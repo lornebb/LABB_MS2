@@ -1,4 +1,4 @@
-# W. U. B (Writers Unblocker)
+# W. U. B (Writers UnBlocker)
 
 Thank you for checking out this site. W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. If you have any questions, comments or bugs, please let me know and get in touch :). 
 
