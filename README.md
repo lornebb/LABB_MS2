@@ -99,10 +99,18 @@ The font used is called <a href=http://fonts3.com/fonts/k/Krungthep.html>Krungth
 
 ##### Icons 
 
+Icons, much in the saem way as the font, were designed to be as transpoarent as possible. I got the fonts from <a href="https://www.flaticon.com/home">FlatIcon</a> for free.
 
-        
-        * Icons
-        * Colours
+##### Colours
+
+Colour palette was generated at <a href="https://www.coolors.co">Coolors.com</a>. I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting. 
+
+* Primary Green - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour. 
+* Background Yellow - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour i tried. 
+* Teriary Pearl/Cream - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction. 
+* Grey and black - #000000 & #5D737E - These darker colours are used for text, icons and and results. 
+
+
         * Styling
         * Images
         * Backgrounds
