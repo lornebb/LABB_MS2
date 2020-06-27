@@ -7,22 +7,26 @@ Grey: #5D737E;
 Black: #000000;
 */
 
-
 /* - - - ALL - - - */
-.text {
-  color: #5D737E;
-}
-
 
 /* - - - Nav - - - */
 
-.navbar { 
-  background-color: #F0F7EE;
+.navbar {
+  background-color: #f0f7ee;
+  text-align: center;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
-.nav-title {
-  text-align: center;
-  color: #5D737E;
+.nav-seperator hr {
+    color: #5D737E;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar-toggler {
+    color: #5D737E;
 }
 
 header {
