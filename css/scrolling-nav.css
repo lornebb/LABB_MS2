@@ -34,7 +34,7 @@ Black: #000000;
     max-block-size: 1rem;
 }
 
-
+/* - - - Sections - - - */
 
 header {
   padding: 156px 0 100px;
@@ -42,4 +42,12 @@ header {
 
 section {
   padding: 150px 0;
+}
+
+/* - - - Footer - - - */
+
+.footer {
+    padding: 0.5rem;
+    background-color: #f0f7ee;
+    color: #5D737E;
 }
