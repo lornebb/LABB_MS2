@@ -17,6 +17,7 @@ Black: #000000;
   display: inline-block;
   float: none;
   vertical-align: top;
+  padding: 0.5rem;
 }
 
 .nav-seperator hr {
@@ -28,6 +29,12 @@ Black: #000000;
 .navbar-toggler {
     color: #5D737E;
 }
+
+#back-arrow {
+    max-block-size: 1rem;
+}
+
+
 
 header {
   padding: 156px 0 100px;
