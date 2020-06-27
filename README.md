@@ -120,11 +120,12 @@ Styling was done with CSS and Bootstrap.
 
 ##### Images 
 
-This is not an image heavy web site. The majority of the site is text and icon only. 
+This is not an image heavy web site. The majority of the site is text and icon only. The only image used in the design is on the home page, for creativity context. The image was found, license free, on <a href="https://unsplash.com/s/photos/writing-block">Unsplash</a>.
 
-        * Images
-        * Backgrounds
-GIT COMMIT BIUSH!!!
+##### Backgrounds
+
+One background is used site wide for continuity. The muted yellow from the palette #FFF07C is used to fill the screen and allow the green generator buttons to stand out.        
+
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
