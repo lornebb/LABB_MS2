@@ -79,10 +79,28 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 
 * Easy buttons to sections.
 * Familiar navbar as to not get lost or confused about where they are.
+* Instant and varied results from each generation
+* Only song lyrics to be searched and returned in lyric search. 
+
+#### User Expectations
+
+* Varied enough results every time, so if initial generation result is not satisfactory, the next one should not appear familiar to its predecessor.
+* Text bars are copy and paste friendly
+* Site should be accessable on all browsers from mobile to desktop.
+* Any feature suggestions to go direct to developer. 
+
+## Design Choices
+
+This is purely functional web application, design is feature focused, and style comes second. I went for a relatively light background to keep the focus on the darker content. Large active buttons used for generations of content.
+
+##### Fonts
+
+The font used is called <a href=http://fonts3.com/fonts/k/Krungthep.html>Krungthep</a> which looks as mechanical as possible without appearing too comical or ironic. Which goes with the purely functional theme I'm applying site-wide. The focus is to provide short, highly literal, informative information to the user so as to not distract from what's important - the content generation. 
+
+##### Icons 
 
 
-    - Design Choices 
-        * Fonts
+        
         * Icons
         * Colours
         * Styling
