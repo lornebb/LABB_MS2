@@ -8,6 +8,10 @@ Black: #000000;
 */
 
 
+/* - - - ALL - - - */
+.text {
+  color: #5D737E;
+}
 
 
 /* - - - Nav - - - */
@@ -16,12 +20,7 @@ Black: #000000;
   background-color: #F0F7EE;
 }
 
-.navbar-dark {
-  text-align: center;
-  color: #5D737E;
-}
-
-.navbar-brand {
+.nav-title {
   text-align: center;
   color: #5D737E;
 }
