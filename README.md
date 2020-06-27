@@ -128,8 +128,11 @@ One background is used site wide for continuity. The muted yellow from the palet
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
+* 3 easy to navigate features on home page. 
+* Music melody and harmony random generator.
+* Name generator, with different filters.
+* Form validation for feature submit to avoid spam. 
+* Lyric search. 
 
 ### Existing Features
 
