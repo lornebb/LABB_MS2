@@ -9,6 +9,13 @@ Black: #000000;
 
 /* - - - ALL - - - */
 
+font-family: 'Press Start 2P', cursive;
+font-family: 'Roboto Slab', serif;
+
+body {
+    font-family: 'Press Start 2p', serif;
+}
+
 /* - - - Nav - - - */
 
 .navbar {
