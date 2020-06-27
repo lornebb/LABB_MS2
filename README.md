@@ -110,8 +110,16 @@ Colour palette was generated at <a href="https://www.coolors.co">Coolors.com</a>
 * Teriary Pearl/Cream - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction. 
 * Grey and black - #000000 & #5D737E - These darker colours are used for text, icons and and results. 
 
+The palette: 
 
-        * Styling
+![Coolers Palette Image](LABB_MS2/Wireframes/MS2_color_template_2.png)
+
+##### Styling
+
+Styling was done with CSS and Bootstrap. 
+
+
+
         * Images
         * Backgrounds
 
