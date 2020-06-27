@@ -16,6 +16,10 @@ body {
     font-family: 'Press Start 2p', serif;
 }
 
+.bg-yellow {
+    background-color: #FFF07C;
+}
+
 /* - - - Nav - - - */
 
 .navbar {
@@ -45,14 +49,35 @@ body {
     max-block-size: 1rem;
 }
 
-/* - - - Sections - - - */
+/* - - - Home Sections - - - */
 
 header {
-  padding: 156px 0 100px;
+  padding: 90px 0 50px;
+}
+
+header h6 {
+    font-family: 'Press Start 2P', cursive;
 }
 
 section {
   padding: 150px 0;
+}
+
+.big-section-btn {
+  background-color: #87BBA2; 
+  border: 1px dotted #5D737E;
+  color: #5D737E;
+  padding: 20vh 20vh;
+  font-size: 100%;
+  border-radius: 8%
+}
+
+.big-section-btn:hover {
+  background-color: #F0F7EE;
+}
+
+.big-section-btn i {
+    font: xx-large;
 }
 
 /* - - - Footer - - - */
