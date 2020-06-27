@@ -118,11 +118,13 @@ The palette:
 
 Styling was done with CSS and Bootstrap. 
 
+##### Images 
 
+This is not an image heavy web site. The majority of the site is text and icon only. 
 
         * Images
         * Backgrounds
-
+GIT COMMIT BIUSH!!!
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
