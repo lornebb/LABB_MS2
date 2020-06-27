@@ -37,6 +37,10 @@ body {
     color: #5D737E;
 }
 
+.navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+}
+
 #back-arrow {
     max-block-size: 1rem;
 }
@@ -54,7 +58,18 @@ section {
 /* - - - Footer - - - */
 
 .footer {
+    font-family: 'Press Start 2P', cursive;
     padding: 0.5rem;
     background-color: #f0f7ee;
     color: #5D737E;
+}
+
+.footer-img {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+    border-radius: 50%;
 }
