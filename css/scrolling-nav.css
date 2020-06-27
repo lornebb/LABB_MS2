@@ -1,8 +1,31 @@
-/*!
- * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/templates/scrolling-nav)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
- */
+/* - - - - - Colours - - - - - - /*
+/*
+Primary Green: #87BBA2;
+Background Yellow: #FFF07C;
+Teriary Pearl: #F0F7EE;
+Grey: #5D737E;
+Black: #000000;
+*/
+
+
+
+
+/* - - - Nav - - - */
+
+.navbar { 
+  background-color: #F0F7EE;
+}
+
+.navbar-dark {
+  text-align: center;
+  color: #5D737E;
+}
+
+.navbar-brand {
+  text-align: center;
+  color: #5D737E;
+}
+
 header {
   padding: 156px 0 100px;
 }
