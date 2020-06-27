@@ -57,11 +57,22 @@ section {
 
 /* - - - Footer - - - */
 
-.footer {
-    font-family: 'Press Start 2P', cursive;
+.footer-seperator {
+    color: #5D737E;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-style {
+    margin: auto;
     padding: 0.5rem;
     background-color: #f0f7ee;
     color: #5D737E;
+}
+
+.footer-style h6 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
 }
 
 .footer-img {
