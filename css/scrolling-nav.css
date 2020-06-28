@@ -50,18 +50,20 @@ body {
 }
 
 /* - - - Home Sections - - - */
-.btn {
-  background-color: #F0F7EE !important;
-  border-radius: 9% !important;
+.container-fluid {
+    padding-bottom: 30px;
 }
 
 .btn-sq-lg {
   width: 150px !important;
   height: 150px !important;
+  background-color: #F0F7EE !important;
+  border-radius: 9% !important;
+  margin: 2em;
 }
 
 header {
-  padding: 90px 0 50px;
+  padding: 90px 0 0px;
 }
 
 header h6 {
