@@ -79,11 +79,24 @@ header h6 {
   border-radius: 9%
 }
 
+.big-main-btns {
+    place-content: center; 
+    font-family: 'Press Start 2P', cursive;
+}
+
 img {
     max-height: 25em;
     overflow: hidden;
     max-width: 25em;
     float: right;
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+.about-bg {
+    background-color: #87BBA2;
 }
 
 /* - - - Footer - - - */
