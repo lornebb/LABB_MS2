@@ -50,6 +50,7 @@ body {
 }
 
 /* - - - Home Sections - - - */
+
 .container-fluid {
     padding-bottom: 30px;
 }
@@ -76,6 +77,13 @@ header h6 {
   color: #5D737E;
   font-size: 100%;
   border-radius: 9%
+}
+
+img {
+    max-height: 25em;
+    overflow: hidden;
+    max-width: 25em;
+    float: right;
 }
 
 /* - - - Footer - - - */
