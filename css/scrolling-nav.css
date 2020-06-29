@@ -99,13 +99,15 @@ img {
     background-color: #87BBA2;
 }
 
-.center-form {
-    place-content: center;
+section h6 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-family: 'Press Start 2P', cursive;
 }
 
-section h6 {
-    padding: 2em;
-    font-family: 'Press Start 2P', cursive;
+.btn-secondary {
+    background-color: transparent;
+    color: inherit;
 }
 
 /* - - - Footer - - - */

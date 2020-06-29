@@ -18,6 +18,13 @@
 		rel="stylesheet">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+      emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
+      emailjs.send("default_service", "wub",{name: "W.U.B features", notes: "Hey, wouldn't it be cool if the site could do this..."});
+   })();
+	</script>
 </head>
 
 <body id="page-top" class="bg-yellow">
@@ -78,7 +85,7 @@
 			</a>
 		</div>
 	</div>
-
+	<!-- About section -->
 	<section id="services" class="about-bg">
 		<div class="container">
 			<div class="row">
@@ -106,14 +113,13 @@
 		<div class="row">
 			<div class="mx-auto">
 				<form>
-					<textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Type here..." required></textarea>
+					<textarea rows="3" name="projectsummary" class="form-control" id="projectsummary" placeholder="Type here..." required></textarea>
 					<button type="submit" class="btn btn-secondary center-block">Send</button>
 				</form>
-                <span>ADD CAPTACH HERE</span>
+				<span>ADD CAPTACH HERE</span>
 			</div>
 		</div>
 	</section>
-
 	<!-- Footer -->
 	<footer class="footer-style">
 		<div class="footer-seperator">
