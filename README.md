@@ -201,6 +201,7 @@ In particular, you should provide all details of the differences between the dep
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
 ## Credits
+Chris Palmer - helped with JavaScript and API integration troubleshooting. 
 Credit - FREEPIK via FlatIcon.com for icons in wireframes
 Wireframes made in Adobe XD
 

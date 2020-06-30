@@ -19,15 +19,15 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-	<!--    
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function(){
       emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
    })();
 	</script>
- <script src="js/sendEmail.js"></script> 
- -->
+
+
 
 </head>
 
@@ -117,13 +117,14 @@
 		<div class="row">
 			<div class="mx-auto">
 				<form onsubmit="return sendMail(this);">
-					<textarea rows="3" name="projectsummary" class="form-control" id="projectsummary" placeholder="Tell me what you want to see on the site..." required></textarea>
+					<textarea rows="3" name="feature_request" class="form-control" id="feature_request" placeholder="Tell me what you want to see on the site..." required></textarea>
 					<button type="submit" class="btn btn-secondary center-block">Send</button>
 				</form>
 				<span>ADD CAPTACH HERE</span>
 			</div>
 		</div>
 	</section>
+    <button id="test">PRESS ME</button>
 	<!-- Footer -->
 	<footer class="footer-style">
 		<div class="footer-seperator">
@@ -146,7 +147,7 @@
 	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
 	<!-- Custom JavaScript for this theme -->
-
+	<script src="/js/sendEmail.js"></script>
 </body>
 
 </html>
