@@ -146,7 +146,10 @@ section h6 {
   height: 75px !important;
   background-color: #F0F7EE !important;
   border-radius: 9% !important;
-  margin: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
 }
 
 .btn-sq-sm i {
