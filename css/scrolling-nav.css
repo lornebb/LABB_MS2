@@ -110,6 +110,21 @@ section h6 {
     color: inherit;
 }
 
+/* - - - Generation page nav - - - */
+
+.top-page-btns {
+  background-color: #87BBA2; 
+  border: 1px solid #5D737E;
+  color: #5D737E;
+  font-size: 100%;
+  border-radius: 9%
+}
+
+.btn-sq-md {
+  place-content: center; 
+  font-family: 'Press Start 2P', cursive;
+}   
+
 /* - - - Footer - - - */
 
 .footer-seperator {
