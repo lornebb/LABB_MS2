@@ -102,7 +102,11 @@ img {
 section h6 {
     padding-top: 2em;
     padding-bottom: 1em;
+}
+
+.search-type {
     font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
 }
 
 .btn-secondary {
@@ -134,6 +138,20 @@ section h6 {
   background-color: #F0F7EE !important; 
   font-family: 'Press Start 2P', cursive;
 }   
+
+/* - - - Search buttons - - - */
+
+.btn-sq-sm {
+  width: 150px !important;
+  height: 75px !important;
+  background-color: #F0F7EE !important;
+  border-radius: 9% !important;
+  margin: 2em;
+}
+
+.btn-sq-sm i {
+    font-size: 30px;
+}
 
 /* - - - Footer - - - */
 
