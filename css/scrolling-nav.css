@@ -112,16 +112,26 @@ section h6 {
 
 /* - - - Generation page nav - - - */
 
-.top-page-btns {
-  background-color: #87BBA2; 
-  border: 1px solid #5D737E;
+.top-page-header {
   color: #5D737E;
   font-size: 100%;
-  border-radius: 9%
+
+  place-content: center; 
+  font-family: 'Press Start 2P', cursive; 
+}
+
+.top-page-header div h6 {
+    padding: 1em;
+    margin: 0px;
+}
+
+.header-text {
+    padding: 0px;
+    padding-top: 02vh;
 }
 
 .btn-sq-md {
-  place-content: center; 
+  background-color: #F0F7EE !important; 
   font-family: 'Press Start 2P', cursive;
 }   
 
