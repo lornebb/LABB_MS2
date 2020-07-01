@@ -1,8 +1,8 @@
 // test button for linked file
 
-$("#test").click(function () {
-    alert("reached")
-});
+// $("#test").click(function () {
+//     alert("reached")
+// });
 
 
 // send mail js
