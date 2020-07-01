@@ -1,13 +1,4 @@
-/* 
-const template_params = {
-   "feature_request": "feature_request_value"
-};
-let service_id = "default_service";
-let template_id = "wub";
-emailjs.send(service_id, template_id, template_params)
-    .then(res => {console.log('SUCCESS!', response.status, response.text);
-    }).catch(error => {console.log('NOPE, try again')});
-*/
+// send mail js
 
 function sendMail(contactForm) {
     console.log("reached");
@@ -31,3 +22,23 @@ function sendMail(contactForm) {
 $("#test").click(function () {
     alert("reached")
 });
+
+// search lyrics js
+
+function searchLyrics(lyricSearch) {
+
+    fetch("https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=kiss%20the%20rain", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "shazam.p.rapidapi.com",
+		"x-rapidapi-key": "15dac825ebmsh76a9e21a4637745p1a6c3bjsnb08d198023c0"
+	}
+})
+.then(response => {
+    console.log(response)
+    console.log("it worked");
+})
+.catch(err => {
+    console.log(err)
+    console.log("try again stupid");
+})}; 
