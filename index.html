@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap"
         rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
+        })();
+    </script>
 
-    <script type="text/javascript" src="assets/js/wubjs.js"></script>
     <!-- script link to other JS at bottom too -->
     <title>W.U.B - Writers UnBlocker</title>
 </head>
@@ -76,10 +81,11 @@
                 <p> Ringing faint bells?</p>
                 <p> See if you actually wrote it
                     or not...</p>
-                <form onsubmit=" return searchLyrics(this)">
+                <form onsubmit="return searchLyrics(this)">
                     <input type="text" placeholder="type lyrics here" id="lyric_search_box">
                     <input type="submit">
                 </form>
+                <button id="test">PRESS ME</button>
             </div>
         </div>
         <div class="nav-seperator">
@@ -101,21 +107,23 @@
     </section>
 
     <footer class="footer-style">
-		<div class="footer-seperator">
-			<hr />
-		</div>
-		<div class="container">
-			<div class="row">
-				<h6 class="text-left">2020© <br> LABB</h6>
-					<img class="footer-img mx-auto" src="/assets/imgs/lornæ_favicon.png" alt="lornae brand logo favicon">
-					<h6 class="text-right">For edu <br> purposes <br> only </h6>
-			</div>
-		</div>
-	</footer>
+        <div class="footer-seperator">
+            <hr />
+        </div>
+        <div class="container">
+            <div class="row">
+                <h6 class="text-left">2020© <br> LABB</h6>
+                <img class="footer-img mx-auto" src="/assets/imgs/lornæ_favicon.png" alt="lornae brand logo favicon">
+                <h6 class="text-right">For edu <br> purposes <br> only </h6>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/wubjs.js"></script>
 </body>
 
 </html>

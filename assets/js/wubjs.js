@@ -1,8 +1,8 @@
 // test button for linked file
 
-// $("#test").click(function () {
-//     alert("reached")
-// });
+$("#test").click(function () {
+    alert("reached")
+});
 
 
 // send mail js
@@ -48,6 +48,6 @@ function searchLyrics(lyricSearch) {
         })
 };
 
-var searchInput = $("#searchInput").val(); //takes value (.val) from html ID searchInput eg: fairground
+var searchInput = $("#lyric_search_box").val(); //takes value (.val) from html ID searchInput eg: fairground
 
 searchLyrics(searchInput); // in brackets is the string from above determined as searchInput. searchLyrics(Fairground);  
