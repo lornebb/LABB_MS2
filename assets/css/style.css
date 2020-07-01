@@ -49,6 +49,12 @@ body {
     max-block-size: 1rem;
 }
 
+/* - - - HEADER HIDE - - - */
+
+#lyrics-section {
+    display: block;
+}
+
 /* - - - Home Sections - - - */
 
 .container-fluid {
