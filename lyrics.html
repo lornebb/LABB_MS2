@@ -21,11 +21,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/lyric-search.js"></script>
-	<script type="text/javascript">
-		(function(){
-      emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
-    })();
-	</script>
 
 </head>
 
@@ -92,8 +87,8 @@
 			<p> Ringing faint bells?</p>
 			<p> See if you actually wrote it
 				or not...</p>
-			<form onsubmit=" return ">
-				<input type="text" placeholder="type lyrics here">
+			<form onsubmit=" return searchLyrics(this)">
+				<input type="text" placeholder="type lyrics here" id="lyric_search_box">
 				<input type="submit">
             </form>
 		</div>
