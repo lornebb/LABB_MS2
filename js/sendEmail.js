@@ -10,24 +10,24 @@ emailjs.send(service_id, template_id, template_params)
 */
 
 function sendMail(contactForm) {
-console.log("reached");
+    console.log("reached");
     emailjs.send("lorneashley_gmail_com", "wub", {
-/*    "from_name": contactForm.name.value,
-    "from_email": contactForm.emailaddress.value,*/
-    "feature_request": contactForm.feature_request.value
-})
-    .then(
-        function (response) {
-            console.log("SUCCESS", response);
-            console.log("SUCCESS", response.status, response.text);
-        },
-        function (error) {
-            console.log("FAILED", error);
-        }
-    );
-return false;
-} 
+        /*    "from_name": contactForm.name.value,
+            "from_email": contactForm.emailaddress.value,*/
+        "feature_request": contactForm.feature_request.value
+    })
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+                console.log("SUCCESS", response.status, response.text);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false;
+}
 
-$("#test").click(function(){
+$("#test").click(function () {
     alert("reached")
 });

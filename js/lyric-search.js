@@ -1,5 +1,6 @@
 function searchLyrics(lyricSearch) {
-fetch("https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=kiss%20the%20rain", {
+
+    fetch("https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=kiss%20the%20rain", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "shazam.p.rapidapi.com",
@@ -13,5 +14,4 @@ fetch("https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=k
 .catch(err => {
     console.log(err)
     console.log("try again stupid");
-})};
-
+})}; 
