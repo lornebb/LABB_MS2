@@ -29,9 +29,8 @@ function sendMail(contactForm) {
 
 // search lyrics js
 
-function searchLyrics(lyricSearch) {
-
-    fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${lyricSearch}`, {
+function searchLyrics(searchInput) {
+    fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchInput}`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "shazam.p.rapidapi.com",
@@ -48,6 +47,12 @@ function searchLyrics(lyricSearch) {
         })
 };
 
-var searchInput = $("#lyric_search_box").val(); //takes value (.val) from html ID searchInput eg: fairground
+//var searchInput = $("#lyric-search-box").val(); //takes value (.val) from html ID searchInput eg: fairground
 
-searchLyrics(searchInput); // in brackets is the string from above determined as searchInput. searchLyrics(Fairground);  
+// searchLyrics(searchInput); // in brackets is the string from above determined as searchInput. searchLyrics(Fairground);  
+
+$('#lyric-search').submit(function (e) { 
+    e.preventDefault();
+    let searchValue = $('lyric-search-box').val()
+    searchLyrics(searchValue);
+});
