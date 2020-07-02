@@ -39,7 +39,20 @@ function searchLyrics(searchValue) {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "shazam.p.rapidapi.com",
-                "x-rapidapi-key": "15dac825ebmsh76a9e21a4637745p1a6c3bjsnb08d198023c0"
+                "x-rapidapi-key": "15dac825ebmsh76a9e21a4637745p1a6c3bjsnb08d198023c0",
+                "access-control-allow-credentials": "true",
+                "access-control-allow-headers": "ver",
+                "access-control-allow-methods": "GET, POST",
+                "access-control-allow-origin": "*",
+                "content-type": "application/json",
+                "date": "Thu, 02 Jul 2020 11:32:46 GMT",
+                "server": "RapidAPI-1.1.15",
+                "x-rapidapi-region": "AWS - eu-central-1",
+                "x-rapidapi-version": "1.1.15",
+                "x-ratelimit-requests-limit": "500",
+                "x-ratelimit-requests-remaining": "307",
+                "transfer-encoding": "chunked",
+                "connection": "Close"
             }
         })
         .then(response => {
