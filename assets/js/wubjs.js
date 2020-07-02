@@ -60,17 +60,9 @@ function searchLyrics(searchValue) {
             console.log(data)
             var artistResult = data.tracks.hits[0].track
             console.log("artist", data.tracks.hits[0].track.subtitle)
-            $('#artist-result').val(`${artistResult.subtitle}`);
-
-            // var artistResult = []
-
-            //     .then(response => response.json())
-            //     .then(data => places.push(data));
-
-            
-            // artistResult[tracks.hits[0].track.subtitle]
-            
-            // console.log(artistResult);
+            console.log("track", data.tracks.hits[0].track.title)
+            $('#artist-result').val(`${artistResult.subtitle}`)
+            $('#track-result').val(`${artistResult.title}`);
         })
         .catch(err => {
             console.log("try again stupid");
