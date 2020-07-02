@@ -44,25 +44,19 @@ function searchLyrics(searchValue) {
                 "access-control-allow-headers": "ver",
                 "access-control-allow-methods": "GET, POST",
                 "access-control-allow-origin": "*",
-                "content-type": "application/json",
-                "date": "Thu, 02 Jul 2020 11:32:46 GMT",
                 "server": "RapidAPI-1.1.15",
                 "x-rapidapi-region": "AWS - eu-central-1",
                 "x-rapidapi-version": "1.1.15",
-                "x-ratelimit-requests-limit": "500",
-                "x-ratelimit-requests-remaining": "307",
                 "transfer-encoding": "chunked",
                 "connection": "Close"
             }
         })
-        .then(response => {
-            console.log(response)
-            console.log("it worked");
-        })
-        .catch(err => {
-            console.log(err)
-            console.log("try again stupid");
-        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        // .catch(err => {
+        //     console.log(err)
+        //     console.log("try again stupid");
+        // })
 };
 
 // var x = $("#lyric-search-box").val(); //takes value (.val) from html ID searchInput eg: fairground
