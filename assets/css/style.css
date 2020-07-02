@@ -197,6 +197,12 @@ section h6 {
     font-size: 30px;
 }
 
+.results-box {
+    background-color: ivory;
+    background-size: inherit;
+    border: lightslategray;
+}
+
 /* - - - Lyric Search Section - - - */
 
 #lyric-search-results-form {

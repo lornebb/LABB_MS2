@@ -1,6 +1,7 @@
 $(document).ready(function () {
     //thank you W3school for this function for scrolling//
     console.log("new page load")
+
     function topFunction() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0;
@@ -34,7 +35,7 @@ function sendMail(contactForm) {
     return false;
 }
 
-// search lyrics js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// search lyrics and show results js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function searchLyrics(searchValue) {
     fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
@@ -57,6 +58,19 @@ function searchLyrics(searchValue) {
         .then(data => {
             $('#results-below-box-show').css("display", "block")
             console.log(data)
+            var artistResult = data.tracks.hits[0].track
+            console.log("artist", data.tracks.hits[0].track.subtitle)
+            $('#artist-result').val(`${artistResult.subtitle}`);
+
+            // var artistResult = []
+
+            //     .then(response => response.json())
+            //     .then(data => places.push(data));
+
+            
+            // artistResult[tracks.hits[0].track.subtitle]
+            
+            // console.log(artistResult);
         })
         .catch(err => {
             console.log("try again stupid");
@@ -71,6 +85,13 @@ $('#lyric-search-form').submit(function (e) {
     searchLyrics(searchValue);
 });
 
+
+// tracks.hits[0].track.subtitle //artist
+// tracks.hits[0].track.title //title
+
+
+
+
 // Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 // function toggleHomeView() {
@@ -81,19 +102,19 @@ $('#lyric-search-form').submit(function (e) {
 //         pageName.display = "none";
 //     }
 
-$( '#chords-and-melody-section-btn' ).click(function() {
-    $( '#chords-and-melody-section' ).toggle()
-    $( '#home-section' ).toggle()
+$('#chords-and-melody-section-btn').click(function () {
+    $('#chords-and-melody-section').toggle()
+    $('#home-section').toggle()
 });
 
-$( '#writing-section-btn' ).click(function() {
-    $( '#writing-section' ).toggle()
-    $( '#home-section' ).toggle()
+$('#writing-section-btn').click(function () {
+    $('#writing-section').toggle()
+    $('#home-section').toggle()
 });
 
-$( '#lyric-search-btn' ).click(function() {
-    $( '#lyric-section' ).toggle()
-    $( '#home-section' ).toggle()
+$('#lyric-search-btn').click(function () {
+    $('#lyric-section').toggle()
+    $('#home-section').toggle()
 });
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
