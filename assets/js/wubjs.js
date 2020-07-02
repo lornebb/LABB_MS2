@@ -80,9 +80,6 @@ $('#lyric-search-form').submit(function (e) {
 //     } else {
 //         pageName.display = "none";
 //     }
-// }
-
-
 
 $( '#chords-and-melody-section-btn' ).click(function() {
     $( '#chords-and-melody-section' ).toggle()
