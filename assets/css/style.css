@@ -27,6 +27,13 @@ body {
     text-decoration: underline;
 }
 
+.subtitle {
+    font-family: 'Press Start 2p', serif;
+    font-size: 10px;
+    padding: 0;
+    
+}
+
 .add-font {
     font-family: 'Press Start 2p', serif;
 }

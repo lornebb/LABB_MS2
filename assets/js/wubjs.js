@@ -59,10 +59,12 @@ function searchLyrics(searchValue) {
             $('#results-below-box-show').css("display", "block")
             console.log(data)
             var artistResult = data.tracks.hits[0].track
-            console.log("artist", data.tracks.hits[0].track.subtitle)
-            console.log("track", data.tracks.hits[0].track.title)
+            console.log("artist:", data.tracks.hits[0].track.subtitle)
+            console.log("track:", data.tracks.hits[0].track.title)
+            console.log("link", data.tracks.hits[0].track.share.html)
             $('#artist-result').val(`${artistResult.subtitle}`)
-            $('#track-result').val(`${artistResult.title}`);
+            $('#track-result').val(`${artistResult.title}`)
+            $('#lyric-link').html(href).replaceWith(`${artistResult.track.share.html}`)
         })
         .catch(err => {
             console.log("try again stupid");
@@ -77,22 +79,7 @@ $('#lyric-search-form').submit(function (e) {
     searchLyrics(searchValue);
 });
 
-
-// tracks.hits[0].track.subtitle //artist
-// tracks.hits[0].track.title //title
-
-
-
-
 // Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-// function toggleHomeView() {
-//     var pageName = document.getElementById('home-section');
-//     if (pageName.style.display === "none") {
-//         pageName.style.display = "block";
-//     } else {
-//         pageName.display = "none";
-//     }
 
 $('#chords-and-melody-section-btn').click(function () {
     $('#chords-and-melody-section').toggle()
