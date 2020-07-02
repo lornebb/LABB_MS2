@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
@@ -81,11 +81,12 @@
                 <p> Ringing faint bells?</p>
                 <p> See if you actually wrote it
                     or not...</p>
-                <form onsubmit="return searchLyrics(this)">
+               <!-- <form onsubmit="return searchLyrics(this)">-->
+               <form id=lyric-search-form>
                     <input type="text" placeholder="type lyrics here" id="lyric-search-box">
                     <input id="lyric-submit" type="submit">
                 </form>
-                <button id="test">PRESS ME</button>
+                <!-- <button id="test">PRESS ME TEST</button> -->
             </div>
         </div>
         <div class="nav-seperator">

@@ -1,3 +1,8 @@
+
+$(document).ready(function () {
+    console.log("new page load")
+});
+
 // test button for linked file
 
 $("#test").click(function () {
@@ -29,8 +34,8 @@ function sendMail(contactForm) {
 
 // search lyrics js
 
-function searchLyrics(x) {
-    fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${x}`, {
+function searchLyrics(searchValue) {
+    fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "shazam.p.rapidapi.com",
@@ -47,12 +52,12 @@ function searchLyrics(x) {
         })
 };
 
-var lyricSearch = $("#lyric-search-box").val(); //takes value (.val) from html ID searchInput eg: fairground
+// var x = $("#lyric-search-box").val(); //takes value (.val) from html ID searchInput eg: fairground
 
-searchLyrics(lyricSearch); // in brackets is the string from above determined as searchInput. searchLyrics(Fairground);  
+// searchLyrics(x); // in brackets is the string from above determined as searchInput. searchLyrics(Fairground);  
 
-$('#lyric-search-box').submit(function (e) { 
+$('#lyric-search-form').submit(function (e) { 
     e.preventDefault();
-    // let searchValue = $('#lyric-search-box').val()
-    // searchLyrics(searchValue);
+    let searchValue = $('#lyric-search-box').val()
+    searchLyrics(searchValue);
 });
