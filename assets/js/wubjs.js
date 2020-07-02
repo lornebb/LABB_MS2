@@ -82,6 +82,18 @@ $('#lyric-search-form').submit(function (e) {
 //     }
 // }
 
+
+
+$( '#chords-and-melody-section-btn' ).click(function() {
+    $( '#chords-and-melody-section' ).toggle()
+    $( '#home-section' ).toggle()
+});
+
+$( '#writing-section-btn' ).click(function() {
+    $( '#writing-section' ).toggle()
+    $( '#home-section' ).toggle()
+});
+
 $( '#lyric-search-btn' ).click(function() {
     $( '#lyric-section' ).toggle()
     $( '#home-section' ).toggle()

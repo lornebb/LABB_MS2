@@ -70,14 +70,24 @@ body {
 
 /* - - - HEADER HIDE - - - */
 
+#home-section {
+    display: block;
+}
+
 #lyric-section {
     display: none;
     /* transition: opacity 1s ease-out; */
 }
 
-#home-section {
-    display: block;
+#chords-and-melody-section {
+    display: none;
 }
+
+#writing-section {
+    display: none;
+}
+
+
 
 /* - - - Home Sections - - - */
 
