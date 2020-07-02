@@ -70,38 +70,56 @@
         </header>
         <!-- Search button -->
         <div class="container">
-            <button href="SEARCH" class="btn btn-sq-sm row">
-                <!--<i class="fa fa-search fa-5x"></i>-->
-                Did I Write This?
-            </button>
+            <div class="row">
+                <button href="SEARCH" class="btn btn-sq-sm mx-auto">
+                    <!--<i class="fa fa-search fa-5x"></i>-->
+                    Did I Write This?
+                </button>
+            </div>
         </div>
         <div class="container">
-            <div class="search-type">
-                <p> Do your lyrics sound familiar?</p>
-                <p> Ringing faint bells?</p>
-                <p> See if you actually wrote it
-                    or not...</p>
-                <!-- <form onsubmit="return searchLyrics(this)">-->
-                <form id=lyric-search-form>
-                    <input type="text" placeholder="type lyrics here" id="lyric-search-box">
-                    <input id="lyric-submit" type="submit">
-                </form>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="search-type col-10">
+                    <p> Do your lyrics sound familiar?</p>
+                    <p> Ringing faint bells?</p>
+                    <p> See if you actually wrote it
+                        or not...</p>
+                </div>
+                <div class="col-1"></div>
             </div>
+            <div class="row add-font medium-text">
+                <form id="lyric-search-form">
+                    <input type="text" placeholder="type lyrics here" id="lyric-search-box">
+                    <br>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <input id="lyric-submit" type="submit" class="col-10">
+                        <div class="col-1"></div>
+                    </div>
+                </form>
+                <div id="something-went-wrong-box-hide">Sorry, something went wrong. Give the page a refresh and try
+                    again.</div>
+                <div id="results-below-box-show">Check out your results below</div>
+            </div>
+        </div>
         </div>
         <div class="nav-seperator">
             <hr />
         </div>
         <!--Lyric search results-->
-        <div class="mx-auto">
-            <h5 class="title">Results</h5>
-            <form id="lyric-search-results-form">
-                <label for="art-res">Most likely artist</label><br>
-                <input type="text" id="artist-result" name="art-res" value="Artist Result"><br>
-                <br><label for="art-res">Most likely song name</label><br>
-                <input type="text" id="artist-result" name="art-res" value="Artist Result"><br>
-                <br><label for="art-res">Most likely artist</label><br>
-                <input type="text" id="artist-result" name="art-res" value="Artist Result">
-            </form>
+        <div class="container">
+            <div class="row">
+                <form id="lyric-search-results-form">
+                    <h5 class="title">Results</h5>
+                    <label for="art-res">Most likely artist</label><br>
+                    <input type="text" id="artist-result" name="art-res" value="Artist Result"><br>
+                    <br><label for="art-res">Most likely song name</label><br>
+                    <input type="text" id="artist-result" name="art-res" value="Artist Result"><br>
+                    <br><label for="art-res">Most likely artist</label><br>
+                    <input type="text" id="artist-result" name="art-res" value="Artist Result">
+                </form>
+            </div>
         </div>
         <div class="nav-seperator">
             <hr />

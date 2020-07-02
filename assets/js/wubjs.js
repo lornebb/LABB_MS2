@@ -52,11 +52,15 @@ function searchLyrics(searchValue) {
             }
         })
         .then(response => response.json())
-        .then(data => console.log(data))
-        // .catch(err => {
-        //     console.log(err)
-        //     console.log("try again stupid");
-        // })
+        .then(data => {
+            $('#results-below-box-show').css("display", "block") 
+            console.log(data)
+        })
+        .catch(err => {
+            console.log("try again stupid");
+            $('#something-went-wrong-box-hide').css("display", "block")            
+            console.log(err)
+        })
 };
 
 // var x = $("#lyric-search-box").val(); //takes value (.val) from html ID searchInput eg: fairground
