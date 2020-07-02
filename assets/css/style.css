@@ -71,7 +71,7 @@ body {
 /* - - - HEADER HIDE - - - */
 
 #lyric-section {
-    display: block;
+    display: none;
     /* transition: opacity 1s ease-out; */
 }
 

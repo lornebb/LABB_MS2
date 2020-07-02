@@ -1,5 +1,10 @@
 $(document).ready(function () {
+    //thank you W3school for this function for scrolling//
     console.log("new page load")
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0;
+    };
 });
 
 // test button for linked file - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -68,8 +73,11 @@ $('#lyric-search-form').submit(function (e) {
 
 // Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
+
+
 $( '#lyric-search-btn' ).click(function() {
-    $( '#lyric-section' ).toggle();
+    $( '#lyric-section' ).toggle()
+    $( '#home-section' ).toggle()
 });
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
