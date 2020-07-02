@@ -74,3 +74,5 @@ $('#lyric-search-form').submit(function (e) {
     let searchValue = $('#lyric-search-box').val()
     searchLyrics(searchValue);
 });
+
+console.log("end of js script")

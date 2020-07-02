@@ -9,8 +9,10 @@ Black: #000000;
 
 /* - - - ALL - - - */
 
-font-family 'Press Start 2P', cursive;
-font-family 'Roboto Slab', serif;
+font-family 'Press Start 2P',
+cursive;
+font-family 'Roboto Slab',
+serif;
 
 body {
     font-family: 'Press Start 2p', serif;
@@ -20,15 +22,19 @@ body {
     background-color: #FFF07C;
 }
 
+.title {
+    font-family: 'Press Start 2p', serif;
+}
+
 /* - - - Nav - - - */
 
 .navbar {
-  background-color: #f0f7ee;
-  text-align: center;
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  padding: 0.5rem;
+    background-color: #f0f7ee;
+    text-align: center;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    padding: 0.5rem;
 }
 
 .nav-seperator hr {
@@ -62,15 +68,15 @@ body {
 }
 
 .btn-sq-lg {
-  width: 150px !important;
-  height: 150px !important;
-  background-color: #F0F7EE !important;
-  border-radius: 9% !important;
-  margin: 2em;
+    width: 150px !important;
+    height: 150px !important;
+    background-color: #F0F7EE !important;
+    border-radius: 9% !important;
+    margin: 2em;
 }
 
 header {
-  padding: 90px 0 0px;
+    padding: 90px 0 0px;
 }
 
 header h6 {
@@ -78,15 +84,15 @@ header h6 {
 }
 
 .big-section-btn {
-  background-color: #87BBA2; 
-  border: 1px solid #5D737E;
-  color: #5D737E;
-  font-size: 100%;
-  border-radius: 9%
+    background-color: #87BBA2;
+    border: 1px solid #5D737E;
+    color: #5D737E;
+    font-size: 100%;
+    border-radius: 9%
 }
 
 .big-main-btns {
-    place-content: center; 
+    place-content: center;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -123,11 +129,11 @@ section h6 {
 /* - - - Generation page nav - - - */
 
 .top-page-header {
-  color: #5D737E;
-  font-size: 100%;
+    color: #5D737E;
+    font-size: 100%;
 
-  place-content: center; 
-  font-family: 'Press Start 2P', cursive; 
+    place-content: center;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .top-page-header div h6 {
@@ -141,25 +147,33 @@ section h6 {
 }
 
 .btn-sq-md {
-  background-color: #F0F7EE !important; 
-  font-family: 'Press Start 2P', cursive;
-}   
+    background-color: #F0F7EE !important;
+    font-family: 'Press Start 2P', cursive;
+}
 
 /* - - - Search buttons - - - */
 
 .btn-sq-sm {
-  width: 150px !important;
-  height: 75px !important;
-  background-color: #F0F7EE !important;
-  border-radius: 9% !important;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
+    width: 150px !important;
+    height: 75px !important;
+    background-color: #F0F7EE !important;
+    border-radius: 9% !important;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
 }
 
 .btn-sq-sm i {
     font-size: 30px;
+}
+
+/* - - - Lyric Search Section - - - */
+
+#lyric-search-results-form {
+    margin: auto;
+    font-family: 'press start 2p', cursive;
+    font-size: 11px;
 }
 
 /* - - - Footer - - - */

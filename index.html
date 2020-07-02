@@ -81,26 +81,27 @@
                 <p> Ringing faint bells?</p>
                 <p> See if you actually wrote it
                     or not...</p>
-               <!-- <form onsubmit="return searchLyrics(this)">-->
-               <form id=lyric-search-form>
+                <!-- <form onsubmit="return searchLyrics(this)">-->
+                <form id=lyric-search-form>
                     <input type="text" placeholder="type lyrics here" id="lyric-search-box">
                     <input id="lyric-submit" type="submit">
                 </form>
-                <!-- <button id="test">PRESS ME TEST</button> -->
             </div>
         </div>
         <div class="nav-seperator">
             <hr />
         </div>
-        <!-- Results button -->
-        <div>
-            Most probable Artist result bar
-        </div>
-        <div>
-            Most probable Song result bar
-        </div>
-        <div>
-            Rest of results Link result bar
+        <!--Lyric search results-->
+        <div class="mx-auto">
+            <h5 class="title">Results</h5>
+            <form id="lyric-search-results-form">
+                <label for="art-res">Most likely artist</label><br>
+                <input type="text" id="artist-result" name="art-res" value="Artist Result"><br>
+                <br><label for="art-res">Most likely song name</label><br>
+                <input type="text" id="artist-result" name="art-res" value="Artist Result"><br>
+                <br><label for="art-res">Most likely artist</label><br>
+                <input type="text" id="artist-result" name="art-res" value="Artist Result">
+            </form>
         </div>
         <div class="nav-seperator">
             <hr />
