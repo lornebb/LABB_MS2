@@ -1,16 +1,14 @@
-
 $(document).ready(function () {
     console.log("new page load")
 });
 
-// test button for linked file
+// test button for linked file - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 $("#test").click(function () {
     alert("reached")
 });
 
-
-// send mail js
+// send mail js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function sendMail(contactForm) {
     console.log("reached");
@@ -31,8 +29,7 @@ function sendMail(contactForm) {
     return false;
 }
 
-
-// search lyrics js
+// search lyrics js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function searchLyrics(searchValue) {
     fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
@@ -53,24 +50,27 @@ function searchLyrics(searchValue) {
         })
         .then(response => response.json())
         .then(data => {
-            $('#results-below-box-show').css("display", "block") 
+            $('#results-below-box-show').css("display", "block")
             console.log(data)
         })
         .catch(err => {
             console.log("try again stupid");
-            $('#something-went-wrong-box-hide').css("display", "block")            
+            $('#something-went-wrong-box-hide').css("display", "block")
             console.log(err)
         })
 };
 
-// var x = $("#lyric-search-box").val(); //takes value (.val) from html ID searchInput eg: fairground
-
-// searchLyrics(x); // in brackets is the string from above determined as searchInput. searchLyrics(Fairground);  
-
-$('#lyric-search-form').submit(function (e) { 
+$('#lyric-search-form').submit(function (e) {
     e.preventDefault();
     let searchValue = $('#lyric-search-box').val()
     searchLyrics(searchValue);
 });
 
+// Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+$("#lyric-search-btn").onClick(function () {
+    $("#lyric-section").toggle(3000);
+});
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 console.log("end of js script")
