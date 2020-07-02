@@ -75,6 +75,10 @@ body {
     /* transition: opacity 1s ease-out; */
 }
 
+#home-section {
+    display: block;
+}
+
 /* - - - Home Sections - - - */
 
 .container-fluid {

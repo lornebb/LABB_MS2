@@ -73,7 +73,14 @@ $('#lyric-search-form').submit(function (e) {
 
 // Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-
+// function toggleHomeView() {
+//     var pageName = document.getElementById('home-section');
+//     if (pageName.style.display === "none") {
+//         pageName.style.display = "block";
+//     } else {
+//         pageName.display = "none";
+//     }
+// }
 
 $( '#lyric-search-btn' ).click(function() {
     $( '#lyric-section' ).toggle()
