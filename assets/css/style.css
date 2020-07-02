@@ -70,9 +70,9 @@ body {
 
 /* - - - HEADER HIDE - - - */
 
-#lyrics-section {
+#lyric-section {
     display: block;
-    transition: opacity 1s ease-out;
+    /* transition: opacity 1s ease-out; */
 }
 
 /* - - - Home Sections - - - */

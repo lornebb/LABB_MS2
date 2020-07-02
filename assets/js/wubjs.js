@@ -68,9 +68,10 @@ $('#lyric-search-form').submit(function (e) {
 
 // Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-$("#lyric-search-btn").onClick(function () {
-    $("#lyric-section").toggle(3000);
+$( '#lyric-search-btn' ).click(function() {
+    $( '#lyric-section' ).toggle();
 });
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 console.log("end of js script")
