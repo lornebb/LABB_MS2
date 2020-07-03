@@ -35,6 +35,13 @@ function sendMail(contactForm) {
     return false;
 }
 
+// chord and melody generator js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// https://www.scales-chords.com/api/
+
+
+// Name generator js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// https://fungenerators.com/api/namegen/
+
 // search lyrics and show results js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function searchLyrics(searchValue) {
