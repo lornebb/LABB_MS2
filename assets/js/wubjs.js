@@ -59,12 +59,15 @@ function searchLyrics(searchValue) {
             $('#results-below-box-show').css("display", "block")
             console.log(data)
             var artistResult = data.tracks.hits[0].track
-            console.log("artist:", data.tracks.hits[0].track.subtitle)
-            console.log("track:", data.tracks.hits[0].track.title)
-            console.log("link", data.tracks.hits[0].track.share.html)
+            // console.log("artist:", data.tracks.hits[0].track.subtitle)
+            // console.log("track:", data.tracks.hits[0].track.title)
+            // console.log("link", data.tracks.hits[0].track.share.html)
+            var lyricResultLink = data.tracks.hits[0].track.share.html
+            // console.log("did it work?", lyricResultLink)
             $('#artist-result').val(`${artistResult.subtitle}`)
             $('#track-result').val(`${artistResult.title}`)
-            $('#lyric-link').html(href).replaceWith(`${artistResult.track.share.html}`)
+            //  $('#lyric-link').attr("href", `${artistResult.track.share.html}`)
+            $("#lyric-link").find("href").attr("href", `${lyricResultLink}`);
         })
         .catch(err => {
             console.log("try again stupid");
