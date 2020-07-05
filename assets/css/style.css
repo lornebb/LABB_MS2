@@ -11,8 +11,10 @@ Black: #000000;
 
 font-family 'Press Start 2P',
 cursive;
-font-family 'Roboto Slab',
-serif;
+/* font-family 'Roboto Slab',
+serif; */
+font-family: 'Source Code Pro',
+monospace;
 
 body {
     font-family: 'Press Start 2p', serif;
@@ -31,7 +33,6 @@ body {
     font-family: 'Press Start 2p', serif;
     font-size: 10px;
     padding: 0;
-    
 }
 
 .add-font {
@@ -44,6 +45,10 @@ body {
 
 .medium-text {
     font-size: 13px;
+}
+
+.other-font {
+    font-family: 'Source Code Pro', monospace;
 }
 
 /* - - - Nav - - - */
@@ -187,6 +192,10 @@ section h6 {
     font-family: 'Press Start 2P', cursive;
 }
 
+.chord-output-text {
+    font-family:
+}
+
 /* - - - Search buttons - - - */
 
 .btn-sq-sm {
@@ -229,6 +238,7 @@ section h6 {
 #lyric-search-form {
     margin: auto;
 }
+
 /* - - - Footer - - - */
 
 .footer-seperator {

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <!-- EmailJS for email form on index -->
     <script type="text/javascript">
@@ -140,16 +141,15 @@
         <!-- results -->
         <div class="container">
             <form>
-                <label for="noChords">Number of chords: </label>
+                <label for="noChords" class="add-font medium-text"> Number of chords: </label>
                 <input type="number" value="3" min="1" max="5" step="1" id="noChords"><br>
-                <label for="noProgressions">Number of chord progressions: </label>
+                <label for="noProgressions" class="add-font medium-text">Number of <br>chord progressions: </label>
                 <input type="number" value="5" min="1" max="7" step="1" id="noProgressions"><br>
                 <!-- <label></label><input type="button" value="Generate" id="generateRandomCP"> -->
             </form>
-
             <div style="border: 1px solid black;">
                 <h2 id="titleRandomCP"></h2>
-                <p id="functionRandomCP" class="tool-output-text"></p>
+                <p id="functionRandomCP" class="chord-output-text"></p>
             </div>
         </div>
         <div class="nav-seperator">
@@ -157,16 +157,15 @@
         </div>
         <!-- Chord help gtr and piano section -->
 
-        <div class="container">
+        <div class="container-fluid">
             <div>
-                <h6 class="add-font">
-                    How do I play <br> these chords?
+                <h6 class="add-font medium-text">
+                    How do I play these chords?
                 </h6>
             </div>
-            <form class="row add-font">
+            <form class="add-font medium-text">
                 <fieldset>
-                    <!-- <legend>Chose chords</legend> -->
-                    <div>
+                    <div class="row">
                         <div class="col-6">
                             <label>Chord letter</label>
                             <select id="myList">
@@ -203,9 +202,11 @@
                     </div>
                 </fieldset>
             </form>
-            <div class="container-fluid">
-                <button type="radio">Guitar</button>
-                <button type="radio">Piano</button>
+            <div class="container">
+                <div class="row add-font small-text">
+                    <button class="col-6" type="radio">Guitar</button>
+                    <button class="col-6" type="radio">Piano</button>
+                </div>
             </div>
         </div>
         <!-- piano -->
