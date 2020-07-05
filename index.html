@@ -155,12 +155,12 @@
         <div class="nav-seperator">
             <hr />
         </div>
-        
+
         <!-- Chord help gtr and piano section -->
 
         <div class="container-fluid">
             <div>
-                <h6 class="add-font medium-text">
+                <h6 class="add-font medium-text underline">
                     How do I play these chords?
                 </h6>
             </div>
@@ -210,37 +210,40 @@
                 </div>
             </div>
         </div>
-        <!-- piano -->
-        <div class="chord-image container">
-            <div class="container-fluid">
-                <ins class="scales_chords_api" chord="Dm" instrument="piano" width="150px;" height="100px;"></ins>
+        <div class="container">
+            <div class="chord-image row">
+                <!-- piano -->
+                <div class="col-12">
+                    <ins class="scales_chords_api" chord="Cm" instrument="piano" width="390px;" height="200px;"></ins>
+                </div>
+                <!-- guitar -->
+                <div class="col-12">
+                    <ins class="scales_chords_api" chord="Cm" instrument="guitar" width="390px;" height="200px;"></ins>
+                </div>
             </div>
-            <!-- guitar -->
+            <div class="chord-sound container">
+                <h6 class="add-font medium-text">It should sound like this:</h6>
+                <div class="sounds-like-piano">
+                    <ins class="scales_chords_api" chord="Cm" instrument="piano" output="sound"></ins>
+                </div>
+                <div class="sounds-like-guitar">
+                    <ins class="scales_chords_api" chord="Cm" instrument="guitar" output="sound"></ins>
+                </div>
+            </div>
+            <div class="nav-seperator">
+                <hr />
+            </div>
+            <!-- Melody section -->
             <div>
-                <ins class="scales_chords_api" chord="Cm" instrument="guitar" width="150px;" height="100px;"></ins>
+                melody Gen button
             </div>
-        </div>
-        <div class="chord-sound container">
-            <div class="row">
-                <ins class="scales_chords_api" chord="" instrument="piano" output="sound"></ins>
-                <ins class="scales_chords_api" chord="" instrument="guitar" output="sound"></ins>
+            <!-- results -->
+            <div>
+                simple 4 boxes
             </div>
-        </div>
-        <div class="nav-seperator">
-            <hr />
-        </div>
-
-        <!-- Melody section -->
-        <div>
-            melody Gen button
-        </div>
-        <!-- results -->
-        <div>
-            simple 4 boxes
-        </div>
-        <div>
-            Less simple 8 boxes
-        </div>
+            <div>
+                Less simple 8 boxes
+            </div>
     </section>
 
     <!-- copy from writing, and hide -->

@@ -9,12 +9,10 @@ Black: #000000;
 
 /* - - - ALL - - - */
 
-font-family 'Press Start 2P',
-cursive;
+font-family: 'Press Start 2P', cursive;
 /* font-family 'Roboto Slab',
 serif; */
-font-family: 'Source Code Pro',
-monospace;
+font-family: 'Source Code Pro', monospace;
 
 body {
     font-family: 'Press Start 2p', serif;
@@ -49,6 +47,10 @@ body {
 
 .other-font {
     font-family: 'Source Code Pro', monospace;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* - - - Nav - - - */
@@ -199,6 +201,10 @@ section h6 {
 #chord-results-box {
     font-family: 'Source Code Pro', monospace;
     border: 1px dotted grey;
+}
+
+.sounds-like-piano {
+    
 }
 
 /* - - - Search buttons - - - */
