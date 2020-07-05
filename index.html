@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Writers UnBlock" content="A website for instant inspiration generation!" />
+    <meta name="W.U.B Writers UnBlock" content="A website for instant inspiration generation!" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <!-- EmailJS for email form on index -->
     <script type="text/javascript">
         (function () {
             emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
         })();
     </script>
+    <!-- Scale - Chords API - for gtr & piano chord diagram generator -->
+    <script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
 
     <title>W.U.B - Writers UnBlocker</title>
 </head>
@@ -153,19 +156,73 @@
             <hr />
         </div>
         <!-- Chord help gtr and piano section -->
-        <div>
-            How do I play that chord?
-        </div>
-        <div>
-            chord name enter
+
+        <div class="container">
+            <div>
+                <h6 class="add-font">
+                    How do I play <br> these chords?
+                </h6>
+            </div>
+            <form class="row add-font">
+                <fieldset>
+                    <!-- <legend>Chose chords</legend> -->
+                    <div>
+                        <div class="col-6">
+                            <label>Chord letter</label>
+                            <select id="myList">
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">C</option>
+                                <option value="4">D</option>
+                                <option value="4">E</option>
+                                <option value="4">F</option>
+                                <option value="4">G</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label>Chord extension</label>
+                            <select id="myList">
+                                <option value="1">♭ </option>
+                                <option value="2"># </option>
+                                <option value="3">major</option>
+                                <option value="4">maj7</option>
+                                <option value="5">+</option>
+                                <option value="6">maj9</option>
+                                <option value="7">maj13</option>
+                                <option value="8">6/9</option>
+                                <option value="9">6 / add6</option>
+                                <option value="10">minor</option>
+                                <option value="11">m7</option>
+                                <option value="11">m/ma7</option>
+                                <option value="12">m6</option>
+                                <option value="13">m9</option>
+                                <option value="14">m1</option>
+                                <option value="15">m13</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="container-fluid">
+                <button type="radio">Guitar</button>
+                <button type="radio">Piano</button>
+            </div>
         </div>
         <!-- piano -->
-        <div>
-            piano chord image return
+        <div class="chord-image container">
+            <div class="container-fluid">
+                <ins class="scales_chords_api" chord="Dm" instrument="piano" width="150px;" height="100px;"></ins>
+            </div>
+            <!-- guitar -->
+            <div>
+                <ins class="scales_chords_api" chord="Cm" instrument="guitar" width="150px;" height="100px;"></ins>
+            </div>
         </div>
-        <!-- guitar -->
-        <div>
-            guitar image return
+        <div class="chord-sound container">
+            <div class="row">
+                <ins class="scales_chords_api" chord="" instrument="piano" output="sound"></ins>
+                <ins class="scales_chords_api" chord="" instrument="guitar" output="sound"></ins>
+            </div>
         </div>
         <div class="nav-seperator">
             <hr />
