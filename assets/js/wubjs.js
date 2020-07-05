@@ -36,7 +36,151 @@ function sendMail(contactForm) {
 }
 
 // chord and melody generator js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-// https://www.scales-chords.com/api/
+// CREDIT - Scraggo's Music Tools - https://codepen.io/scraggo/pen/JNveOq?editors=0110 /
+
+// ========================
+// RANDOM GENERATORS SETUP
+// ========================
+
+
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  /**Returns a random integer between min (inclusive) and max (inclusive)
+   Using Math.round() will give you a non-uniform distribution!*/
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  // Random choice of element from array
+  function randomChoice(myArray) {
+      return myArray[Math.floor(Math.random() * myArray.length)];
+  }
+  
+  // =========================
+  // 1. RANDOM CHORD GENERATOR
+  // =========================
+  
+  // Cache DOM access.
+  let noChords = document.getElementById("noChords");
+  let noProgressions = document.getElementById("noProgressions");
+  let generateButtonRandomCP = document.getElementById("generateRandomCP");
+  
+  function chordGenerator(chNum) {
+    let replaceObj = {'Ebdim': 'D#dim', 'Abdim': 'G#dim', 'Bbdim': 'A#dim'};
+    let chRoot = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+    let chQuality = ['', 'm', 'dim', '+'];
+    let chProg = '';
+    for (let i = 0; i < chNum; i++) {
+      let randRoot = randomChoice(chRoot);
+      let randQuality = randomChoice(chQuality);
+      let chord = randRoot + randQuality;
+      if (chord in replaceObj) {chord = replaceObj[chord];}
+      chProg += chord + ((i < chNum-1) ? " | " : "");
+    }
+    return chProg;
+  }
+  
+  function randomChords() {
+    let chNum = Number(noChords.value);
+    let progNum = Number(noProgressions.value);
+    if (chNum < 1) {chNum = 1;}
+    if (chNum > 16) {chNum = 16;}
+    if (progNum < 1) {progNum = 5;}
+    if (progNum > 50) {progNum = 50;}
+    let titleOutput = `${progNum} Random Progressions of ${chNum} Chords`;
+    let output = "";
+    for (let i = 1; i <= progNum; i++) {
+      output += `${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0");
+      output += `${chordGenerator(chNum)}<br>`;
+    }
+    document.getElementById("titleRandomCP").innerHTML = titleOutput;
+    document.getElementById("functionRandomCP").innerHTML = output;
+  }
+  
+  generateButtonRandomCP.addEventListener("click", randomChords);
+  
+  
+  // ===========================
+  // 2. RANDOM MELODY GENERATOR
+  // ===========================
+  
+  //FORM VARIABLES - ID
+  let numNotesEl = document.getElementById("noNotesMelody");
+  let numMelodiesEl = document.getElementById("noMelodies");
+  let generateButtonRandomMelody = document.getElementById("generateRandomMelody");
+  //global
+  let direction = ["↑", "↓"];
+  
+  function melody_d(notes) {
+    /*Creates a random diatonic melody as such: ↑1 ↑3 ↑5 ↓7 ↑1 ↑2 ↓4 ↓6
+      notes is an integer, how many melody notes you"d like.*/
+    var melody = "";
+    //generate string as such:
+      // ↓6 ↑1 ↓3 ↓7 ↑4 ↑7 ↑1 ↑3 
+    for (var x = 0; x < notes; x++) {
+      //direction
+      var randDirection = randomChoice(direction);
+      // melody note = 
+      var diatonic7 = getRandomInt(1, 7);
+      melody += `${randDirection}${diatonic7} `;
+    }
+    return melody;
+  }
+  
+  function melody_c(notes) {
+    /*Creates a random chromatic melody as such: ↑C ↑D ↑Eb ↓F ↑G ↑C# ↓Bb ↓A
+    notes is an integer, how many melody notes you"d like.
+    */
+    var ch_root = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B", ];
+    var melody = "";
+    for (var x = 0; x < notes; x++) {
+      // direction
+      var randDirection = randomChoice(direction);
+      // get melody note
+      var chromatic12 = randomChoice(ch_root);
+      melody += `${randDirection}${chromatic12} `;
+    }
+    return melody;
+  }
+  
+  function createDiatonicMelody(numNotes, numMelodies) {
+    var dMelody = "<ol>";
+    for (var x = 0; x < numMelodies; x++) {
+      dMelody += `<li>${melody_d(numNotes)}</li>`;
+    }
+    dMelody += "</ol>"
+    return dMelody;
+  }
+  
+  function createChromaticMelody(numNotes, numMelodies) {
+    var cMelody = "<ol>";
+    for (var x = 0; x < numMelodies; x++) {
+      cMelody += `<li>${melody_c(numNotes)}</li>`;
+    }
+    cMelody += "</ol>"
+    return cMelody;
+  }
+  
+  function createMelodies() {
+    let numNotes = numNotesEl.value;
+    let numMelodies = numMelodiesEl.value;
+    if (numNotes < 3) {numNotes = 3;}
+    else if (numNotes > 30) {numNotes = 30;}
+    if (numMelodies < 1) {numMelodies = 1;}
+    else if (numMelodies > 30) {numMelodies = 30;}
+    document.getElementById("titleDiatonicMelody").innerHTML = `${numMelodies} Random Diatonic Melodies of ${numNotes} Notes`;
+    document.getElementById("functionDiatonicMelody").innerHTML = createDiatonicMelody(numNotes, numMelodies);
+    document.getElementById("titleChromaticMelody").innerHTML = `${numMelodies} Random Chromatic Melodies of ${numNotes} Notes`;
+    document.getElementById("functionChromaticMelody").innerHTML = createChromaticMelody(numNotes, numMelodies);
+  }
+  
+  // generateButtonRandomMelody.addEventListener("click", createMelodies);
+  
+  
 
 
 // Name generator js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 

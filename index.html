@@ -126,16 +126,28 @@
                 </div>
             </div>
         </header>
-        <!-- Chord section -->
-        <div>
-            chord Gen button
+        <!-- I NEED CHORDS -->
+        <div class="container">
+            <div class="row">
+                <button href="#" class="btn btn-sq-sm mx-auto" id="generateRandomCP">
+                    I Need Chords
+                </button>
+            </div>
         </div>
         <!-- results -->
-        <div>
-            simple 3 boxes
-        </div>
-        <div>
-            Less simple 5 boxes
+        <div class="centerDiv">
+            <form>
+                <label for="noChords">Number of chords in a measure: </label>
+                <input type="number" value="3" min="1" max="5" step="1" id="noChords"><br>
+                <label for="noProgressions">Number of chord progressions: </label>
+                <input type="number" value="5" min="1" max="7" step="1" id="noProgressions"><br>
+                <label></label><input type="button" value="Generate" id="generateRandomCP">
+            </form>
+
+            <div style="border: 1px solid black;">
+                <h2 id="titleRandomCP"></h2>
+                <p id="functionRandomCP" class="tool-output-text"></p>
+            </div>
         </div>
         <div class="nav-seperator">
             <hr />
