@@ -10,12 +10,12 @@ $(document).ready(function () {
 
 // test button for linked file - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-$("#test").click(function () {
-    alert("reached")
-});
+// $("#test").click(function () {
+//     alert("reached")
+// });
 
 // send mail js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
+// 
 function sendMail(contactForm) {
     console.log("reached");
     emailjs.send("lorneashley_gmail_com", "wub", {
@@ -180,9 +180,6 @@ function getRandomIntInclusive(min, max) {
   
   // generateButtonRandomMelody.addEventListener("click", createMelodies);
   
-  
-
-
 // Name generator js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 // https://fungenerators.com/api/namegen/
 
