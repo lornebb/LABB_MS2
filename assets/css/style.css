@@ -204,7 +204,25 @@ section h6 {
 }
 
 .sounds-like-piano {
-    
+    background-color: #87BBA2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.sounds-like-guitar {
+    background-color: #87BBA2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /* - - - Search buttons - - - */

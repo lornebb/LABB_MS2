@@ -67,10 +67,6 @@
                     <i class="fa fa-music fa-5x"></i>
                     Chords & Melody
                 </a>
-                <a href="#" id="writing-section-btn" class="btn btn-sq-lg col-lg-4">
-                    <i class="fa fa-pen fa-5x"></i>
-                    Writing Prompts
-                </a>
                 <a href="#" id="lyric-search-btn" class="btn btn-sq-md btn btn-sq-lg col-lg-4">
                     <i class="fa fa-gavel fa-5x"></i>Did I Write This?
                 </a>
@@ -223,47 +219,19 @@
             </div>
             <div class="chord-sound container">
                 <h6 class="add-font medium-text">It should sound like this:</h6>
-                <div class="sounds-like-piano">
-                    <ins class="scales_chords_api" chord="Cm" instrument="piano" output="sound"></ins>
-                </div>
+                <button class="sounds-like-piano">
+                    <label for="piano-clip">Piano</label>
+                    <ins class="scales_chords_api" chord="Cm" instrument="piano" output="sound" name="piano-clip"></ins>
+                </button>
                 <div class="sounds-like-guitar">
-                    <ins class="scales_chords_api" chord="Cm" instrument="guitar" output="sound"></ins>
+                    <label for="guitar-clip">Guitar</label>
+                    <ins class="scales_chords_api" chord="Cm" instrument="guitar" output="sound" name="guitar-clip"></ins>
                 </div>
             </div>
             <div class="nav-seperator">
                 <hr />
             </div>
-            <!-- Melody section -->
-            <div>
-                melody Gen button
-            </div>
-            <!-- results -->
-            <div>
-                simple 4 boxes
-            </div>
-            <div>
-                Less simple 8 boxes
-            </div>
     </section>
-
-    <!-- copy from writing, and hide -->
-    <section id="writing-section">
-        <header>
-            <div class="container-fluid">
-                <div class="row top-page-header">
-                    <div class="col-4">
-                        <a href="./index.html" id="writing-search-btn" class="btn btn-sq-md">
-                            <i class="fa fa-pen fa-5x"></i>
-                        </a>
-                    </div>
-                    <div class="col-8 header-text">
-                        <h6> Writing <br> Prompts</h6>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section>
-
     <!-- Lyrics Section -->
     <section id="lyric-section">
         <header>
