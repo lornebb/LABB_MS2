@@ -1,19 +1,3 @@
-$(document).ready(function () {
-    //thank you W3school for this function for scrolling//
-    console.log("new page load")
-
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0;
-    };
-});
-
-// test button for linked file - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-// $("#test").click(function () {
-//     alert("reached")
-// });
-
 // send mail js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 // 
 function sendMail(contactForm) {
@@ -200,15 +184,6 @@ function createMelodies() {
 
 // generateButtonRandomMelody.addEventListener("click", createMelodies);
 
-
-// How to play chords js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-// https://www.scales-chords.com/api/
-
-
-
-// Name generator js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-// https://fungenerators.com/api/namegen/
-
 // search lyrics and show results js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function searchLyrics(searchValue) {
@@ -274,5 +249,3 @@ $('#lyric-search-btn').click(function () {
 });
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-console.log("end of js script")
