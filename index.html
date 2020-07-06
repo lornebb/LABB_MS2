@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +12,15 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <!-- EmailJS for email form on index -->
-    <script type="text/javascript">
+    <script>
         (function () {
             emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
         })();
     </script>
     <!-- Scale - Chords API - for gtr & piano chord diagram generator -->
-    <script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
-
+    <script async src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
     <title>W.U.B - Writers UnBlocker</title>
 </head>
 
@@ -53,7 +51,6 @@
             <hr />
         </div>
     </nav>
-
     <!-- Home / index -->
     <section id="home-section">
         <header>
@@ -110,7 +107,6 @@
             </div>
         </section>
     </section>
-
     <!-- Chords and melody Section -->
     <section id="chords-and-melody-section">
         <header>
@@ -152,9 +148,7 @@
         <div class="nav-seperator">
             <hr />
         </div>
-
         <!-- Chord help gtr and piano section -->
-
         <div class="container-fluid">
             <div>
                 <h6 class="add-font medium-text underline">
@@ -166,7 +160,7 @@
                     <div class="row">
                         <div class="col-6">
                             <label>Chord letter</label>
-                            <select id="myList">
+                            <select id="chord-letter-list">
                                 <option value="1">A</option>
                                 <option value="2">B</option>
                                 <option value="3">C</option>
@@ -178,7 +172,7 @@
                         </div>
                         <div class="col-6">
                             <label>Chord extension</label>
-                            <select id="myList">
+                            <select id="chord-extension">
                                 <option value="1">♭ </option>
                                 <option value="2"># </option>
                                 <option value="3">major</option>
@@ -187,7 +181,7 @@
                                 <option value="6">maj9</option>
                                 <option value="7">maj13</option>
                                 <option value="8">6/9</option>
-                                <option value="9">6 / add6</option>
+                                <option value="9">6/add6</option>
                                 <option value="10">minor</option>
                                 <option value="11">m7</option>
                                 <option value="11">m/ma7</option>

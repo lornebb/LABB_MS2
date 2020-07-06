@@ -3,18 +3,18 @@
 Thank you for checking out this site. W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. If you have any questions, comments or bugs, please let me know and get in touch :).
 
 * UX
-  - Project Goals
-  - Target Audience Goals
-  - Site Owner Goals
-  - User Requirements and Expectations
-  - Design Choices
+  * Project Goals
+  * Target Audience Goals
+  * Site Owner Goals
+  * User Requirements and Expectations
+  * Design Choices
     * Fonts
     * Icons
     * Colours
 * Wireframes
 * Features
-  - Features that have been developed
-  - Features that will be implemented in the future
+  * Features that have been developed
+  * Features that will be implemented in the future
 * Technologies Used
 * Testing
 * Bugs
@@ -70,14 +70,14 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 * **Easy buttons** to sections.
 * Familiar navbar as to not get lost or confused about where they are.
 * Instant and varied results from each generation
-* Only song lyrics to be searched and returned in lyric search. 
+* Only song lyrics to be searched and returned in lyric search.
 
 ### User Expectations
 
 * Varied enough results every time, so if initial generation result is not satisfactory, the next one should not appear familiar to its predecessor.
 * Text bars are copy and paste friendly
 * Site should be **accessable on all browsers** from mobile to desktop.
-* Any feature suggestions to go **direct to developer**. 
+* Any feature suggestions to go **direct to developer**.
 
 ## Design Choices
 
@@ -98,7 +98,7 @@ Icons, much in the same way as the font, were designed to be as transpoarent as 
 Colour palette was generated at [Coolors.co](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting.
 
 * Primary Green - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour.
-* Background Yellow - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour i tried.
+* Background Yellow - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour I tried.
 * Teriary Pearl/Cream - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction.
 * Grey and black - #000000 & #5D737E - These darker colours are used for text, icons and and results.
 
@@ -111,7 +111,7 @@ The palette:
 * 2 easy to navigate features on home page.
 * One page for all content, Javascript hides other content when certain features  are selected.
 * Music harmony random generator.
-* how-to diagrams and sound-like audio clips of any chord imaginable. 
+* how-to diagrams and sound-like audio clips of any chord imaginable.
 * Direct contact with developer.
 * Lyric search.
 
@@ -130,11 +130,11 @@ The palette:
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)
-  - **Javascript** is used to generate chords, hide DOM elements, call APIs on this project.
+  * **Javascript** is used to generate chords, hide DOM elements, call APIs on this project.
 * [JQuery](https://jquery.com)
-  - The project uses **JQuery** to simplify DOM manipulation.
-* [Adobe XD](https://www.adobe.com/uk/products/xd.html) 
-  - **XD** was used to create interactive wireframes, giving the ability to live-test on all platforms
+  * The project uses **JQuery** to simplify DOM manipulation.
+* [Adobe XD](https://www.adobe.com/uk/products/xd.html)
+  * **XD** was used to create interactive wireframes, giving the ability to live-test on all platforms
 
 ### Tools & Libraries
 
@@ -149,25 +149,24 @@ The palette:
 
 ## Testing
 
-** ask Simen **
+<!--
+**ask Simen**
 
-##### Test Planning 
+##### Test Planning
 
-##### Testing Stories 
+##### Testing Stories
 
-### Overall 
-- Responsiveness - 
-- Plan - 
-- Implimentation - 
-- Result - 
-- Verdict - 
-- Design - 
+### Overall
+- Responsiveness -
 - Plan -
-- Implimentation - 
-- Results - 
+- Implimentation -
+- Result -
 - Verdict -
-
-
+- Design -
+- Plan -
+- Implimentation -
+- Results -
+- Verdict -
 
 <!-- //  1. Contact form:
         1. Go to the "Contact Us" page
@@ -180,22 +179,22 @@ The palette:
     You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
     If this section grows too long, you may want to split it off into a separate file and        link to it from here. -->
- 
+
 ## Bugs
 
 Throughout development of the site I had a live deployment and a local preview of the project in chrome with dev. inspector open on each tab. So most bugs were squashed during the build. However there were some issues worth mentioning.  
 
 ### EmailJs JS impliment Bug
 
-- **Bug** EmailJs send would trigger on each page refresh, twice, without content.
-- **Fix** Moving the JS function code within it's own '{}' curly brackets as a function fixed the problem.
-- **Verdict** Changing the scope of the variables used in the JS code for EmailJs fixed the problem, thank you to fellow pupil Chris Palmer for helping me with that.
+* **Bug** EmailJs send would trigger on each page refresh, twice, without content.
+* **Fix** Moving the JS function code within it's own '{}' curly brackets as a function fixed the problem.
+* **Verdict** Changing the scope of the variables used in the JS code for EmailJs fixed the problem, thank you to fellow pupil Chris Palmer for helping me with that.
 
 ### Rapid API SDK issue
 
-- **Bug** Lyric search feature was firing but not returning the correct data from the API.
-- **Fix** Code Institute tutors located and found the probelm was with the Rapid API SDK sample code, providing incorrect headers and JSON code.
-- **Verdict** I wouldn't have known it at the time, but experience will have helped to spot this myself.
+* **Bug** Lyric search feature was firing but not returning the correct data from the API.
+* **Fix** Code Institute tutors located and found the probelm was with the Rapid API SDK sample code, providing incorrect headers and JSON code.
+* **Verdict** I wouldn't have known it at the time, but experience will have helped to spot this myself.
 
 ## Deployment
 
@@ -208,12 +207,12 @@ When deploying **W.U.B** using **GitHub Pages** the following steps were made:
 * Selected my **repositories**.
 * Navigated to **'/lornebb/LORNEBB_MS2'**.
 * In the top navigation clicked **'settings'**.
-* Scrolled down to the **GitHub Pages** area. 
+* Scrolled down to the **GitHub Pages** area.
 * Selected **'Master Branch'** from the **'Source'** dropdown menu.
 * Clicked to confirm my selection.
 * W.U.B now live on GitHub Pages.
 
-#### Running W.U.B Locally
+### Running W.U.B Locally
 
 Cloning **W.U.B** from **GitHub**:
 
@@ -221,17 +220,19 @@ Cloning **W.U.B** from **GitHub**:
 * Click the green **'Clone or Download'** button in the top right.
 * Copy the **url** in the dropdown box.
 * Using your favourite **IDE** open up your preferred **terminal**.
-* Navigate to your desired file location. 
+* Navigate to your desired file location.
 * Copy the following **code** and input it into your terminal to clone Holiday Destinations.
- ```git
-  git clone https://github.com/lornebb/LORNEBB_MS2.git
-   ```
+
+```bash
+git clone https://github.com/lornebb/LORNEBB_MS2.git
+```
 
 ## Credits
-- **Chris Palmer** - helped with JavaScript and API integration troubleshooting.
-- **David Williams** - helped navigate some API documentation suggestions.
-- **CI Student care** - helped with incomplete SDK from API.
-- [bootstrap snippets](https://bootsnipp.com/snippets/GqBjl) **dvinciguerra** for the Square Buttons.
+
+* **Chris Palmer** - helped with JavaScript and API integration troubleshooting.
+* **David Williams** - helped navigate some API documentation suggestions.
+* **CI Student care** - helped with incomplete SDK from API.
+* [Bootstrap snippets](https://bootsnipp.com/snippets/GqBjl) **dvinciguerra** for the Square Buttons.
 
 ### Media
 

@@ -1,18 +1,26 @@
-/* - - - - - Colours - - - - - - /*
-/*
-Primary Green: #87BBA2;
-Background Yellow: #FFF07C;
-Teriary Pearl: #F0F7EE;
-Grey: #5D737E;
-Black: #000000;
-*/
 
 /* - - - ALL - - - */
 
-font-family 'Press Start 2P', cursive;
-/* font-family 'Roboto Slab',
-serif; */
-font-family 'Source Code Pro', monospace;
+#primary-green {
+    color: #87BBA2;
+}
+
+#background-yellow {
+    color: #FFF07C;
+}
+
+#teriary-pearl {
+    color: #F0F7EE;
+}
+
+#grey {
+    color: #5D737E;
+}
+
+#black {
+    color: #000000;
+}
+
 
 body {
     font-family: 'Press Start 2p', serif;
@@ -80,7 +88,7 @@ body {
 }
 
 #back-arrow {
-    max-block-size: 1rem;
+    max-width: 1rem;
 }
 
 /* - - - HEADER HIDE - - - */
