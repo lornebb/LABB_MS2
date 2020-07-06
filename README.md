@@ -1,27 +1,25 @@
 # W. U. B (Writers UnBlocker)
 
-Thank you for checking out this site. W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. If you have any questions, comments or bugs, please let me know and get in touch :). 
+Thank you for checking out this site. W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. If you have any questions, comments or bugs, please let me know and get in touch :).
 
-* UX 
-    - Project Goals
-    - Target Audience Goals
-    - Site Owner Goals
-    - User Requirements and Expectations
-    - Design Choices 
-        * Fonts
-        * Icons
-        * Colours
-* Wireframes 
-* Features 
-    - Features that have been developed
-    - Features that will be implemented in the future
-* Technologies Used 
-* Testing 
-* Bugs 
-* Deployment 
-* Credits 
-
- 
+* UX
+  - Project Goals
+  - Target Audience Goals
+  - Site Owner Goals
+  - User Requirements and Expectations
+  - Design Choices
+    * Fonts
+    * Icons
+    * Colours
+* Wireframes
+* Features
+  - Features that have been developed
+  - Features that will be implemented in the future
+* Technologies Used
+* Testing
+* Bugs
+* Deployment
+* Credits
 
 ## UX
 
@@ -43,21 +41,21 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 * Simple and complicated chord sequence generators.
 * Direct contact for feature requests.
 * No frills, easy to navigate design.
-* Easily recognisable on all browser sizes. 
+* Easily recognisable on all browser sizes.
 
 #### User Stories
 
 ##### Mr. Bloggs
 
-<em>As a composer and pianist I expect a site that can **generate harmony**, in key, instantly, and flexibly.</em>
+*As a composer and pianist I expect a site that can **generate harmony**, in key, instantly, and flexibly.*
 
 ##### Ms. C. Thweepioh
 
-<em>As a musician and web developer, I want the ability to **get in touch** with the developer and suggest feaures, potentially to collaborate (meta) </em>
+*As a musician and web developer, I want the ability to **get in touch** with the developer and suggest feaures, potentially to collaborate.*
 
 ##### They Maplecourt
 
-<em>As a lyricist, I make lyrics all day, every day of the week. Sometimes I need to **make sure that what I make is mine**, without sifting through unrelated search results.</em>
+*As a lyricist, I make lyrics all day, every day of the week. Sometimes I need to **make sure that what I make is mine**, without sifting through unrelated search results.*
 
 #### Site Owner Goals
 
@@ -67,14 +65,14 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 
 ## User Requirements and Expectations
 
-#### User Requirements:
+### User Requirements
 
 * **Easy buttons** to sections.
 * Familiar navbar as to not get lost or confused about where they are.
 * Instant and varied results from each generation
 * Only song lyrics to be searched and returned in lyric search. 
 
-#### User Expectations
+### User Expectations
 
 * Varied enough results every time, so if initial generation result is not satisfactory, the next one should not appear familiar to its predecessor.
 * Text bars are copy and paste friendly
@@ -85,40 +83,28 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 
 This is purely functional web application, design is feature focused, and style comes second. I went for a relatively light background to keep the focus on the darker content. Large active buttons used for generations of content.
 
-##### Fonts
+### Fonts
 
-The font used in the wireframes is called <a href=http://fonts3.com/fonts/k/Krungthep.html>Krungthep</a> which looks as mechanical as possible without appearing too comical or ironic. Which goes with the purely functional theme I'm applying site-wide. The focus is to provide short, highly literal, informative information to the user so as to **not distract** from what's important - the content generation. 
+The font used in the wireframes is called [Krungthep](http://fonts3.com/fonts/k/Krungthep.html) which looks as mechanical as possible without appearing too comical or ironic. Which goes with the purely functional theme I'm applying site-wide. The focus is to provide short, highly literal, informative information to the user so as to **not distract** from what's important - the content generation.
 
-Implimentation of this font proved too difficult for loading so a new and similar font was chosen on the same merits from **Google Fonts** called <a href="https://fonts.google.com/specimen/Press+Start+2P?category=Display,Monospace&preview.size=64&preview.layout=row&selection.family=Press+Start+2P|Roboto+Slab&sidebar.open#pairings">**Press Start 2P**</a> and **Roboto** for minor text.
+Implimentation of this font proved too difficult for loading so a new and similar font was chosen on the same merits from **Google Fonts** called [**Press Start 2P**](https://fonts.google.com/specimen/Press+Start+2P?category=Display,Monospace&preview.size=64&preview.layout=row&selection.family=Press+Start+2P|Roboto+Slab&sidebar.open#pairings") and **Roboto** for minor text.
 
-##### Icons 
+### Icons
 
-Icons, much in the same way as the font, were designed to be as transpoarent as possible. I got the fonts, initially from <a href="https://www.flaticon.com/home">FlatIcon</a> and then later from <a href="https://fontawesome.com/">Font Awesome</a> both for free.
+Icons, much in the same way as the font, were designed to be as transpoarent as possible. I got the fonts, initially from [FlatIcon](https://www.flaticon.com/home) and then later from [Font Awesome](https://fontawesome.com/) both for free.
 
-##### Colours
+### Colours
 
-Colour palette was generated at <a href="https://www.coolors.co">Coolors.com</a>. I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting. 
+Colour palette was generated at [Coolors.co](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting.
 
-* Primary Green - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour. 
-* Background Yellow - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour i tried. 
-* Teriary Pearl/Cream - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction. 
-* Grey and black - #000000 & #5D737E - These darker colours are used for text, icons and and results. 
+* Primary Green - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour.
+* Background Yellow - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour i tried.
+* Teriary Pearl/Cream - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction.
+* Grey and black - #000000 & #5D737E - These darker colours are used for text, icons and and results.
 
-The palette: 
+The palette:
 
 ![Coolers Palette Image](wireframes/MS2_color_template_2.png)
-
-<!-- ##### Styling
-
-Styling was done with CSS and Bootstrap. 
-
-##### Images 
-
-This is not an image heavy web site. The majority of the site is text and icon only. The only image used in the design is on the home page, for creativity context. The image was found, license free, on <a href="https://unsplash.com/s/photos/writing-block">Unsplash</a>.
-
-##### Backgrounds
-
-One background is used site wide for continuity. The muted yellow from the palette #FFF07C is used to fill the screen and allow the green generator buttons to stand out.         -->
 
 ## Features
 
@@ -139,18 +125,18 @@ One background is used site wide for continuity. The muted yellow from the palet
 
 ## Technologies Used
 
-### Languages 
+### Languages
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)
-    - **Javascript** is used to generate chords, hide DOM elements, call APIs on this project.
+  - **Javascript** is used to generate chords, hide DOM elements, call APIs on this project.
 * [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+  - The project uses **JQuery** to simplify DOM manipulation.
 * [Adobe XD](https://www.adobe.com/uk/products/xd.html) 
-    - **XD** was used to create interactive wireframes, giving the ability to live-test on all platforms
+  - **XD** was used to create interactive wireframes, giving the ability to live-test on all platforms
 
-### Tools & Libraries 
+### Tools & Libraries
 
 * [Bootstrap](https://getbootstrap.com/)
 * [Git](https://git-scm.com/)
@@ -160,7 +146,7 @@ One background is used site wide for continuity. The muted yellow from the palet
 * [Shazam API](https://rapidapi.com/apidojo/api/shazam)
 * [Scales-Chords API](https://www.scales-chords.com/api/)
 * [Scraggo Music Tools](https://codepen.io/scraggo/details/JNveOq)
- 
+
 ## Testing
 
 ** ask Simen **
@@ -194,12 +180,12 @@ One background is used site wide for continuity. The muted yellow from the palet
     You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
     If this section grows too long, you may want to split it off into a separate file and        link to it from here. -->
-    
-## Bugs 
+ 
+## Bugs
 
 Throughout development of the site I had a live deployment and a local preview of the project in chrome with dev. inspector open on each tab. So most bugs were squashed during the build. However there were some issues worth mentioning.  
 
-### EmailJs JS impliment Bug 
+### EmailJs JS impliment Bug
 
 - **Bug** EmailJs send would trigger on each page refresh, twice, without content.
 - **Fix** Moving the JS function code within it's own '{}' curly brackets as a function fixed the problem.
@@ -207,9 +193,9 @@ Throughout development of the site I had a live deployment and a local preview o
 
 ### Rapid API SDK issue
 
-- **Bug** Lyric search feature was firing but not returning the correct data from the API. 
+- **Bug** Lyric search feature was firing but not returning the correct data from the API.
 - **Fix** Code Institute tutors located and found the probelm was with the Rapid API SDK sample code, providing incorrect headers and JSON code.
-- **Verdict** I wouldn't have known it at the time, but experience will have helped to spot this myself. 
+- **Verdict** I wouldn't have known it at the time, but experience will have helped to spot this myself.
 
 ## Deployment
 
@@ -217,13 +203,13 @@ Throughout development of the site I had a live deployment and a local preview o
 
 When deploying **W.U.B** using **GitHub Pages** the following steps were made:
 
-* Opened up <strong>GitHub</strong> in the browser.
+* Opened up **GitHub** in the browser.
 * Signed in using username and password.
-* Selected my <strong>repositories</strong>.
-* Navigated to <strong>'/lornebb/LORNEBB_MS2'</strong>.
-* In the top navigation clicked <strong>'settings'</strong>.
-* Scrolled down to the <strong>GitHub Pages</strong> area. 
-* Selected <strong>'Master Branch'</strong> from the <strong>'Source'</strong> dropdown menu.
+* Selected my **repositories**.
+* Navigated to **'/lornebb/LORNEBB_MS2'**.
+* In the top navigation clicked **'settings'**.
+* Scrolled down to the **GitHub Pages** area. 
+* Selected **'Master Branch'** from the **'Source'** dropdown menu.
 * Clicked to confirm my selection.
 * W.U.B now live on GitHub Pages.
 
@@ -231,12 +217,12 @@ When deploying **W.U.B** using **GitHub Pages** the following steps were made:
 
 Cloning **W.U.B** from **GitHub**:
 
-* Navigate to <strong>'/lornebb/LORNEBB_MS2'</strong>.
-* Click the green <strong>'Clone or Download'</strong> button in the top right.
-* Copy the <strong>url</strong> in the dropdown box.
-* Using your favourite <strong>IDE</strong> open up your preferred <strong>terminal</strong>.
+* Navigate to **'/lornebb/LORNEBB_MS2'**.
+* Click the green **'Clone or Download'** button in the top right.
+* Copy the **url** in the dropdown box.
+* Using your favourite **IDE** open up your preferred **terminal**.
 * Navigate to your desired file location. 
-* Copy the following <strong>code</strong> and input it into your terminal to clone Holiday Destinations.
+* Copy the following **code** and input it into your terminal to clone Holiday Destinations.
  ```git
   git clone https://github.com/lornebb/LORNEBB_MS2.git
    ```
@@ -253,4 +239,4 @@ Cloning **W.U.B** from **GitHub**:
 
 ### Acknowledgements
 
-* I received inspiration for this project from my brother, who just happened to ask teh right question at the right time, as always. 
+* I received inspiration for this project from my brother, who just happened to ask the right question at the right time, as always.
