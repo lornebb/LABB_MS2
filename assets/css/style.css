@@ -21,7 +21,6 @@
     color: #000000;
 }
 
-
 body {
     font-family: 'Press Start 2p', serif;
     scroll-behavior: smooth;
@@ -110,8 +109,6 @@ body {
     display: none;
 }
 
-
-
 /* - - - Home Sections - - - */
 
 .container-fluid {
@@ -154,8 +151,26 @@ img {
     float: right;
 }
 
-.about-text {
-    font-size: 18px;
+.search-type {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    /* text-align: justify; */
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: inherit;
+}
+
+#services h4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#services p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
 }
 
 .about-bg {
@@ -167,15 +182,14 @@ section h6 {
     padding-bottom: 1em;
 }
 
-.search-type {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 13px;
-    /* text-align: justify; */
-}
+.about-image {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
 
-.btn-secondary {
-    background-color: transparent;
-    color: inherit;
 }
 
 /* - - - Generation page nav - - - */
