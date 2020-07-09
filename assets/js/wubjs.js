@@ -1,5 +1,10 @@
 // send mail js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 // 
+
+(function () {
+    emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
+})();
+
 function sendMail(contactForm) {
     console.log("reached");
     emailjs.send("lorneashley_gmail_com", "wub", {
