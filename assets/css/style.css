@@ -256,7 +256,11 @@ section h6 {
     display: none;
 }
 
-.chord-sound {
+.chord-sound-gtr {
+    display: none;
+}
+
+.chord-sound-piano {
     display: none;
 }
 
