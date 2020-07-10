@@ -168,25 +168,26 @@
         <div class="container">
             <div class="chord-image row">
                 <!-- guitar -->
-                <div class="col-12 piano-hide">
-                    <ins class="scales_chords_api" chord="cm" instrument="guitar" width="390px;" height="200px;"></ins>
+                <div class="col-12 gtr-hide" id="gtr-insert">
+                    
                 </div>
                 <!-- piano -->
-                <div class="col-12 gtr-hide">
+                <div class="col-12 piano-hide">
                     <ins class="scales_chords_api" chord="Cm" instrument="piano" width="390px;" height="200px;"></ins>
                 </div>
             </div>
             <div class="chord-sound container">
                 <h6 class="add-font medium-text">It should sound like this:</h6>
-                <button class="sounds-like-piano">
-                    <label for="piano-clip">Piano</label>
-                    <ins class="scales_chords_api" chord="Cm" instrument="piano" output="sound" name="piano-clip"></ins>
-                </button>
                 <div class="sounds-like-guitar">
                     <label for="guitar-clip">Guitar</label>
                     <ins class="scales_chords_api" chord="Cm" instrument="guitar" output="sound"
                         name="guitar-clip"></ins>
                 </div>
+                <button class="sounds-like-piano">
+                    <label for="piano-clip">Piano</label>
+                    <ins class="scales_chords_api" chord="Cm" instrument="piano" output="sound" name="piano-clip"></ins>
+                </button>
+
             </div>
             <div class="nav-seperator">
                 <hr />

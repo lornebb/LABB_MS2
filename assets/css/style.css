@@ -249,10 +249,22 @@ section h6 {
 }
 
 .gtr-hide {
-    display: block;
+    display: none;
 }
 
 .piano-hide {
+    display: none;
+}
+
+.chord-sound {
+    display: none;
+}
+
+.sounds-like-piano {
+    display: none;
+}
+
+.sounds-like-guitar {
     display: none;
 }
 
