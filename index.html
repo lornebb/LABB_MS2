@@ -13,10 +13,6 @@
         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Slab&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <!-- EmailJS for email form on index -->
-    <script>
-
-    </script>
     <!-- Scale - Chords API - for gtr & piano chord diagram generator -->
     <script async src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
     <title>W.U.B - Writers UnBlocker</title>
@@ -33,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./Chords-Melody.html">Chords & Melody</a>
+                        <a class="nav-link js-scroll-trigger" href="#">Chords & Melody</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./lyrics.html">Did I Write this?</a>
+                        <a class="nav-link js-scroll-trigger" href="#">Did I Write this?</a>
                     </li>
                 </ul>
             </div>
@@ -156,30 +152,37 @@
                             <label>Chord letter</label>
                             <select id="chord-main">
                                 <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="3">C</option>
-                                <option value="4">D</option>
-                                <option value="5">E</option>
-                                <option value="6">F</option>
-                                <option value="7">G</option>
-                                <option value="8">Am</option>
-                                <option value="9">Bm</option>
-                                <option value="10">Cm</option>
-                                <option value="11">Dm</option>
-                                <option value="12">Em</option>
-                                <option value="13">Fm</option>
-                                <option value="14">Gm</option>
+                                <option value="2">A#</option>
+                                <option value="3">B</option>
+                                <option value="4">C</option>
+                                <option value="5">C#</option>
+                                <option value="6">D</option>
+                                <option value="7">D#</option>
+                                <option value="8">E</option>
+                                <option value="9">F</option>
+                                <option value="10">F#</option>
+                                <option value="11">G</option>
+                                <option value="12">G#</option>
+                                <option value="13">Am</option>
+                                <option value="14">A#m</option>
+                                <option value="15">Bm</option>
+                                <option value="16">Cm</option>
+                                <option value="17">C#m</option>
+                                <option value="18">Dm</option>
+                                <option value="19">D#m</option>
+                                <option value="20">Em</option>
+                                <option value="21">Fm</option>
+                                <option value="22">F#m</option>
+                                <option value="23">Gm</option>
+                                <option value="24">G#m</option>
                             </select>
                         </div>
                         <div class="col-6">
                             <label>Chord extension</label>
                             <select id="chord-extension">
-                                <option value="1">#</option>
-                                <option value="2">maj9</option>
-                                <option value="4">6/9</option>
-                                <option value="5">m7</option>
-                                <option value="6">maj7</option>
-                                <optoin value="7">" "</optoin>
+                                <option value="1">m7</option>
+                                <option value="2">maj7</option>
+                                <option value="3"><li></li></option>
                             </select>
                         </div>
                     </div>
@@ -187,7 +190,7 @@
             </form>
             <div class="container">
                 <div class="row add-font small-text">
-                    <button class="col-6" type="radio">Guitar</button>
+                    <button class="col-6 gtr-btn" type="radio">Guitar</button>
                     <button class="col-6" type="radio">Piano</button>
                 </div>
             </div>
@@ -200,7 +203,7 @@
                 </div>
                 <!-- guitar -->
                 <div class="col-12">
-                    <ins class="scales_chords_api" chord="Cm" instrument="guitar" width="390px;" height="200px;"></ins>
+                    <ins class="scales_chords_api" chord="cm" instrument="guitar" width="390px;" height="200px;"></ins>
                 </div>
             </div>
             <div class="chord-sound container">

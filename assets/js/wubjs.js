@@ -1,4 +1,4 @@
-// send mail js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// send mail js
 // 
 
 (function () {
@@ -22,7 +22,7 @@ function sendMail(contactForm) {
     return false;
 }
 
-// chord and melody generator js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// chord and melody generator js 
 // CREDIT - Scraggo's Music Tools - https://codepen.io/scraggo/pen/JNveOq?editors=0110 /
 
 // ========================
@@ -185,7 +185,7 @@ function createMelodies() {
     document.getElementById("functionChromaticMelody").innerHTML = createChromaticMelody(numNotes, numMelodies);
 }
 
-// search lyrics and show results js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// search lyrics and show results js 
 
 function searchLyrics(searchValue) {
     fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
@@ -232,13 +232,22 @@ $('#lyric-search-form').submit(function (e) {
     searchLyrics(searchValue);
 });
 
-// Chord chart - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// Chord chart 
 
-// $('#chord-main').
+console.log("below this: Chord Name")
+
+let fullChordName = function(chName, chExt) { 
+    chName = "F"
+    chExt = "#"
+}
+
+console.log(fullChordName);
+
+// change chord name 
+$("#scales_chords_api").find("chord").attr("chord", `${fullChordName}`);
 
 
-
-// Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+// Section button hide and show / toggle
 
 $('#chords-and-melody-section-btn').click(function () {
     $('#chords-and-melody-section').toggle()
@@ -254,5 +263,3 @@ $('#lyric-search-btn').click(function () {
     $('#lyric-section').toggle()
     $('#home-section').toggle()
 });
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
