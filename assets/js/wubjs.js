@@ -234,17 +234,65 @@ $('#lyric-search-form').submit(function (e) {
 
 // Chord chart 
 
-console.log("below this: Chord Name")
+function showGtrChords() {
+    let chordName = document.getElementById("chordName")
+    console.log(chordName.value)
+    //$("#scales_chords_api").find("chord").attr("chord", `${chordName}`)
+    document.getElementById('container').insertAdjacentHTML('beforeend', '<div id="idChild"> content html </div>');
+};
 
-let fullChordName = function(chName, chExt) { 
-    chName = "F"
-    chExt = "#"
-}
+// function chordGenerator(chNum) {
+//     let replaceObj = {
+//         'Ebdim': 'D#dim',
+//         'Abdim': 'G#dim',
+//         'Bbdim': 'A#dim'
+//     };
+//     let chRoot = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+//     let chQuality = ['', 'm', 'dim', '+'];
+//     let chProg = '';
+//     for (let i = 0; i < chNum; i++) {
+//         let randRoot = randomChoice(chRoot);
+//         let randQuality = randomChoice(chQuality);
+//         let chord = randRoot + randQuality;
+//         if (chord in replaceObj) {
+//             chord = replaceObj[chord];
+//         }
+//         chProg += chord + ((i < chNum - 1) ? " | " : "");
+//     }
+//     return chProg;
+// }
 
-console.log(fullChordName);
+// function randomChords() {
+//     let chNum = Number(noChords.value);
+//     let progNum = Number(noProgressions.value);
+//     if (chNum < 1) {
+//         chNum = 1;
+//     }
+//     if (chNum > 16) {
+//         chNum = 16;
+//     }
+//     if (progNum < 1) {
+//         progNum = 5;
+//     }
+//     if (progNum > 50) {
+//         progNum = 50;
+//     }
+//     let titleOutput = `${progNum} Random Progressions of ${chNum} Chords`;
+//     let output = "";
+//     for (let i = 1; i <= progNum; i++) {
+//         output += `${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0");
+//         output += `${chordGenerator(chNum)}<br>`;
+//     }
+//     document.getElementById("titleRandomCP").innerHTML = titleOutput;
+//     document.getElementById("functionRandomCP").innerHTML = output;
+// }
+
+// generateButtonRandomCP.addEventListener("click", randomChords);
+
+// console.log(fullChordName);
 
 // change chord name 
-$("#scales_chords_api").find("chord").attr("chord", `${fullChordName}`);
+//
 
 
 // Section button hide and show / toggle

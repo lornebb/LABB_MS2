@@ -248,6 +248,14 @@ section h6 {
     font-size: 16px;
 }
 
+.gtr-hide {
+    display: block;
+}
+
+.piano-hide {
+    display: none;
+}
+
 /* - - - Search buttons - - - */
 
 .btn-sq-sm {
