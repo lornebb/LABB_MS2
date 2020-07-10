@@ -8,8 +8,6 @@
 function sendMail(contactForm) {
     console.log("reached");
     emailjs.send("lorneashley_gmail_com", "wub", {
-            /*    "from_name": contactForm.name.value,
-                "from_email": contactForm.emailaddress.value,*/
             "feature_request": contactForm.feature_request.value
         })
         .then(
@@ -187,8 +185,6 @@ function createMelodies() {
     document.getElementById("functionChromaticMelody").innerHTML = createChromaticMelody(numNotes, numMelodies);
 }
 
-// generateButtonRandomMelody.addEventListener("click", createMelodies);
-
 // search lyrics and show results js - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function searchLyrics(searchValue) {
@@ -235,6 +231,12 @@ $('#lyric-search-form').submit(function (e) {
     let searchValue = $('#lyric-search-box').val()
     searchLyrics(searchValue);
 });
+
+// Chord chart - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+// $('#chord-main').
+
+
 
 // Section button hide and show / toggle - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
