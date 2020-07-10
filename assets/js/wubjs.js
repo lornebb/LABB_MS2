@@ -170,39 +170,6 @@ function showGtrChords() {
     //
 };
 
-// function randomChords() {
-//     let chNum = Number(noChords.value);
-//     let progNum = Number(noProgressions.value);
-//     if (chNum < 1) {
-//         chNum = 1;
-//     }
-//     if (chNum > 16) {
-//         chNum = 16;
-//     }
-//     if (progNum < 1) {
-//         progNum = 5;
-//     }
-//     if (progNum > 50) {
-//         progNum = 50;
-//     }
-//     let titleOutput = `${progNum} Random Progressions of ${chNum} Chords`;
-//     let output = "";
-//     for (let i = 1; i <= progNum; i++) {
-//         output += `${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0");
-//         output += `${chordGenerator(chNum)}<br>`;
-//     }
-//     document.getElementById("titleRandomCP").innerHTML = titleOutput;
-//     document.getElementById("functionRandomCP").innerHTML = output;
-// }
-
-// generateButtonRandomCP.addEventListener("click", randomChords);
-
-// console.log(fullChordName);
-
-// change chord name 
-//
-
-
 // Section button hide and show / toggle
 
 $('#chords-and-melody-section-btn').click(function () {
