@@ -153,6 +153,11 @@ $('#lyric-search-form').submit(function (e) {
 
 // Chord chart 
 
+function returnChordsToHtml() {
+    let chordName = document.getElementById("chordName")
+    return chordName;
+}
+
 function showGtrChords() {
     let chordName = document.getElementById("chordName")
     console.log(chordName.value)
@@ -164,11 +169,25 @@ function showGtrChords() {
     if (chordName !== chRoot || chordName !== chQuality) {
         document.getElementById('gtr-insert').insertAdjacentHTML('beforeend', `<ins class="scales_chords_api" chord="${chordName}" instrument="guitar" width="390px;" height="200px;"></ins>`);
     } else {
-        console.log("this did not work")
+        console.log("gtr choord search did not work")
+        document.getElementById('gtr-insert').insertAdjacentHTML('beforeend', `<h6 class="small-text"> Your search for ${chordName} did not return anything, try a less specific syntax." </h6>`);
     };
-
-    //
 };
+
+function showPianoChords() {
+    let chordName = document.getElementById("chordName")
+    console.log(chordName.value)
+    let chRoot = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+    let chQuality = ['', 'm', 'dim', '+'];
+    if (chordName !== chRoot || chordName !== chQuality) {
+        document.getElementById('piano-insert').insertAdjacentHTML('beforeend', `<ins class="scales_chords_api" chord="${chordName}" instrument="piano" width="390px;" height="200px;"></ins>`);
+    } else {
+        console.log("gtr choord search did not work")
+        document.getElementById('piano-insert').insertAdjacentHTML('beforeend', `<h6 class="small-text"> Your search for ${chordName} did not return anything, try a less specific syntax." </h6>`);
+    };
+}
+
+
 
 // Section button hide and show / toggle
 
@@ -188,15 +207,9 @@ $('#lyric-search-btn').click(function () {
 });
 
 $('#gtr-button').click(function () {
-    $('.gtr-hide').toggle()
-    $('.chord-sound').toggle()
-    $('.sounds-like-gtr').toggle()
+    $('.chord-sound-gtr').toggle()
 });
 
 $('#piano-button').click(function () {
-    $('.piano-hide').toggle()
-    $('.chord-sound').toggle()
-    $('.sounds-like-piano').toggle()
+    $('.chord-sound-piano').toggle()
 });
-
-
