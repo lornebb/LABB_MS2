@@ -167,7 +167,11 @@ function showGtrChords() {
     // var test = $(chordName).val();
     // console.log(test)
     if (chordName !== chRoot || chordName !== chQuality) {
-        document.getElementById('gtr-insert').insertAdjacentHTML('beforeend', `<ins class="scales_chords_api" chord="${chordName}" instrument="guitar" width="390px;" height="200px;"></ins>`);
+        fetch(``)
+
+
+        // <ins class="scales_chords_api" chord="${chordName}" instrument="guitar" width="390px;" height="200px;"></ins>
+        document.getElementById('gtr-insert').insertAdjacentHTML('beforeend', ``);
     } else {
         console.log("gtr choord search did not work")
         document.getElementById('gtr-insert').insertAdjacentHTML('beforeend', `<h6 class="small-text"> Your search for ${chordName} did not return anything, try a less specific syntax." </h6>`);

@@ -1,5 +1,5 @@
 
-/* - - - ALL - - - */
+/* ALL */
 
 #primary-green {
     color: #87BBA2;
@@ -61,7 +61,7 @@ body {
     text-decoration: underline;
 }
 
-/* - - - Nav - - - */
+/* Nav */
 
 .navbar {
     background-color: #f0f7ee;
@@ -90,7 +90,7 @@ body {
     max-width: 1rem;
 }
 
-/* - - - HEADER HIDE - - - */
+/* HEADER HIDE */
 
 #home-section {
     display: block;
@@ -109,7 +109,7 @@ body {
     display: none;
 }
 
-/* - - - Home Sections - - - */
+/* Home Sections */
 
 .container-fluid {
     padding-bottom: 30px;
@@ -192,7 +192,7 @@ section h6 {
 
 }
 
-/* - - - Generation page nav - - - */
+/* Generation page nav */
 
 .top-page-header {
     color: #5D737E;
@@ -264,7 +264,7 @@ section h6 {
     display: none;
 }
 
-/* - - - Search buttons - - - */
+/* Search buttons */
 
 .btn-sq-sm {
     width: 150px !important;
@@ -287,7 +287,7 @@ section h6 {
     border: lightslategray;
 }
 
-/* - - - Lyric Search Section - - - */
+/* Lyric Search Section */
 
 #lyric-search-results-form {
     margin: auto;
@@ -307,7 +307,7 @@ section h6 {
     margin: auto;
 }
 
-/* - - - Footer - - - */
+/* Footer */
 
 .footer-seperator {
     color: #5D737E;
