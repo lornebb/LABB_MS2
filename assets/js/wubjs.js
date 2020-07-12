@@ -45,6 +45,8 @@ function randomChoice(myArray) {
 // RANDOM CHORD GENERATOR
 
 // Cache DOM access.
+
+$(document).ready(() => {
 let noChords = document.getElementById("noChords");
 let noProgressions = document.getElementById("noProgressions");
 let generateButtonRandomCP = document.getElementById("generateRandomCP");
@@ -96,6 +98,7 @@ function randomChords() {
 }
 
 generateButtonRandomCP.addEventListener("click", randomChords);
+});
 
 // Chord Chart generator
 
