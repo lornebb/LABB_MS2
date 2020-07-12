@@ -115,6 +115,14 @@ $(document).ready(() => {
         return `<ins class="scales_chords_api" chord="${chord}" instrument="piano"></ins>`
     }
 
+    const audioSelectGtr = (chord) => {
+        return `<ins class="scales_chords_api" chord="${chord}" instrument="guitar" output="sound" name="guitar-clip"></ins>`
+    }
+
+    const audioSelectPiano = (chord) => {
+        return`<ins class="scales_chords_api" chord="${chord}" instrument="piano" output="sound" name="guitar-clip"></ins>`
+    }
+
     $("#chord-dropdown").on("change", function (e) {
         const newChord = e.target.value;
         const location = $("#gtr-insert");
@@ -127,21 +135,21 @@ $(document).ready(() => {
         const location = $("#piano-insert");
         location.html(chordSelectPiano(newChord));
         scales_chords_api_onload();
-    })
+    });
 
-    function playAudio3(id_number) {
-        var button = document.getElementById('playbut_' + id_number);
-        button.style.background = "url('https://www.scales-chords.com/images/snd-mute-green-2.png') no-repeat";
-        button.style.backgroundSize = "100%";
-        var music = document.getElementById('music' + id_number);
-        music.play();
-    }
-    
-    function audioStop(id_number) {
-        var button = document.getElementById('playbut_' + id_number);
-        button.style.background = "url('https://www.scales-chords.com/images/snd-play-green-2.png') no-repeat";
-        button.style.backgroundSize = "100%";
-    }
+    $("#chord-dropdown").on("change", function (e) {
+        const newChord = e.target.value;
+        const location = $("#gtr-sound-insert");
+        location.html(audioSelectGtr(newChord));
+        scales_chords_api_onload();
+    });
+
+    $("#chord-dropdown").on("change", function (e) {
+        const newChord = e.target.value;
+        const location = $("#piano-sound-insert");
+        location.html(audioSelectPiano(newChord));
+        scales_chords_api_onload();
+    });
     
     function scales_chords_api_onload() {
         var api_url = "https://www.scales-chords.com/api/scapi.1.3.php";
@@ -186,12 +194,6 @@ $(document).ready(() => {
                 }
             });
         }
-    }
-    
-    if (window.addEventListener) {
-        window.addEventListener('load', scales_chords_api_onload, false);
-    } else {
-        window.attachEvent('onload', scales_chords_api_onload);
     }
     
     function ajaxCall(url, params, successCallback, failCallback, ongoingCallback, cfg) {

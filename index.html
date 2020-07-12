@@ -150,6 +150,7 @@
             <form>
                 <div class="row">
                     <select id="chord-dropdown" class="add-font medium-text"> Chord Name </label>
+                        <option value="">-</option>
                         <option value="A">A</option>
                         <option value="Am">Am</option>
                         <option value="A#">A#</option>
@@ -201,19 +202,23 @@
 
                 </div>
             </div>
+            
             <div class="chord-sound-gtr container">
                 <h6 class="add-font medium-text">It should sound like this:</h6>
                 <button class="sounds-like-guitar">
                     <label for="guitar-clip">Guitar</label>
-                    <ins class="scales_chords_api" chord="" instrument="guitar" output="sound" name="guitar-clip"></ins>
+                    <div id="gtr-sound-insert"></div>
                 </button>
+                
 
             </div>
+            
             <div class="chord-sound-piano container">
                 <h6 class="add-font medium-text">It should sound like this:</h6>
                 <button class="sounds-like-piano">
                     <label for="piano-clip">Piano</label>
-                    <ins class="scales_chords_api" chord="" instrument="piano" output="sound" name="piano-clip"></ins>
+                    <div id="piano-sound-insert"></div>
+                    
                 </button>
 
             </div>
