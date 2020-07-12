@@ -191,8 +191,6 @@ function showPianoChords() {
     };
 }
 
-
-
 // Section button hide and show / toggle
 
 $('#chords-and-melody-section-btn').click(function () {
