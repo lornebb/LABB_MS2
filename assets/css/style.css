@@ -99,7 +99,6 @@ body {
 
 #lyric-section {
     display: none;
-    /* transition: opacity 1s ease-out; */
 }
 
 #chords-and-melody-section {
@@ -184,9 +183,6 @@ section h6 {
 }
 
 .about-image {
-    /* 767 pixels; */
-    /* width: 90px;
-    height: 90px; */
     margin: auto;    
     display: block;
     content: url(/assets/imgs/writing-tools-img.jpg);
@@ -298,6 +294,15 @@ section h6 {
     margin: auto;
     font-family: 'press start 2p', cursive;
     font-size: 11px;
+}
+
+#lyric-search-results-form * {
+    display: block;
+}
+
+#lyric-search-results-form label {
+    padding-top: 10px;
+    margin: 0;
 }
 
 #something-went-wrong-box-hide {
