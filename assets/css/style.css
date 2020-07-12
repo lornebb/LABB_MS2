@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'Press Start 2p', serif;
+    font-family: "Press Start 2p", serif;
     scroll-behavior: smooth;
 }
 
@@ -32,18 +32,18 @@ body {
 }
 
 .title {
-    font-family: 'Press Start 2p', serif;
+    font-family: "Press Start 2p", serif;
     text-decoration: underline;
 }
 
 .subtitle {
-    font-family: 'Press Start 2p', serif;
+    font-family: "Press Start 2p", serif;
     font-size: 10px;
     padding: 0;
 }
 
 .add-font {
-    font-family: 'Press Start 2p', serif;
+    font-family: "Press Start 2p", serif;
 }
 
 .small-text {
@@ -84,7 +84,7 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 
 #back-arrow {
@@ -128,7 +128,7 @@ header {
 }
 
 header h6 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 
 .big-section-btn {
@@ -141,7 +141,7 @@ header h6 {
 
 .big-main-btns {
     place-content: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 
 img {
@@ -152,7 +152,7 @@ img {
 }
 
 .search-type {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     font-size: 13px;
     /* text-align: justify; */
 }
@@ -200,7 +200,7 @@ section h6 {
     font-size: 100%;
 
     place-content: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 
 .top-page-header div h6 {
@@ -215,7 +215,7 @@ section h6 {
 
 .btn-sq-md {
     background-color: #F0F7EE !important;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 
 .chord-output-text {
@@ -274,7 +274,7 @@ section h6 {
     border-radius: 9% !important;
     margin-bottom: 1em;
     margin-top: 1em;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     font-size: 14px;
 }
 
@@ -292,7 +292,7 @@ section h6 {
 
 #lyric-search-results-form {
     margin: auto;
-    font-family: 'press start 2p', cursive;
+    font-family: "press start 2p", cursive;
     font-size: 11px;
 }
 
@@ -347,7 +347,7 @@ section h6 {
 }
 
 .footer-style h6 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     font-size: 12px;
 }
 
