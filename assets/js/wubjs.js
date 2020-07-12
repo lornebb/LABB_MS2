@@ -108,15 +108,26 @@ generateButtonRandomCP.addEventListener("click", randomChords);
 $(document).ready(() => {
 
     const chordSelectGtr = (chord) => {
-        return `<ins class="scales_chords_api" chord="${chord} instrument="guitar"></ins>`
+        return `<ins class="scales_chords_api" chord="${chord}" instrument="guitar"></ins>`
+    }
+
+    const chordSelectPiano = (chord) => {
+        return `<ins class="scales_chords_api" chord="${chord}" instrument="piano"></ins>`
     }
 
     $("#chord-dropdown").on("change", function (e) {
         const newChord = e.target.value;
-        const location = $(".gtr-hide");
-        location.html(chordSelect(newChord));
+        const location = $("#gtr-insert");
+        location.html(chordSelectGtr(newChord));
         scales_chords_api_onload();
     });
+
+    $("#chord-dropdown").on("change", function (e) {
+        const newChord = e.target.value;
+        const location = $("#piano-insert");
+        location.html(chordSelectPiano(newChord));
+        scales_chords_api_onload();
+    })
 
     function playAudio3(id_number) {
         var button = document.getElementById('playbut_' + id_number);
