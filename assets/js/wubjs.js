@@ -24,10 +24,7 @@ function sendMail(contactForm) {
 // chord and melody generator js 
 // CREDIT - Scraggo's Music Tools - https://codepen.io/scraggo/pen/JNveOq?editors=0110 /
 
-// ========================
 // RANDOM GENERATORS SETUP
-// ========================
-
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
@@ -46,9 +43,7 @@ function randomChoice(myArray) {
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
 
-// =========================
-// 1. RANDOM CHORD GENERATOR
-// =========================
+// RANDOM CHORD GENERATOR
 
 // Cache DOM access.
 let noChords = document.getElementById("noChords");
@@ -294,19 +289,6 @@ $('#lyric-search-form').submit(function (e) {
     let searchValue = $('#lyric-search-box').val()
     searchLyrics(searchValue);
 });
-
-function showPianoChords() {
-    let chordName = document.getElementById("chordName")
-    console.log(chordName.value)
-    let chRoot = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-    let chQuality = ['', 'm', 'dim', '+'];
-    if (chordName !== chRoot || chordName !== chQuality) {
-        document.getElementById('piano-insert').insertAdjacentHTML('beforeend', `<ins class="scales_chords_api" chord="${chordName}" instrument="piano" width="390px;" height="200px;"></ins>`);
-    } else {
-        console.log("gtr choord search did not work")
-        document.getElementById('piano-insert').insertAdjacentHTML('beforeend', `<h6 class="small-text"> Your search for ${chordName} did not return anything, try a less specific syntax." </h6>`);
-    };
-}
 
 // Section button hide and show / toggle
 

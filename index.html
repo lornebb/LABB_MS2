@@ -16,27 +16,29 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <!-- Scale - Chords API - for gtr & piano chord diagram generator -->
     <script async src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
+    <!-- google recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>W.U.B - Writers UnBlocker</title>
 </head>
 
 <body id="page-top" class="bg-yellow">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger mx-auto allign-bottom" href="index.html">W.U.B</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            <a class="navbar-brand mx-auto allign-bottom" href="index.html">W.U.B</a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#">Chords & Melody</a>
+                        <a class="nav-link" onclick="">Chords</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#">Did I Write this?</a>
+                        <a class="nav-link" href="#">Lyrics</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <div class="nav-seperator">
             <hr />
@@ -52,14 +54,14 @@
         <!--Main section links-->
         <div class="container-fluid">
             <div class="row big-main-btns">
-                <a href="#" aria-label="chords and melody section button" id="chords-and-melody-section-btn"
+                <a href="#" aria-label="chords and section button" id="chords-and-melody-section-btn"
                     class="btn btn-sq-lg col-lg-4 ">
                     <i class="fa fa-music fa-5x"></i>
-                    Chords & Melody
+                    Chords
                 </a>
                 <a href="#" aria-label="lyric search section button" id="lyric-search-btn"
                     class="btn btn-sq-md btn btn-sq-lg col-lg-4">
-                    <i class="fa fa-gavel fa-5x"></i>Did I Write This?
+                    <i class="fa fa-gavel fa-5x"></i>Lyrics
                 </a>
             </div>
         </div>
@@ -94,24 +96,28 @@
                         <textarea rows="3" name="feature_request" class="form-control" id="feature_request"
                             placeholder="Tell me what you want to see on the site..." required></textarea>
                         <button type="submit" class="btn btn-secondary center-block">Send</button>
+                        <div class="g-recaptcha" data-sitekey="6LfRhrAZAAAAACRAmraNzGw3CVjMQ8nbPiZtLKu0"></div>
+                        <br />
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
             </div>
         </section>
     </section>
-    <!-- Chords and melody Section -->
+    <!-- Chords Section -->
     <section id="chords-and-melody-section">
         <header>
             <div class="container-fluid">
                 <div class="row top-page-header">
                     <div class="col-4">
                         <a href="./index.html" aria-label="back home button" id="chords-and-melody-search-btn"
-                            class="btn btn-sq-md">
+                            class="btn btn-sq-md small-text">
                             <i class="fa fa-music fa-5x"></i>
+                            Back
                         </a>
                     </div>
                     <div class="col-8 header-text">
-                        <h6> Chords <br>& Melody</h6>
+                        <h6> Chords </h6>
                     </div>
                 </div>
             </div>
@@ -124,7 +130,6 @@
                 </button>
             </div>
         </div>
-        <!-- results -->
         <div class="container-fluid">
             <form>
                 <label for="noChords" class="add-font medium-text"> Number of chords: </label>
@@ -132,6 +137,7 @@
                 <label for="noProgressions" class="add-font medium-text">Number of <br>chord progressions: </label>
                 <input type="number" value="3" min="1" max="7" step="1" id="noProgressions"><br>
             </form>
+            <!-- results -->
             <div id="chord-results-box">
                 <h2 id="titleRandomCP"></h2>
                 <p id="functionRandomCP" class="chord-output-text"></p>
@@ -202,23 +208,23 @@
 
                 </div>
             </div>
-            
+
             <div class="chord-sound-gtr container">
                 <h6 class="add-font medium-text">It should sound like this:</h6>
                 <button class="sounds-like-guitar">
                     <label for="guitar-clip">Guitar</label>
                     <div id="gtr-sound-insert"></div>
                 </button>
-                
+
 
             </div>
-            
+
             <div class="chord-sound-piano container">
                 <h6 class="add-font medium-text">It should sound like this:</h6>
                 <button class="sounds-like-piano">
                     <label for="piano-clip">Piano</label>
                     <div id="piano-sound-insert"></div>
-                    
+
                 </button>
 
             </div>
@@ -233,8 +239,9 @@
                 <div class="row top-page-header">
                     <div class="col-4">
                         <a href="./index.html" aria-label="lyric search button" id="lyric-search-btn"
-                            class="btn btn-sq-md">
+                            class="btn btn-sq-md small-text">
                             <i class="fa fa-gavel fa-5x"></i>
+                            Back
                         </a>
                     </div>
                     <div class="col-8 header-text">
