@@ -277,7 +277,9 @@ function searchLyrics(searchValue) {
             var lyricResultLink = data.tracks.hits[0].track.share.html
             $('#artist-result').val(`${artistResult.subtitle}`)
             $('#track-result').val(`${artistResult.title}`)
-            $("#lyric-link").find("href").attr("href", `${lyricResultLink}`);
+            // $("#lyric-link").find("href").attr("href", lyricResultLink)
+            console.log(lyricResultLink)
+            $(".put-result-link-here").html(`<a href="${lyricResultLink}" target="_blank"> <input type="button" id="lyric-link"  name="link-res" value="Lyric Link Result"> ></a>`)
         })
         .catch(err => {
             $('#something-went-wrong-box-hide').css("display", "block")
