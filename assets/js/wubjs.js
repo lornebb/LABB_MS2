@@ -25,7 +25,6 @@ function sendMail(contactForm) {
 // CREDIT - Scraggo's Music Tools - https://codepen.io/scraggo/pen/JNveOq?editors=0110 /
 
 // RANDOM GENERATORS SETUP
-
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -115,7 +114,7 @@ $(document).ready(() => {
     }
 
     const audioSelectPiano = (chord) => {
-        return`<ins class="scales_chords_api" chord="${chord}" instrument="piano" output="sound" name="guitar-clip"></ins>`
+        return `<ins class="scales_chords_api" chord="${chord}" instrument="piano" output="sound" name="guitar-clip"></ins>`
     }
 
     $("#chord-dropdown").on("change", function (e) {
@@ -145,7 +144,7 @@ $(document).ready(() => {
         location.html(audioSelectPiano(newChord));
         scales_chords_api_onload();
     });
-    
+
     function scales_chords_api_onload() {
         var api_url = "https://www.scales-chords.com/api/scapi.1.3.php";
         if (typeof api_override_url !== 'undefined') {
@@ -190,7 +189,7 @@ $(document).ready(() => {
             });
         }
     }
-    
+
     function ajaxCall(url, params, successCallback, failCallback, ongoingCallback, cfg) {
         var xhr;
         if (window.XMLHttpRequest) {
@@ -267,9 +266,12 @@ function searchLyrics(searchValue) {
                 "connection": "Close"
             }
         })
+        .then($("#search-loading").css("display", "block"))
         .then(response => response.json())
         .then(data => {
             $('#results-below-box-show').css("display", "block")
+            $("#search-loading").css("display", "none")
+            $("#search-results-section").css("display", "block")
             console.log(data)
             var artistResult = data.tracks.hits[0].track
             var lyricResultLink = data.tracks.hits[0].track.share.html
@@ -278,7 +280,6 @@ function searchLyrics(searchValue) {
             $("#lyric-link").find("href").attr("href", `${lyricResultLink}`);
         })
         .catch(err => {
-            console.log("try again stupid");
             $('#something-went-wrong-box-hide').css("display", "block")
             console.log(err)
         })
@@ -286,6 +287,7 @@ function searchLyrics(searchValue) {
 
 $('#lyric-search-form').submit(function (e) {
     e.preventDefault();
+    $("#search-loading").toggle();
     let searchValue = $('#lyric-search-box').val()
     searchLyrics(searchValue);
 });

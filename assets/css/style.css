@@ -307,6 +307,18 @@ section h6 {
     margin: auto;
 }
 
+.searchLoading {
+    background: url(/assets/imgs/loader-pac-man.gif);
+}
+
+#search-results-section {
+    display: none;
+}
+
+#search-loading {
+    display: none;
+}
+
 /* Footer */
 
 .footer-seperator {

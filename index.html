@@ -289,7 +289,8 @@
             <hr />
         </div>
         <!--Lyric search results-->
-        <div class="container">
+        <div id="search-loading" class="mx-auto"><img src="/assets/imgs/loader-pac-man.gif" /></div>
+        <div class="container" id="search-results-section">
             <div class="row">
                 <form id="lyric-search-results-form">
                     <h5 class="title">Results</h5>
@@ -303,7 +304,6 @@
                     <br>
                     <label for="link-res">Double Check</label><br>
                     <input type="button" id="lyric-link" href='#' name="link-res" value="Lyric Link Result"><br>
-
                     <!-- <button type="button" id="link-to-result" name="results-link" value="See More"
                         target="_blank">See
                         More
