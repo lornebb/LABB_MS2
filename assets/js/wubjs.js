@@ -313,9 +313,15 @@ $('#lyric-search-btn').click(function () {
 });
 
 $('#gtr-button').click(function () {
-    $('.chord-sound-gtr').toggle()
+    $('.gtr-hide').css("display", "block")
+    $('.chord-sound-gtr').css("display", "block")
+    $('.piano-hide').css("display", "none")
+    $('.chord-sound-piano').css("display", "none")
 });
 
 $('#piano-button').click(function () {
-    $('.chord-sound-piano').toggle()
+    $('.piano-hide').css("display", "block")
+    $('.chord-sound-piano').css("display", "block")
+    $('.gtr-hide').css("display", "none")
+    $('.chord-sound-piano').css("display", "none")
 });
