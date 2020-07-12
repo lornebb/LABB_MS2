@@ -32,13 +32,11 @@ body {
 }
 
 .title {
-    font-family: "Press Start 2p", serif;
     text-decoration: underline;
 }
 
 .subtitle {
-    font-family: "Press Start 2p", serif;
-    font-size: 10px;
+    font-size: 0.6rem;
     padding: 0;
 }
 
@@ -47,15 +45,16 @@ body {
 }
 
 .small-text {
-    font-size: x-small;
+    font-size: 0.7rem;
 }
 
 .medium-text {
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
 .other-font {
     font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
 }
 
 .underline {
@@ -68,7 +67,6 @@ body {
     background-color: #f0f7ee;
     text-align: center;
     display: inline-block;
-    float: none;
     vertical-align: top;
     padding: 0.5rem;
 }
@@ -84,7 +82,6 @@ body {
 }
 
 .navbar-brand {
-    font-family: "Press Start 2P", cursive;
 }
 
 #back-arrow {
@@ -127,33 +124,26 @@ header {
     padding: 90px 0 0px;
 }
 
-header h6 {
-    font-family: "Press Start 2P", cursive;
-}
-
+/* 
 .big-section-btn {
     background-color: #87BBA2;
     border: 1px solid #5D737E;
     color: #5D737E;
-    font-size: 100%;
+    font-size: 1rem;
     border-radius: 9%
-}
+} */
 
 .big-main-btns {
     place-content: center;
-    font-family: "Press Start 2P", cursive;
 }
 
 img {
-    max-height: 25em;
     overflow: hidden;
-    max-width: 25em;
-    float: right;
 }
 
 .search-type {
     font-family: "Press Start 2P", cursive;
-    font-size: 13px;
+    font-size: 0.9rem;
     /* text-align: justify; */
 }
 
@@ -170,7 +160,7 @@ img {
 #services p {
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 
 .about-bg {
@@ -197,10 +187,8 @@ section h6 {
 
 .top-page-header {
     color: #5D737E;
-    font-size: 100%;
-
+    font-size: 1rem;
     place-content: center;
-    font-family: "Press Start 2P", cursive;
 }
 
 .top-page-header div h6 {
@@ -215,11 +203,6 @@ section h6 {
 
 .btn-sq-md {
     background-color: #F0F7EE !important;
-    font-family: "Press Start 2P", cursive;
-}
-
-.chord-output-text {
-    font-family: 'Source Code Pro', monospace;
 }
 
 #chord-results-box {
@@ -235,7 +218,7 @@ section h6 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.7rem;
 }
 
 .sounds-like-guitar {
@@ -246,7 +229,7 @@ section h6 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.7rem;
 }
 
 .gtr-hide {
@@ -274,12 +257,7 @@ section h6 {
     border-radius: 9% !important;
     margin-bottom: 1em;
     margin-top: 1em;
-    font-family: "Press Start 2P", cursive;
     font-size: 14px;
-}
-
-.btn-sq-sm i {
-    font-size: 30px;
 }
 
 .results-box {
@@ -292,8 +270,7 @@ section h6 {
 
 #lyric-search-results-form {
     margin: auto;
-    font-family: "press start 2p", cursive;
-    font-size: 11px;
+    font-size: 0.8rem;
 }
 
 #lyric-search-results-form * {
@@ -347,8 +324,7 @@ section h6 {
 }
 
 .footer-style h6 {
-    font-family: "Press Start 2P", cursive;
-    font-size: 12px;
+    font-size: 0.7rem;
 }
 
 .footer-img {
