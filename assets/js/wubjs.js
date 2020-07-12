@@ -326,5 +326,5 @@ $('#piano-button').click(function () {
     $('.piano-hide').css("display", "block")
     $('.chord-sound-piano').css("display", "block")
     $('.gtr-hide').css("display", "none")
-    $('.chord-sound-piano').css("display", "none")
+    $('.chord-sound-gtr').css("display", "none")
 });
