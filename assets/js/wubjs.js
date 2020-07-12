@@ -281,6 +281,7 @@ function searchLyrics(searchValue) {
         })
         .catch(err => {
             $('#something-went-wrong-box-hide').css("display", "block")
+            $("#search-loading").css("display", "none")
             console.log(err)
         })
 };

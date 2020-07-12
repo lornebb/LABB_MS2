@@ -1,4 +1,3 @@
-
 /* ALL */
 
 #primary-green {
@@ -185,7 +184,7 @@ section h6 {
 .about-image {
     display: block;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     width: 50%;
     max-width: 100%;
     height: auto;
@@ -249,19 +248,19 @@ section h6 {
 }
 
 .gtr-hide {
-    display: block;
+    display: none;
 }
 
 .piano-hide {
-    display: block;
+    display: none;
 }
 
 .chord-sound-gtr {
-    display: block;
+    display: none;
 }
 
 .chord-sound-piano {
-    display: block;
+    display: none;
 }
 
 /* Search buttons */
@@ -307,19 +306,21 @@ section h6 {
     margin: auto;
 }
 
-.searchLoading {
-    background: url(/assets/imgs/loader-pac-man.gif);
-}
-
 #search-results-section {
     display: none;
 }
 
 #search-loading {
     display: none;
+    content: url(/assets/imgs/loader-pac-man.gif);
 }
 
 /* Footer */
+
+.footer-row {    
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .footer-seperator {
     color: #5D737E;
