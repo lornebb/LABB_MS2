@@ -52,11 +52,13 @@
         <!--Main section links-->
         <div class="container-fluid">
             <div class="row big-main-btns">
-                <a href="#" aria-label="chords and melody section button" id="chords-and-melody-section-btn" class="btn btn-sq-lg col-lg-4 ">
+                <a href="#" aria-label="chords and melody section button" id="chords-and-melody-section-btn"
+                    class="btn btn-sq-lg col-lg-4 ">
                     <i class="fa fa-music fa-5x"></i>
                     Chords & Melody
                 </a>
-                <a href="#" aria-label="lyric search section button" id="lyric-search-btn" class="btn btn-sq-md btn btn-sq-lg col-lg-4">
+                <a href="#" aria-label="lyric search section button" id="lyric-search-btn"
+                    class="btn btn-sq-md btn btn-sq-lg col-lg-4">
                     <i class="fa fa-gavel fa-5x"></i>Did I Write This?
                 </a>
             </div>
@@ -103,7 +105,8 @@
             <div class="container-fluid">
                 <div class="row top-page-header">
                     <div class="col-4">
-                        <a href="./index.html" aria-label="back home button" id="chords-and-melody-search-btn" class="btn btn-sq-md">
+                        <a href="./index.html" aria-label="back home button" id="chords-and-melody-search-btn"
+                            class="btn btn-sq-md">
                             <i class="fa fa-music fa-5x"></i>
                         </a>
                     </div>
@@ -145,22 +148,45 @@
                 </h6>
             </div>
             <form>
-                <div class="row"></div>
-                <label for="chordName" class="add-font medium-text"> Chord Name </label>
-                <input type="text" id="chordName">
+                <div class="row">
+                    <select id="chord-dropdown" class="add-font medium-text"> Chord Name </label>
+                        <option value="A">A</option>
+                        <option value="Am">Am</option>
+                        <option value="A#">A#</option>
+                        <option value="A#m">A#m</option>
+                        <option value="B">B</option>
+                        <option value="Bm">Bm</option>
+                        <option value="C">C</option>
+                        <option value="Cm">Cm</option>
+                        <option value="C#">C#</option>
+                        <option value="C#m">C#m</option>
+                        <option value="D">D</option>
+                        <option value="Dm">Dm</option>
+                        <option value="D#">D#</option>
+                        <option value="D#m">D#m</option>
+                        <option value="E">E</option>
+                        <option value="Em">Em</option>
+                        <option value="F">F</option>
+                        <option value="Fm">Fm</option>
+                        <option value="F#">F#</option>
+                        <option value="F#m">F#m</option>
+                        <option value="G">G</option>
+                        <option value="Gm">Gm</option>
+                        <option value="G#">G#</option>
+                        <option value="G#m">G#m</option>
+                    </select>
+                </div>
             </form>
         </div>
         <div class="container">
             <div class="row add-font small-text">
                 <div class="col-6">
                     <label for="gtr-button"> Lets see Guitar </label>
-                    <input class="col-6" type="button" id="gtr-button" value="guitar" name="piano-or-gtr"
-                        onclick="showGtrChords()"></input>
+                    <input class="col-6" type="button" id="gtr-button" value="guitar" name="piano-or-gtr"></input>
                 </div>
                 <div class="col-6">
                     <label for="piano-button"> Lets see Piano </label>
-                    <input class="col-6" type="button" id="piano-button" value="piano" name="piano-or-gtr"
-                        onclick="showPianoChords()"></input>
+                    <input class="col-6" type="button" id="piano-button" value="piano" name="piano-or-gtr"></input>
                 </div>
             </div>
         </div>
@@ -168,19 +194,18 @@
             <div class="chord-image row">
                 <!-- guitar -->
                 <div class="col-12 gtr-hide" id="gtr-insert">
-                    
+
                 </div>
                 <!-- piano -->
                 <div class="col-12 piano-hide" id="piano-insert">
-                    
+
                 </div>
             </div>
             <div class="chord-sound-gtr container">
                 <h6 class="add-font medium-text">It should sound like this:</h6>
                 <button class="sounds-like-guitar">
                     <label for="guitar-clip">Guitar</label>
-                    <ins class="scales_chords_api" chord="" instrument="guitar" output="sound"
-                        name="guitar-clip"></ins>
+                    <ins class="scales_chords_api" chord="" instrument="guitar" output="sound" name="guitar-clip"></ins>
                 </button>
 
             </div>
@@ -202,7 +227,8 @@
             <div class="container-fluid">
                 <div class="row top-page-header">
                     <div class="col-4">
-                        <a href="./index.html" aria-label="lyric search button" id="lyric-search-btn" class="btn btn-sq-md">
+                        <a href="./index.html" aria-label="lyric search button" id="lyric-search-btn"
+                            class="btn btn-sq-md">
                             <i class="fa fa-gavel fa-5x"></i>
                         </a>
                     </div>

@@ -249,19 +249,19 @@ section h6 {
 }
 
 .gtr-hide {
-    display: none;
+    display: block;
 }
 
 .piano-hide {
-    display: none;
+    display: block;
 }
 
 .chord-sound-gtr {
-    display: none;
+    display: block;
 }
 
 .chord-sound-piano {
-    display: none;
+    display: block;
 }
 
 /* Search buttons */
