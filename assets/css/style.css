@@ -81,9 +81,6 @@ body {
     color: #5D737E;
 }
 
-.navbar-brand {
-}
-
 #back-arrow {
     max-width: 1rem;
 }
@@ -124,15 +121,6 @@ header {
     padding: 90px 0 0px;
 }
 
-/* 
-.big-section-btn {
-    background-color: #87BBA2;
-    border: 1px solid #5D737E;
-    color: #5D737E;
-    font-size: 1rem;
-    border-radius: 9%
-} */
-
 .big-main-btns {
     place-content: center;
 }
@@ -144,7 +132,6 @@ img {
 .search-type {
     font-family: "Press Start 2P", cursive;
     font-size: 0.9rem;
-    /* text-align: justify; */
 }
 
 .btn-secondary {
