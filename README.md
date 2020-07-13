@@ -290,11 +290,11 @@ git clone https://github.com/lornebb/LORNEBB_MS2.git
 
 ## Credits
 
-- **Chris Palmer** - helped with JavaScript and API integration troubleshooting.
-- **David Williams** - helped navigate some API documentation suggestions.
+- [**Chris Palmer**](https://github.com/cgpalmer) - helped with JavaScript and API integration troubleshooting.
+- [**David Williams**](https://eightarms.co.uk/) - helped navigate some API documentation suggestions.
 - **CI Student care** - helped with incomplete SDK from API.
 - [Bootstrap snippets](https://bootsnipp.com/snippets/GqBjl) **dvinciguerra** for the Square Buttons.
-- **Bim Williams** - Cracked the Scales-Chords-Api call problem by deep diving into their api!
+- [**Bim Williams**](https://github.com/MrBim) - Cracked the Scales-Chords-Api call problem by deep diving into their api!
 
 ### Media
 
