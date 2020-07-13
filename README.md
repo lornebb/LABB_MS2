@@ -1,20 +1,17 @@
-- [W. U. B (Writers UnBlocker)](#w-u-b--writers-unblocker-)
+# [W. U. B (Writers UnBlocker)](#w-u-b--writers-unblocker-)
 
-Thank you for checking out this site. W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. If you have any questions, comments or bugs, please let me know and get in touch :).
+W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. Current features include an instant chord sequence generator, how-to-play chord diagrams on guitar & piano, and a lyric search feature. If you have any questions, comments or bugs, please let me know and get in touch :).
 
-1. [UX](#ux)
-
-- [Project Goals](#project-goals)
-- [Target Audience Goals](#target-audience-goals)
-- [Target audience](#target-audience)
-- [User Goals](#user-goals)
-- [User Stories](#user-stories)
-
-* [Mr. Bloggs](#mr-bloggs)
-* [Ms. C. Thweepioh](#ms-c-thweepioh)
-* [They Maplecourt](#they-maplecourt)
-  - [Site Owner Goals](#site-owner-goals)
-
+- [UX](#ux)
+  - [Project Goals](#project-goals)
+  - [Target Audience Goals](#target-audience-goals)
+    - [Target audience](#target-audience)
+    - [User Goals](#user-goals)
+    - [User Stories](#user-stories)
+      - [Mr. Bloggs](#mr-bloggs)
+      - [Ms. C. Thweepioh](#ms-c-thweepioh)
+      - [They Maplecourt](#they-maplecourt)
+    - [Site Owner Goals](#site-owner-goals)
 - [User Requirements and Expectations](#user-requirements-and-expectations)
   - [User Requirements](#user-requirements)
   - [User Expectations](#user-expectations)
@@ -22,18 +19,25 @@ Thank you for checking out this site. W. U. B is a one stop shop for creatives t
   - [Fonts](#fonts)
   - [Icons](#icons)
   - [Colours](#colours)
+- [Wireframes](#wireframes)
+  - [Original Concept](#original-concept)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
+  - [Tablet](#tablet)
 - [Features](#features)
 - [Features That Will Be Implemented In The Future](#features-that-will-be-implemented-in-the-future)
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
-  - [Tools & Libraries](#tools---libraries)
+  - [Libraries & Frameworks](#libraries---frameworks)
+  - [Tools](#tools)
 - [Testing](#testing)
-  _ [Test Planning](#test-planning)
-  _ [Testing Stories](#testing-stories)
+  - [Test Planning](#test-planning)
+  - [Testing Stories](#testing-stories)
   - [Overall](#overall)
 - [Bugs](#bugs)
   - [EmailJs JS impliment Bug](#emailjs-js-impliment-bug)
   - [Rapid API SDK issue](#rapid-api-sdk-issue)
+  - [Chord chart call](#chord-chart-call)
 - [Deployment](#deployment)
   - [Running W.U.B Locally](#running-wub-locally)
 - [Credits](#credits)
@@ -50,8 +54,8 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 
 #### Target audience
 
-- Music writers
-- Music composers
+- Music **writers**
+- Music **composers**
 
 #### User Goals
 
@@ -80,27 +84,27 @@ _As a lyricist, I make lyrics all day, every day of the week. Sometimes I need t
 
 - Provide **results easily** and effortlessly to writers.
 - Maintain a level of **theoretical stability** in the generation of musical chords and melody.
-- Not to collect, or try to claim, any ownership, credit, contact details or watermarking of content provided to any final product that emerges from the results generated on the site.
+- **Not to collect**, or try to claim, any ownership, credit, **contact details** or watermarking of content provided to any final product that emerges from the results generated on the site.
 
 ## User Requirements and Expectations
 
 ### User Requirements
 
 - **Easy buttons** to sections.
-- Familiar navbar as to not get lost or confused about where they are.
-- Instant and varied results from each generation
-- Only song lyrics to be searched and returned in lyric search.
+- **Familiar navbar** as to not get lost or confused about where they are.
+- **Instant** and varied **results** from each generation
+- Only **song lyrics** to be searched and returned in lyric search.
 
 ### User Expectations
 
-- Varied enough results every time, so if initial generation result is not satisfactory, the next one should not appear familiar to its predecessor.
-- Text bars are copy and paste friendly
+- **Varied** enough **results** every time, so if initial generation result is not satisfactory, the next one should not appear familiar to its predecessor.
+- Text bars are **copy and paste friendly**
 - Site should be **accessable on all browsers** from mobile to desktop.
 - Any feature suggestions to go **direct to developer**.
 
 ## Design Choices
 
-This is purely functional web application, design is feature focused, and style comes second. I went for a relatively light background to keep the focus on the darker content. Large active buttons used for generations of content.
+This is purely functional web application, design is feature focused, and style comes second. I went for a relatively light background to keep the focus on the darker content. Large active buttons used for generation of content.
 
 ### Fonts
 
@@ -110,16 +114,16 @@ Implimentation of this font proved too difficult for loading so a new and simila
 
 ### Icons
 
-Icons, much in the same way as the font, were designed to be as transpoarent as possible. I got the fonts, initially from [FlatIcon](https://www.flaticon.com/home) and then later from [Font Awesome](https://fontawesome.com/) both for free.
+Icons, much in the same way as the font, were designed to be as transparent as possible. I got the fonts, initially from [FlatIcon](https://www.flaticon.com/home) and then later from [Font Awesome](https://fontawesome.com/) both for free.
 
 ### Colours
 
-Colour palette was generated at [Coolors.co](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting.
+Colour palette was generated at [**Coolors.co**](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting.
 
-- Primary Green - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour.
-- Background Yellow - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour I tried.
-- Teriary Pearl/Cream - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction.
-- Grey and black - #000000 & #5D737E - These darker colours are used for text, icons and and results.
+- **Primary Green** - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour.
+- **Background Yellow** - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour I tried.
+- **Teriary Pearl/Cream** - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction.
+- **Grey and Black** - #000000 & #5D737E - These darker colours are used for text, icons and and results.
 
 The palette:
 
@@ -149,20 +153,27 @@ The palette:
 
 ## Features
 
-- 2 easy to navigate features on home page.
-- One page for all content, Javascript hides other content when certain features are selected.
-- Music harmony random generator.
-- how-to diagrams and sound-like audio clips of any chord imaginable.
-- Direct contact with developer.
-- Lyric search.
+- **2 easy to navigate features** on home page.
+- **One page** for all content, Javascript hides other content when certain features are selected.
+- **Music harmony** random generator.
+- **How-to diagrams** and **sound-like** audio clips of a selection of chords.
+- **Direct contact with developer**, with no data collection.
+- **Captcha** for stopping spam or bots from abusing the mail feature.
+- **Lyric search**, with dedicated, filtered results straight to music from a respectable music search source.
 
-## Features That Will Be Implemented In The Future
+## Features That Will Be Implemented In The **Future**
 
-- Features for writers, novelists, or games masters with a pen in one hand and their phone / tablet in the other - to generate names of a wide array of things from names, pets and places, to orcs, dragons and angels.
+- **Features for writers, novelists, or games masters** with a pen in one hand and their phone / tablet in the other - to generate names of a wide array of things from names, pets and places, to orcs, dragons and angels.
 
-- Simple and complicated, in key, melody generator.
+- Simple and complicated, in key, **melody generator**.
 
-- Auto fill from chord generator to chord play, and then pass that key into melody generator so only one button is needed to generate all that content.
+- **Auto fill** from chord generator to chord play, and then pass that key into melody generator so only one button is needed to generate all that content.
+
+- Link footer to personal site / git hub repo.
+
+- Use **8-bit icons** for in theme visuals.
+
+- More **interactive transitions** between javascript toggles.
 
 ## Technologies Used
 
@@ -184,45 +195,45 @@ The palette:
 - [Shazam API](https://rapidapi.com/apidojo/api/shazam) - provided lyric search results via it's api.
 - [Scales-Chords API](https://www.scales-chords.com/api/) - for chord charts and sound clips.
 - [Scraggo Music Tools](http://www.scraggo.com/) - javascript chord generation.
-- [Loading IO](https://loading.io/) - animated gif loading image. 
+- [Loading IO](https://loading.io/) - animated gif loading image.
 
 ### Tools
 
-- [Adobe XD](https://www.adobe.com/uk/products/xd.html) was used to create interactive wireframes, giving the ability to live-test on all platforms
+- [Adobe XD](https://www.adobe.com/uk/products/xd.html) was used to create interactive wireframes, giving the ability to live-test on all platforms.
 - [VS Code](https://code.visualstudio.com/)
+- [Chrome](https://www.google.com/intl/en/chrome/) developer tools.
 
 ## Testing
 
-<!--
-**ask Simen**
+### Test Planning
 
-##### Test Planning
+This was my first time implimenting API's and using Javascript in a project, so testing was done at almost every line of code, using console logs and chrome inspector. As features were implimented, testing was then carried out by a small select batch of users and peers. Each tester was asked to test  feature by feature.
 
-##### Testing Stories
+### Testing Stories
+
+- The first test on the EmailJS integration came back with a problem with the submit button, where only a small section of the button was clickable to submit. This was fixed with a more robudt struct to the HTML of that section.
+
+- Similiarly, the testing of the lyric search feature showed an issue with the results link button.
+
+- Most testing of the search feature came back with feedback saying the feature was not returning any results. On further inspection, the results were loading too slowly. To fix this, I trimmed some un-need headers being sent to via fetch and added a loading icon to appear after the user presses search, until the results are returned.
+
+- Another laoding issue found during testing of the deployed site, was the loading of the image on the about section. Most browsers never loaded the file. this was fixed by reducing the file size.
 
 ### Overall
-- Responsiveness -
-- Plan -
-- Implimentation -
-- Result -
-- Verdict -
-- Design -
-- Plan -
-- Implimentation -
-- Results -
-- Verdict -
 
-<!-- //  1. Contact form:
-        1. Go to the "Contact Us" page
-        2. Try to submit the empty form and verify that an error message about the required fields appears
-        3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-        4. Try to submit the form with all inputs valid and verify that a success message appears.
+#### Responsiveness
 
-    In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+- **Plan** - The site had to desgned as a mobile first platform to maintain the one handed minimal tap feature.
+- **Implimentation** - I kept the preview in mobile view as to allow me to make the best decions when styling.
+- **Result** - The site's main features can be navigated to and used with minimal taps and instant results.
+- **Verdict** - The site looks and feels great on mobile browsers.
 
-    You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+#### Design
 
-    If this section grows too long, you may want to split it off into a separate file and        link to it from here. -->
+- **Plan** - Feature first, one handed use, minimal interaction to use features.
+- **Implimentation** - Big buttons and less than 3 taps to get results.
+- **Results** - After some testing, this was reduced to two taps generate the main feature of the site, the chords. with 3 for the rest.
+- **Verdict** - Passed these tests. Very happy with the no nonsense approach of the site.
 
 ## Bugs
 
