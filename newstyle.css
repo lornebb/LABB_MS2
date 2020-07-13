@@ -8,3 +8,7 @@ body {
 .about-image {
     content: url(assets/imgs/guitar-pad.jpg);
 }
+
+.footer-favicon {
+    content: url(assets/imgs/lornae_favicon.png);
+}
