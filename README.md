@@ -1,25 +1,42 @@
-# W. U. B (Writers UnBlocker)
+- [W. U. B (Writers UnBlocker)](#w-u-b--writers-unblocker-)
 
 Thank you for checking out this site. W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. If you have any questions, comments or bugs, please let me know and get in touch :).
 
-* UX
-  * Project Goals
-  * Target Audience Goals
-  * Site Owner Goals
-  * User Requirements and Expectations
-  * Design Choices
-    * Fonts
-    * Icons
-    * Colours
-* Wireframes
-* Features
-  * Features that have been developed
-  * Features that will be implemented in the future
-* Technologies Used
-* Testing
-* Bugs
-* Deployment
-* Credits
+1. [UX](#ux)
+
+- [Project Goals](#project-goals)
+- [Target Audience Goals](#target-audience-goals)
+- [Target audience](#target-audience)
+- [User Goals](#user-goals)
+- [User Stories](#user-stories)
+  + [Mr. Bloggs](#mr-bloggs)
+  + [Ms. C. Thweepioh](#ms-c-thweepioh)
+  + [They Maplecourt](#they-maplecourt)
+      - [Site Owner Goals](#site-owner-goals)
+  * [User Requirements and Expectations](#user-requirements-and-expectations)
+    + [User Requirements](#user-requirements)
+    + [User Expectations](#user-expectations)
+  * [Design Choices](#design-choices)
+    + [Fonts](#fonts)
+    + [Icons](#icons)
+    + [Colours](#colours)
+  * [Features](#features)
+  * [Features That Will Be Implemented In The Future](#features-that-will-be-implemented-in-the-future)
+  * [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Tools & Libraries](#tools---libraries)
+  * [Testing](#testing)
+        * [Test Planning](#test-planning)
+        * [Testing Stories](#testing-stories)
+    + [Overall](#overall)
+  * [Bugs](#bugs)
+    + [EmailJs JS impliment Bug](#emailjs-js-impliment-bug)
+    + [Rapid API SDK issue](#rapid-api-sdk-issue)
+  * [Deployment](#deployment)
+    + [Running W.U.B Locally](#running-wub-locally)
+  * [Credits](#credits)
+    + [Media](#media)
+    + [Acknowledgements](#acknowledgements)
 
 ## UX
 
@@ -105,6 +122,22 @@ Colour palette was generated at [Coolors.co](https://www.coolors.co). I auto gen
 The palette:
 
 ![Coolers Palette Image](wireframes/MS2_color_template_2.png)
+
+## Wireframes
+
+### Original Concept
+![Original Concept](wireframes/Wireframe-handdrawn-wireframe-0.jpg)
+### Desktop 
+![Desktop](wireframes/wireframe-desktop.png)
+### Mobile 
+![mobile home](wireframes/wireframe-mobile-home.png)
+![mobile chords](wireframes/wireframe-mobile-chords.png)
+![mobile lyrics](wireframes/wireframe-mobile-lyrics.png)
+### Tablet
+![tablet home](wireframes/wireframe-tablet-home.png)
+![tablet chords](wireframes/wireframe-tablet-chords.png)
+![tablet lyrics](wireframes/wireframe-tablet-lyrics.png)
+
 
 ## Features
 
