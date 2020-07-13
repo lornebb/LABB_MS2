@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+    font-family: "Press Start 2P";
+    font-size: 0.9rem;
+}
+
+.about-image {
+    content: url(assets/imgs/guitar-pad.jpg);
+}
