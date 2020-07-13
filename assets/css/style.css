@@ -162,7 +162,7 @@ section h6 {
 .about-image {
     margin: auto;    
     display: block;
-    content: url(/assets/imgs/writing-tools-img.jpg);
+    content: url(assets/imgs/writing-tools-img.jpg);
     margin-left: auto;
     margin-right: auto;
     width: 50%;
