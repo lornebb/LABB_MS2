@@ -305,11 +305,6 @@ $('#chords-and-melody-section-btn').click(function () {
     $('#home-section').toggle()
 });
 
-$('#writing-section-btn').click(function () {
-    $('#writing-section').toggle()
-    $('#home-section').toggle()
-});
-
 $('#lyric-search-btn').click(function () {
     $('#lyric-section').toggle()
     $('#home-section').toggle()
