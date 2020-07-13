@@ -242,8 +242,8 @@ Throughout development of the site I had a live deployment and a local preview o
 
 ### Chord chart call
 
-- **Bug** When trying to impliment the Scales-Chords-Api to insert 'how to play' chord images, I found that their documentation was aimed at static sites. Their call to their api was in the form of a custom tag "<ins>" which only called on a page load, when the HTML was read. 
-- **Fix** I connected with another programmer called Bim Williams, who, as a musician, was interested in this idea anyway. He dove deeper than I was able to, into their api call and helped to show me how to break down the code that is called, so i could call it when I needed. 
+- **Bug** When trying to impliment the Scales-Chords-Api to insert 'how to play' chord images, I found that their documentation was aimed at static sites. Their call to their api was in the form of a custom tag "< ins >" which only called on a page load, when the HTML was read.
+- **Fix** I connected with another programmer called Bim Williams, who, as a musician, was interested in this idea anyway. He dove deeper than I was able to, into their api call and helped to show me how to break down the code that is called, so i could call it when I needed.
 - **Verdict** Once again, experience was the key here. Very glad I was showed how to do this!
 
 ## Deployment
