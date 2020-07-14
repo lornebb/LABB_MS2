@@ -16,61 +16,159 @@
     <nav class="navbar navbar-light">
         <a class="navbar-brand mx-auto" href="#">W.U.B</a>
     </nav>
-    <hr>
     <div class="container text-center">
         I need help with...
     </div>
-    <!-- section selection -->
-    <div class="container-sm">
-        <div class="row justify-content">
-            <div class="col-sm-6">
-                <button class="btn btn-lg">
-                    <i class="fa fa-music fa-5x"></i>
-                    Chords
-                </button>
-            </div>
-            <div class="col-sm-6">
-                <button class="btn btn-lg">
-                    <i class="fa fa-gavel fa-5x"></i>
-                    Lyrics
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- about section -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h4>What is W.U.B
-                    <small class="text-muted">Writers UnBlock</small></h4>
-                <p>Definition: The condition of being unable to think of what to write or how to proceed with writing.
-                </p>
-                <p>Solution: Writers unblock will give you a nudge in the right direction by creating content for you to
-                    jump off and get your engine revv'd.</p>
-            </div>
-            <div class="col-md-6">
-                <div class="about-image img-fluid rounded d-none d-md-block d-lg-none "></div>
+    <section>
+        <!-- section selection -->
+        <div class="container-sm">
+            <div class="row justify-content">
+                <div class="col-sm-6">
+                    <button class="btn btn-lg btn-primary">
+                        <i class="fa fa-music fa-5x"></i>
+                        Chords
+                    </button>
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-lg btn-primary">
+                        <i class="fa fa-gavel fa-5x"></i>
+                        Lyrics
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- contact form -->
-    <div class="container text-center">
-        <h5>Got any features you want to see? <small class="text-muted">Get in touch!</small></h5>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6 mx-auto text-center">
-                <label for="contact-form-textarea">Type away...</label>
-                <textarea id="contact-form-textarea" placeholder="Tell me what you want to see on the site"></textarea>
-                <button type="submit">Submit</button>
+        <!-- about section -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h4>What is W.U.B
+                        <small class="text-muted">Writers UnBlock</small></h4>
+                    <p>Definition: The condition of being unable to think of what to write or how to proceed with
+                        writing.
+                    </p>
+                    <p>Solution: Writers unblock will give you a nudge in the right direction by creating content for
+                        you to
+                        jump off and get your engine revv'd.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-image img-fluid rounded d-none d-md-block d-lg-block "></div>
+                </div>
             </div>
-            <div class="col-sm-3"></div>
         </div>
-    </div>
+        <!-- contact form -->
+        <div class="container text-center">
+            <h5>Got any features you want to see? <small class="text-muted">Get in touch!</small></h5>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 mx-auto text-center">
+                    <label for="contact-form-textarea">Type away...</label>
+                    <textarea id="contact-form-textarea"
+                        placeholder="Tell me what you want to see on the site"></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- chords section -->
+    <section>
+        <!-- Chords Section Title -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <button class="btn btn-lg btn-primary">
+                        <i class="fa fa-music fa-5x"></i>
+                        <h6 class="text-center">Back</h6>
+                    </button>
+                </div>
+                <div class="col-sm-3">
+                    <h6><u>Chords</u></h6>
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+        </div>
+        <!-- Chord Input -->
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <button class="btn btn-lg btn-primary text-wrap">I Need Chords</button>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <label class="col-sm-4" for="chord-input">How many chords?</label>
+                    <input class="col-sm-4" name="chord-input" type="number" step="1" min="1" max="5"></input>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <label class="col-sm-4" for="progression-input">How many progressions?</label>
+                    <input class="col-sm-4" name="progression-input" type="number" step="1" min="1" max="5"></input>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Chord Results JS input -->
+        <!-- Chord Diagrams -->
+        <div class="container">
+            <h6><u>How do I play these chords?</u></h6>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <label class="col-sm-4" for="chord-selector">Pick your chord</label>
+                <input class="col-sm-4" name="chord-selector"></input>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+        <!-- Instrument Selector -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 mx-auto">
+                    <button class="btn btn-md btn-primary">Show Guitar</button>
+                </div>
+                <div class="col-sm-6 mx-auto">
+                    <button class="btn btn-md btn-primary">Show Piano</button>
+                </div>
+            </div>
+        </div>
+        <!-- Chord-Scales API call results -->
+    </section>
+    <!-- Lyrics Search section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <button class="btn btn-lg btn-primary">
+                        <i class="fa fa-gavel fa-5x"></i>
+                        <h6 class="text-center">Back</h6>
+                    </button>
+                </div>
+                <div class="col-sm-3">
+                    <h6><u>Lyrics</u></h6>
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </section>
     <!-- footer -->
     <footer class="container-fluid">
-        <hr>
         <div class="row">
             <div class="col-3 text-left text-muted">Lornæ 2020© </div>
             <div class="col-3 mx-auto footer-favicon"></div>
