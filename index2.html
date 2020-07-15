@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="newstyle.css">
+    <!-- EmailJs -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <title>WUB</title>
 </head>
 
@@ -66,9 +68,8 @@
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6 mx-auto text-center">
                     <label for="contact-form-textarea">Type away...</label>
-                    <textarea id="contact-form-textarea"
-                        placeholder="Tell me what you want to see on the site"></textarea>
-                    <button type="submit">Submit</button>
+                    <textarea id="feature-request" placeholder="Tell me what you want to see on the site"></textarea>
+                    <button id="contact-form-submit" type="submit">Submit</button>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
@@ -221,10 +222,11 @@
             <div class="col-3 text-right text-muted">For educational purposes only</div>
         </div>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- WUB JS -->
     <script src="newmainjs.js"></script>
 </body>
 

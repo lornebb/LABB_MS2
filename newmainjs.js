@@ -17,3 +17,24 @@ $(document).ready(function () {
         $('#lyric-section').hide();
     });
 });
+
+// emailJS
+$('#contact-form-submit').on('click', sendMail)
+
+function sendMail(contactForm) {
+    console.log("EmailJS - calling");
+    emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
+    let templateParams = $('#feature-request').value
+    emailjs.send("lorneashley_gmail_com", "wub", templateParams)
+        .then(
+            function (response) {
+                console.log("SUCCESS - called", response);
+                console.log("SUCCESS", response.status, response.text);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            }
+        );
+    return false;
+}
+
