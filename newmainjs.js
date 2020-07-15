@@ -18,12 +18,13 @@ $(document).ready(function () {
     });
     $("#lyric-search-results").hide();
     $("#lyric-search-loading").hide();
+    $("#contact-form-confirmation").hide();
 });
 
 // emailJS API
 $('#contact-form-submit').on('click', sendMail)
 
-function sendMail(contactForm) {
+function sendMail() {
     console.log("EmailJS - calling");
     emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
     let templateParams = {
@@ -33,6 +34,7 @@ function sendMail(contactForm) {
         .then(
             function (response) {
                 console.log("SUCCESS - called, sent", response, response.status, response.text);
+                $("#contact-form-confirmation").show()
             },
             function (error) {
                 console.log("FAILED", error);
@@ -72,9 +74,6 @@ function searchLyrics(searchValue) {
                 console.log(err)
             }))
 };
-
-// $(selector).attr(attributeName, value);
-
 
 // $('#lyric-search-form').submit(function (e) {
 //     e.preventDefault();
