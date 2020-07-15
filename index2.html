@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="newstyle.css">
-    <!-- EmailJs -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <title>WUB</title>
 </head>
 
@@ -69,7 +67,9 @@
                 <div class="col-sm-6 mx-auto text-center">
                     <label for="contact-form-textarea">Type away...</label>
                     <textarea id="feature-request" placeholder="Tell me what you want to see on the site"></textarea>
-                    <button id="contact-form-submit" type="submit">Submit</button>
+                    <button id="contact-form-submit" class="g-recaptcha"
+                        data-sitekey="6LcYh7AZAAAAAAW7m0Rj_lSXzeSDghU9qzBdQb4p" data-callback='onSubmitCaptcha'
+                        type="submit">Submit</button>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
@@ -219,7 +219,8 @@
                 <div class="row">
                     <div class="col-sm-2"></div>
                     <h6 class="col-sm-4">Check it out:</h6>
-                    <a id="lyric-search-link" class="col-sm-4 btn btn-primary" href="" target="_blank" role="button">Check it out</a>
+                    <a id="lyric-search-link" class="col-sm-4 btn btn-primary" href="" target="_blank"
+                        role="button">Check it out</a>
                     <div class="col-sm-2"></div>
                 </div>
             </div>
@@ -236,6 +237,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- google recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- EmailJs -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <!-- WUB JS -->
     <script src="newmainjs.js"></script>
 </body>

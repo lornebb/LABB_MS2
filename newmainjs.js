@@ -75,9 +75,7 @@ function searchLyrics(searchValue) {
             }))
 };
 
-// $('#lyric-search-form').submit(function (e) {
-//     e.preventDefault();
-//     $("#search-loading").toggle();
-//     let searchValue = $('#lyric-search-box').val()
-//     searchLyrics(searchValue);
-// });
+// captcha
+function onSubmitCaptcha(token) {
+    document.getElementById("contact-form-submit").submit();
+};
