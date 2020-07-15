@@ -24,12 +24,11 @@ $('#contact-form-submit').on('click', sendMail)
 function sendMail(contactForm) {
     console.log("EmailJS - calling");
     emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
-    let templateParams = $('#feature-request').value
+    let templateParams = {"feature_request": $('#feature-request').val()}
     emailjs.send("lorneashley_gmail_com", "wub", templateParams)
         .then(
             function (response) {
-                console.log("SUCCESS - called", response);
-                console.log("SUCCESS", response.status, response.text);
+                console.log("SUCCESS - called, sent", response, response.status, response.text);
             },
             function (error) {
                 console.log("FAILED", error);
