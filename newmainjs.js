@@ -75,7 +75,8 @@ function searchLyrics(searchValue) {
             }))
 };
 
-// captcha
-function onSubmitCaptcha(token) {
-    document.getElementById("contact-form-submit").submit();
-};
+// reCAPTCHA
+// function onSubmitCaptcha(token) {
+//     document.getElementById("contact-form-submit").submit();
+// };
+
