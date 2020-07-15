@@ -13,3 +13,6 @@ body {
     content: url(assets/imgs/lornae_favicon.png);
 }
 
+#lyric-search-loading {
+    content: url(assets/imgs/loader-pac-man.gif);
+}
