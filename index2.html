@@ -100,33 +100,72 @@
             <div class="row">
                 <div class="col-3"></div>
                 <div class="col-6">
-                    <button class="btn btn-lg btn-primary text-wrap">I Need Chords</button>
+                    <div class="btn btn-lg btn-primary text-wrap">I Need Chords</div>
                 </div>
                 <div class="col-3"></div>
             </div>
             <div class="row">
-                <div class="col-sm-2"></div>
                 <label class="col-sm-4" for="chord-input">How many chords?</label>
-                <input class="col-sm-4" name="chord-input" type="number" step="1" min="1" max="5"></input>
-                <div class="col-sm-2"></div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio1" value="1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio2" value="2" checked>
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">3</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio4" value="4">
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio5" value="5">
+                    <label class="form-check-label" for="inlineRadio5">5</label>
+                </div>
             </div>
             <div class="row">
-                <div class="col-sm-2"></div>
-                <label class="col-sm-4" for="progression-input">How many progressions?</label>
-                <input class="col-sm-4" name="progression-input" type="number" step="1" min="1" max="5"></input>
-                <div class="col-sm-2"></div>
+                <label class="col-sm-5" for="progression-input">How many progressions?</label>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio1"
+                        value="1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio2"
+                        value="2" checked>
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio3"
+                        value="3">
+                    <label class="form-check-label" for="inlineRadio3">3</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio4"
+                        value="4">
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio5"
+                        value="5">
+                    <label class="form-check-label" for="inlineRadio5">5</label>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6 text-center">
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="generateButtonRandomChP">Generate</button>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
         </div>
         <!-- Chord Results JS input -->
         <div class="container">
-            <div class="row">
+            <div class="row" id="generate-random-ChP">
                 <div class="col-sm-2"></div>
                 <div> Chord Progression results</div>
                 <div class="col-sm-2"></div>

@@ -47,57 +47,57 @@ function randomChoice(myArray) {
 // Cache DOM access.
 
 $(document).ready(() => {
-let noChords = document.getElementById("noChords");
-let noProgressions = document.getElementById("noProgressions");
-let generateButtonRandomCP = document.getElementById("generateRandomCP");
+    let noChords = document.getElementById("noChords");
+    let noProgressions = document.getElementById("noProgressions");
+    let generateButtonRandomCP = document.getElementById("generateRandomCP");
 
-function chordGenerator(chNum) {
-    let replaceObj = {
-        'Ebdim': 'D#dim',
-        'Abdim': 'G#dim',
-        'Bbdim': 'A#dim'
-    };
-    let chRoot = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-    let chQuality = ['', 'm', 'dim', '+'];
-    let chProg = '';
-    for (let i = 0; i < chNum; i++) {
-        let randRoot = randomChoice(chRoot);
-        let randQuality = randomChoice(chQuality);
-        let chord = randRoot + randQuality;
-        if (chord in replaceObj) {
-            chord = replaceObj[chord];
+    function chordGenerator(chNum) {
+        let replaceObj = {
+            'Ebdim': 'D#dim',
+            'Abdim': 'G#dim',
+            'Bbdim': 'A#dim'
+        };
+        let chRoot = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+        let chQuality = ['', 'm', 'dim', '+'];
+        let chProg = '';
+        for (let i = 0; i < chNum; i++) {
+            let randRoot = randomChoice(chRoot);
+            let randQuality = randomChoice(chQuality);
+            let chord = randRoot + randQuality;
+            if (chord in replaceObj) {
+                chord = replaceObj[chord];
+            }
+            chProg += chord + ((i < chNum - 1) ? " | " : "");
         }
-        chProg += chord + ((i < chNum - 1) ? " | " : "");
+        return chProg;
     }
-    return chProg;
-}
 
-function randomChords() {
-    let chNum = Number(noChords.value);
-    let progNum = Number(noProgressions.value);
-    if (chNum < 1) {
-        chNum = 1;
+    function randomChords() {
+        let chNum = Number(noChords.value);
+        let progNum = Number(noProgressions.value);
+        if (chNum < 1) {
+            chNum = 1;
+        }
+        if (chNum > 16) {
+            chNum = 16;
+        }
+        if (progNum < 1) {
+            progNum = 5;
+        }
+        if (progNum > 50) {
+            progNum = 50;
+        }
+        let titleOutput = `${progNum} Random Progressions of ${chNum} Chords`;
+        let output = "";
+        for (let i = 1; i <= progNum; i++) {
+            output += `${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0");
+            output += `${chordGenerator(chNum)}<br>`;
+        }
+        document.getElementById("titleRandomCP").innerHTML = titleOutput;
+        document.getElementById("functionRandomCP").innerHTML = output;
     }
-    if (chNum > 16) {
-        chNum = 16;
-    }
-    if (progNum < 1) {
-        progNum = 5;
-    }
-    if (progNum > 50) {
-        progNum = 50;
-    }
-    let titleOutput = `${progNum} Random Progressions of ${chNum} Chords`;
-    let output = "";
-    for (let i = 1; i <= progNum; i++) {
-        output += `${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0");
-        output += `${chordGenerator(chNum)}<br>`;
-    }
-    document.getElementById("titleRandomCP").innerHTML = titleOutput;
-    document.getElementById("functionRandomCP").innerHTML = output;
-}
 
-generateButtonRandomCP.addEventListener("click", randomChords);
+    generateButtonRandomCP.addEventListener("click", randomChords);
 });
 
 // Chord Chart generator
