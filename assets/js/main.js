@@ -6,26 +6,30 @@ $(document).ready(function () {
 
     chordSection.hide();
     lyricSection.hide();
+    // When Chord Section button is selected, it hides the other section elements
     $('#chords-section-button').on('click', function () {
         homeSection.hide();
         chordSection.show();
     });
+    // When Lyric Section button is selected, it hides the other section elements
     $('#lyric-section-button').on('click', function () {
         lyricSection.show();
         homeSection.hide();
         chordSection.hide();
     });
+    // When Back button is selected, it hides the other section elements
     $('.back').on('click', function () {
         homeSection.show();
         chordSection.hide();
         lyricSection.hide();
     });
+    // when DOM is loaded, only the Home section shows
     $("#lyric-search-results").hide();
     $("#lyric-search-loading").hide();
     $("#contact-form-confirmation").hide();
 });
 
-// emailJS API
+// emailJS API - when submit is sent, EmailJS API is used to contact developer
 $('#contact-form-submit').on('click', sendMail)
 
 function sendMail() {
@@ -48,7 +52,8 @@ function sendMail() {
 }
 
 // Chord Generator - modified from Scraggos Music Tools - reference in README.
-
+// A random chord and quality is created with chordGenerator() and to make sure 
+// no b / flats are used, the replaceObj function transposes them.
 function chordGenerator(chNum) {
     let replaceObj = {
         'Ebdim': 'D#dim',
@@ -69,7 +74,9 @@ function chordGenerator(chNum) {
     }
     return chProg;
 }
-
+// randomChords() takes the users amount selection from the dropdown, and returns 
+// a div template literal containing what the user selected and the generation
+// of those chords.
 function randomChords() {
     let noChords = $("#chord-amount-selector");
     let chNum = Number(noChords.val());
@@ -96,7 +103,7 @@ function randomChords() {
     $("#titleRandomCP").append(titleOutput);
     $("#functionRandomCP").append(output);
 }
-
+// randomChoice() cycles through the array using JS Math function.
 function randomChoice(myArray) {
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
@@ -118,7 +125,7 @@ $("#generate-random-ChP").on("click", randomChords);
 
 
 // Lyric Search - Shazam API
-
+// When user submits lyrics, Shazam API is called.
 $("#lyric-form-submit").on('click', searchLyrics);
 
 function searchLyrics(searchValue) {
