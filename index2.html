@@ -97,78 +97,44 @@
         </div>
         <!-- Chord Input -->
         <div class="container">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <div class="btn btn-lg btn-primary text-wrap">I Need Chords</div>
+            <div class="input-group mb-3 row">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="chord-amount-selector">Chords?</label>
                 </div>
-                <div class="col-3"></div>
+                <select class="custom-select" id="chord-amount-selector">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
             </div>
-            <div class="row">
-                <label class="col-sm-4" for="chord-input">How many chords?</label>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio1" value="1">
-                    <label class="form-check-label" for="inlineRadio1">1</label>
+            <div class="input-group mb-3 row">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="progression-amount-selector">Progressions?</label>
                 </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio2" value="2" checked>
-                    <label class="form-check-label" for="inlineRadio2">2</label>
-                </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio3" value="3">
-                    <label class="form-check-label" for="inlineRadio3">3</label>
-                </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio4" value="4">
-                    <label class="form-check-label" for="inlineRadio4">4</label>
-                </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-chords" type="radio" name="noofchords" id="inlineRadio5" value="5">
-                    <label class="form-check-label" for="inlineRadio5">5</label>
-                </div>
-            </div>
-            <div class="row">
-                <label class="col-sm-5" for="progression-input">How many progressions?</label>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio1"
-                        value="1">
-                    <label class="form-check-label" for="inlineRadio1">1</label>
-                </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio2"
-                        value="2" checked>
-                    <label class="form-check-label" for="inlineRadio2">2</label>
-                </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio3"
-                        value="3">
-                    <label class="form-check-label" for="inlineRadio3">3</label>
-                </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio4"
-                        value="4">
-                    <label class="form-check-label" for="inlineRadio4">4</label>
-                </div>
-                <div class="form-check form-check-inline col">
-                    <input class="no-of-progressions" type="radio" name="no-of-progressions" id="inlineRadio5"
-                        value="5">
-                    <label class="form-check-label" for="inlineRadio5">5</label>
-                </div>
+                <select class="custom-select" id="progression-amount-selector">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
             </div>
             <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6 text-center">
-                    <button type="submit" class="generateButtonRandomChP">Generate</button>
+                    <button type="submit" id="generate-random-ChP">Generate</button>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
         </div>
         <!-- Chord Results JS input -->
         <div class="container">
-            <div class="row" id="generate-random-ChP">
-                <div class="col-sm-2"></div>
-                <div> Chord Progression results</div>
-                <div class="col-sm-2"></div>
+            <div class="row">
+                <div> Chord Progressions Generated </div>
+            </div>
+            <div class="row">
+                <h3 id="titleRandomCP" class="other-font"></h3>
+                <p id="functionRandomCP" class="other-font"></p>
             </div>
         </div>
         <!-- Chord Diagrams -->
@@ -265,11 +231,11 @@
             </div>
     </section>
     <!-- footer -->
-    <footer class="container-fluid">
+    <footer class="container-fluid footer-small">
         <div class="row">
             <div class="col-3 text-left text-muted">Lornæ 2020© </div>
             <div class="col-3 mx-auto footer-favicon"></div>
-            <div class="col-3 text-right text-muted">For educational purposes only</div>
+            <div class="col-3 text-wrap text-right text-muted ">For educational purposes only</div>
         </div>
     </footer>
 

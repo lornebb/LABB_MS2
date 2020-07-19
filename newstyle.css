@@ -16,3 +16,7 @@ body {
 #lyric-search-loading {
     content: url(assets/imgs/loader-pac-man.gif);
 }
+
+.footer-small {
+    font-size: 0.4rem;
+}
