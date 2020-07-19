@@ -102,8 +102,7 @@
                     <label class="input-group-text" for="chord-amount-selector">Chords?</label>
                 </div>
                 <select class="custom-select" id="chord-amount-selector">
-                    <option selected>0</option>
-                    <option value="1">1</option>
+                    <option value="1" selected>1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
@@ -113,8 +112,7 @@
                     <label class="input-group-text" for="progression-amount-selector">Progressions?</label>
                 </div>
                 <select class="custom-select" id="progression-amount-selector">
-                    <option selected>0</option>
-                    <option value="1">1</option>
+                    <option value="1" selected>1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
@@ -130,11 +128,13 @@
         <!-- Chord Results JS input -->
         <div class="container">
             <div class="row">
-                <div> Chord Progressions Generated </div>
+                <div class="col"> Chord Progressions Generated </div>
             </div>
             <div class="row">
-                <h3 id="titleRandomCP" class="other-font"></h3>
-                <p id="functionRandomCP" class="other-font"></p>
+                <h3 id="titleRandomCP" class="col"></h3>
+            </div>
+            <div class="row">
+                <p id="functionRandomCP" class="col"></p>
             </div>
         </div>
         <!-- Chord Diagrams -->

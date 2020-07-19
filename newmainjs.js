@@ -46,8 +46,8 @@ function sendMail() {
 // Chord Generator
 // only one doc.ready script in the whole document? - ask simen.
 
-let noChords = $("#chord-amount-selector")
-let noProgressions = $("#progression-amount-selector")
+let noChords = $( "#chord-amount-selector" ).val();
+let noProgressions = $("#progression-amount-selector").val();
 let generateButtonRandomChP = $("#generate-random-ChP");
 
 function chordGenerator(chNum) {
@@ -72,9 +72,7 @@ function chordGenerator(chNum) {
 }
 
 function randomChords() {
-    console.log(noChords.value)
-    let chNum = Number(noChords.value);
-    console.log("2nd call" + noChords.value)
+    let chNum = Number(noChords);
     let progNum = Number(noProgressions.value);
     if (chNum < 1) {
         chNum = 1;
