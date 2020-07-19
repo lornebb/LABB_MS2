@@ -46,7 +46,7 @@ function sendMail() {
 // Chord Generator
 // only one doc.ready script in the whole document? - ask simen.
 
-let noChords = $( "#chord-amount-selector" ).val();
+let noChords = $("#chord-amount-selector").val();
 let noProgressions = $("#progression-amount-selector").val();
 let generateButtonRandomChP = $("#generate-random-ChP");
 
@@ -73,7 +73,7 @@ function chordGenerator(chNum) {
 
 function randomChords() {
     let chNum = Number(noChords);
-    let progNum = Number(noProgressions.value);
+    let progNum = Number(noProgressions);
     if (chNum < 1) {
         chNum = 1;
     }
@@ -86,14 +86,18 @@ function randomChords() {
     if (progNum > 50) {
         progNum = 50;
     }
-    let titleOutput = `${progNum} Random Progressions of ${chNum} Chords`;
+    let titleOutput = `<div> ${progNum} Random Progressions of ${chNum} Chords </div>`;
     let output = "";
     for (let i = 1; i <= progNum; i++) {
         output += `${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0");
         output += `${chordGenerator(chNum)}<br>`;
     }
-    $("#titleRandomCP").innerHTML = titleOutput;
-    $("#functionRandomCP").innerHTML = output;
+    $("#titleRandomCP").append(titleOutput);
+    $("#functionRandomCP").append(output);
+}
+
+function randomChoice(myArray) {
+    return myArray[Math.floor(Math.random() * myArray.length)];
 }
 
 generateButtonRandomChP.on("click", randomChords);
