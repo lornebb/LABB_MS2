@@ -6,15 +6,15 @@ body {
 }
 
 .about-image {
-    content: url(assets/imgs/guitar-pad.jpg);
+    content: url(../imgs/guitar-pad.jpg);
 }
 
 .footer-favicon {
-    content: url(assets/imgs/lornae_favicon.png);
+    content: url(../imgs/lornae_favicon.png);
 }
 
 #lyric-search-loading {
-    content: url(assets/imgs/loader-pac-man.gif);
+    content: url(../imgs/loader-pac-man.gif);
 }
 
 .footer-small {
