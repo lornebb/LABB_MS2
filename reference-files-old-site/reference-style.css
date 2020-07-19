@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+/* ALL */
+
+#primary-green {
+    color: #87BBA2;
+}
+
+#background-yellow {
+    color: #FFF07C;
+}
+
+#teriary-pearl {
+    color: #F0F7EE;
+}
+
+#grey {
+    color: #5D737E;
+}
+
+#black {
+    color: #000000;
+}
+
+body {
+    font-family: "Press Start 2p", serif;
+    scroll-behavior: smooth;
+}
+
+.bg-yellow {
+    background-color: #FFF07C;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-size: 0.6rem;
+    padding: 0;
+}
+
+.add-font {
+    font-family: "Press Start 2p", serif;
+}
+
+.small-text {
+    font-size: 0.7rem;
+}
+
+.medium-text {
+    font-size: 0.9rem;
+}
+
+.other-font {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Nav */
+
+.navbar {
+    background-color: #f0f7ee;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.5rem;
+}
+
+.nav-seperator hr {
+    color: #5D737E;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar-toggler {
+    color: #5D737E;
+}
+
+#back-arrow {
+    max-width: 1rem;
+}
+
+/* HEADER HIDE */
+
+#home-section {
+    display: block;
+}
+
+#lyric-section {
+    display: none;
+}
+
+#chords-and-melody-section {
+    display: none;
+}
+
+#writing-section {
+    display: none;
+}
+
+/* Home Sections */
+
+.container-fluid {
+    padding-bottom: 30px;
+}
+
+.btn-sq-lg {
+    width: 150px !important;
+    height: 150px !important;
+    background-color: #F0F7EE !important;
+    border-radius: 9% !important;
+    margin: 2em;
+}
+
+header {
+    padding: 90px 0 0px;
+}
+
+.big-main-btns {
+    place-content: center;
+}
+
+img {
+    overflow: hidden;
+}
+
+.search-type {
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.9rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: inherit;
+}
+
+#services h4 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#services p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.about-bg {
+    background-color: #87BBA2;
+}
+
+section h6 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.about-image {
+    margin: auto;    
+    display: block;
+    content: url(../imgs/writing-tools-img.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Generation page nav */
+
+.top-page-header {
+    color: #5D737E;
+    font-size: 1rem;
+    place-content: center;
+}
+
+.top-page-header div h6 {
+    padding: 1em;
+    margin: 0px;
+}
+
+.header-text {
+    padding: 0px;
+    padding-top: 02vh;
+}
+
+.btn-sq-md {
+    background-color: #F0F7EE !important;
+}
+
+#chord-results-box {
+    font-family: 'Source Code Pro', monospace;
+    border: 1px dotted grey;
+}
+
+.sounds-like-piano {
+    background-color: #87BBA2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+
+.sounds-like-guitar {
+    background-color: #87BBA2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+
+.gtr-hide {
+    display: none;
+}
+
+.piano-hide {
+    display: none;
+}
+
+.chord-sound-gtr {
+    display: none;
+}
+
+.chord-sound-piano {
+    display: none;
+}
+
+/* Search buttons */
+
+.btn-sq-sm {
+    width: 150px !important;
+    height: 75px !important;
+    background-color: #F0F7EE !important;
+    border-radius: 9% !important;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 14px;
+}
+
+.results-box {
+    background-color: ivory;
+    background-size: inherit;
+    border: lightslategray;
+}
+
+/* Lyric Search Section */
+
+#lyric-search-results-form {
+    margin: auto;
+    font-size: 0.8rem;
+}
+
+#lyric-search-results-form * {
+    display: block;
+}
+
+#lyric-search-results-form label {
+    padding-top: 10px;
+    margin: 0;
+}
+
+#something-went-wrong-box-hide {
+    display: none;
+}
+
+#results-below-box-show {
+    display: none;
+}
+
+#lyric-search-form {
+    margin: auto;
+}
+
+#search-results-section {
+    display: none;
+}
+
+#search-loading {
+    display: none;
+    content: url(/assets/imgs/loader-pac-man.gif);
+}
+
+/* Footer */
+
+.footer-row {    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-seperator {
+    color: #5D737E;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-style {
+    margin: auto;
+    padding: 0.5rem;
+    background-color: #f0f7ee;
+    color: #5D737E;
+}
+
+.footer-style h6 {
+    font-size: 0.7rem;
+}
+
+.footer-img {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    height: 15%;
+    overflow: hidden;
+    border-radius: 50%;
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="W.U.B Writers UnBlock" content="A website for instant inspiration generation!" />
+    <link rel="shortcut icon" href="./assets/favicon/lornae_favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <!-- Scale - Chords API - for gtr & piano chord diagram generator -->
+    <script async src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
+    <!-- google recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>W.U.B - Writers UnBlocker</title>
+</head>
+
+<body id="page-top" class="bg-yellow">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand mx-auto allign-bottom" href="index.html">W.U.B</a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="">Chords</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lyrics</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="nav-seperator">
+            <hr />
+        </div>
+    </nav>
+    <!-- Home / index -->
+    <section id="home-section">
+        <header>
+            <div class="container text-center">
+                <h6>I need help with ...</h6>
+            </div>
+        </header>
+        <!--Main section links-->
+        <div class="container-fluid">
+            <div class="row big-main-btns">
+                <a href="#" aria-label="chords and section button" id="chords-and-melody-section-btn"
+                    class="btn btn-sq-lg col-lg-4 ">
+                    <i class="fa fa-music fa-5x"></i>
+                    Chords
+                </a>
+                <a href="#" aria-label="lyric search section button" id="lyric-search-btn" class="btn btn-sq-md btn btn-sq-lg col-lg-4">
+                    <i class="fa fa-gavel fa-5x"></i>Lyrics
+                </a>
+            </div>
+        </div>
+        <!-- About section -->
+        <section id="services" class="about-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4><u>What is Writer's Block</u></h4>
+                        <p>
+                            Definition: The condition of being unable to think of what to write or how to proceed with
+                            writing.</p>
+                        <p>
+                            Solution: <i>Writers unblock</i> will give you a nudge in the right direction by creating
+                            content for you to jump off and get your engine revved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 about-image mx-auto .d-sm-none .d-md-block">
+                        <!-- <img src="assets/imgs/writing-tools-img.jpg" alt="Typewtrier and other writing tools"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact form -->
+        <section class="container-fluid ">
+            <div>
+                <h6 class="contact-heading uppercase text-center">Got any features you want to see?</h6>
+            </div>
+            <div class="row">
+                <div class="mx-auto">
+                    <form onsubmit="return sendMail(this);">
+                        <textarea rows="3" name="feature_request" class="form-control" id="feature_request"
+                            placeholder="Tell me what you want to see on the site..." required></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LcYh7AZAAAAAAW7m0Rj_lSXzeSDghU9qzBdQb4p"></div>
+                        <br />
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Chords Section -->
+    <section id="chords-and-melody-section">
+        <header>
+            <div class="container-fluid">
+                <div class="row top-page-header">
+                    <div class="col-4">
+                        <a href="./index.html" aria-label="back home button" id="chords-and-melody-search-btn"
+                            class="btn btn-sq-md small-text">
+                            <i class="fa fa-music fa-5x"></i>
+                            Back
+                        </a>
+                    </div>
+                    <div class="col-8 header-text">
+                        <h6> Chords </h6>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- I NEED CHORDS -->
+        <div class="container">
+            <div class="row">
+                <button class="btn btn-sq-sm mx-auto" id="generateRandomCP">
+                    I Need Chords
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <form class="text-center">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <label for="noChords" class="add-font medium-text col"> How many chords: </label>
+                    <input type="number" value="3" min="1" max="5" step="1" id="noChords"><br>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <label for="noProgressions" class="add-font medium-text col">How many times? </label>
+                    <input type="number" value="3" min="1" max="7" step="1" id="noProgressions"><br>
+                    <div class="col-3"></div>
+                </div>
+            </form>
+            <!-- results -->
+            <div id="chord-results-box">
+                <h2 id="titleRandomCP" class="other-font"></h2>
+                <p id="functionRandomCP" class="other-font"></p>
+            </div>
+        </div>
+        <div class="nav-seperator">
+            <hr />
+        </div>
+        <!-- Chord help gtr and piano section -->
+        <div class="container-fluid">
+            <div class="container mx-auto">
+                <h6 class="add-font medium-text underline">
+                    How do I play these chords?
+                </h6>
+            </div>
+            <form>
+                <div class="row">
+                    <select id="chord-dropdown" class="add-font medium-text col-6 mx-auto">
+                        <option value="">-</option>
+                        <option value="A">A</option>
+                        <option value="Am">Am</option>
+                        <option value="A#">A#</option>
+                        <option value="A#m">A#m</option>
+                        <option value="B">B</option>
+                        <option value="Bm">Bm</option>
+                        <option value="C">C</option>
+                        <option value="Cm">Cm</option>
+                        <option value="C#">C#</option>
+                        <option value="C#m">C#m</option>
+                        <option value="D">D</option>
+                        <option value="Dm">Dm</option>
+                        <option value="D#">D#</option>
+                        <option value="D#m">D#m</option>
+                        <option value="E">E</option>
+                        <option value="Em">Em</option>
+                        <option value="F">F</option>
+                        <option value="Fm">Fm</option>
+                        <option value="F#">F#</option>
+                        <option value="F#m">F#m</option>
+                        <option value="G">G</option>
+                        <option value="Gm">Gm</option>
+                        <option value="G#">G#</option>
+                        <option value="G#m">G#m</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="row add-font small-text">
+                <div class="col-6">
+                    <label for="gtr-button"> Lets see Guitar </label>
+                    <input class="col-6" type="button" id="gtr-button" value="guitar" name="piano-or-gtr">
+                </div>
+                <div class="col-6">
+                    <label for="piano-button"> Lets see Piano </label>
+                    <input class="col-6" type="button" id="piano-button" value="piano" name="piano-or-gtr">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="chord-image row">
+                <!-- guitar -->
+                <div class="col-12 gtr-hide" id="gtr-insert">
+                </div>
+                <!-- piano -->
+                <div class="col-12 piano-hide" id="piano-insert">
+                </div>
+            </div>
+            <div class="chord-sound-gtr container">
+                <h6 class="add-font medium-text">It should sound like this:</h6>
+                <button class="sounds-like-guitar">
+                    <span>Guitar</span>
+                    <span id="gtr-sound-insert"></span>
+                </button>
+            </div>
+            <div class="chord-sound-piano container">
+                <h6 class="add-font medium-text">It should sound like this:</h6>
+                <button class="sounds-like-piano">
+                    <span>Piano</span>
+                    <span id="piano-sound-insert"></span>
+                </button>
+            </div>
+            <div class="nav-seperator">
+                <hr />
+            </div>
+        </div>
+    </section>
+    <!-- Lyrics Section -->
+    <section id="lyric-section">
+        <header>
+            <div class="container-fluid">
+                <div class="row top-page-header">
+                    <div class="col-4">
+                        <a href="./index.html" aria-label="lyric search button" class="btn btn-sq-md small-text">
+                            <i class="fa fa-gavel fa-5x"></i>
+                            Back
+                        </a>
+                    </div>
+                    <div class="col-8 header-text">
+                        <h6>Lyrics</h6>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Search button -->
+        <div class="container">
+            <div class="row">
+                <button class="btn btn-sq-sm mx-auto">
+                    Did I Write This?
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="search-type col-10">
+                    <p> Do your lyrics sound familiar?</p>
+                    <p> Ringing faint bells?</p>
+                    <p> See if you actually wrote it
+                        or not...</p>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row add-font medium-text">
+                <form id="lyric-search-form">
+                    <input type="text" placeholder="type lyrics here" id="lyric-search-box">
+                    <br>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <input id="lyric-submit" type="submit" class="col-10">
+                        <div class="col-1"></div>
+                    </div>
+                </form>
+                <div id="something-went-wrong-box-hide">Sorry, something went wrong. Give the page a refresh and try
+                    again.</div>
+                <div id="results-below-box-show" class="mx-auto">Check out your results below</div>
+            </div>
+        </div>
+        <div class="nav-seperator">
+            <hr />
+        </div>
+        <!--Lyric search results-->
+        <div class="container">
+            <div id="search-loading" class="mx-auto">
+                Loading...
+            </div>
+        </div>
+        <div class="container" id="search-results-section">
+            <div class="row">
+                <form id="lyric-search-results-form">
+                    <h5 class="title mx-auto">Results</h5>
+                    <h6 class="subtitle">a.k.a you probably stole this from...</h6>
+                    <label for="artist-res">Artist</label>
+                    <input type="text" id="artist-result" name="artist-res" value="Artist Result">
+                    <label for="track-res">Track</label>
+                    <input type="text" id="track-result" name="track-res" value="Track Name Result">
+                    <label for="link-res">Double Check</label>
+                    <div class="put-result-link-here"></div>
+                </form>
+            </div>
+        </div>
+        <div class="nav-seperator">
+            <hr />
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer-style container-fluid footer mt-auto py-3">
+        <div class="footer-seperator">
+            <hr />
+        </div>
+        <div class="footer-row">
+            <h6 class="text-left">2020© <br> LABB</h6>
+
+            <img class="footer-img mx-auto" src="assets/imgs/lornae_favicon.png" alt="lornae brand logo favicon">
+
+            <h6 class="text-right">For edu <br> purposes <br> only </h6>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
