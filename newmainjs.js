@@ -1,20 +1,24 @@
 // section toggles and doc.ready generator scripts
 $(document).ready(function () {
-    $('#chord-section').hide();
-    $('#lyric-section').hide();
+    const chordSection = $('#chord-section');
+    const lyricSection = $('#lyric-section');
+    const homeSection = $('#home-section');
+
+    chordSection.hide();
+    lyricSection.hide();
     $('#chords-section-button').on('click', function () {
-        $('#home-section').hide();
-        $('#chord-section').show();
+        homeSection.hide();
+        chordSection.show();
     });
     $('#lyric-section-button').on('click', function () {
-        $('#lyric-section').show();
-        $('#home-section').hide();
-        $('#chord-section').hide();
+        lyricSection.show();
+        homeSection.hide();
+        chordSection.hide();
     });
     $('.back').on('click', function () {
-        $('#home-section').show();
-        $('#chord-section').hide();
-        $('#lyric-section').hide();
+        homeSection.show();
+        chordSection.hide();
+        lyricSection.hide();
     });
     $("#lyric-search-results").hide();
     $("#lyric-search-loading").hide();
@@ -43,8 +47,7 @@ function sendMail() {
     return false;
 }
 
-// Chord Generator
-// only one doc.ready script in the whole document? - ask simen.
+// Chord Generator - modified from Scroggos Music Tools - reference in README.
 
 function chordGenerator(chNum) {
     let replaceObj = {
@@ -99,6 +102,8 @@ function randomChoice(myArray) {
 }
 
 $("#generate-random-ChP").on("click", randomChords);
+
+// Chord Chart Diagram - modified Scales-Chords.api - reference in README.
 
 
 
