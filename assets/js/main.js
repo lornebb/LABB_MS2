@@ -76,8 +76,10 @@ function chordGenerator(chNum) {
 }
 // randomChords() takes the users amount selection from the dropdown, and returns 
 // a div template literal containing what the user selected and the generation
-// of those chords.
+// of those chords, clearing it on every refresh.
 function randomChords() {
+    $("#titleRandomCP").html("");
+    $("#functionRandomCP").html("");
     let noChords = $("#chord-amount-selector");
     let chNum = Number(noChords.val());
     let noProgressions = $("#progression-amount-selector");
