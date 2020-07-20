@@ -21,11 +21,11 @@ body {
 
 .about-image {
     content: url(../imgs/guitar-pad.jpg);
+    max-width: 80%;
 }
 
 .footer-favicon {
     content: url(../imgs/lornae-favicon.png);
-    max-width: 10%;
 }
 
 #lyric-search-loading {

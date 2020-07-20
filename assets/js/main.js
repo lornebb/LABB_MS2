@@ -3,6 +3,7 @@ $(document).ready(function () {
     const chordSection = $('#chord-section');
     const lyricSection = $('#lyric-section');
     const homeSection = $('#home-section');
+    const howToPlay = $('#how-to-play-section');
 
     chordSection.hide();
     lyricSection.hide();
@@ -10,6 +11,7 @@ $(document).ready(function () {
     $('#chords-section-button').on('click', function () {
         homeSection.hide();
         chordSection.show();
+        howToPlay.hide();
     });
     // When Lyric Section button is selected, it hides the other section elements
     $('#lyric-section-button').on('click', function () {
