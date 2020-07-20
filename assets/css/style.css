@@ -10,7 +10,8 @@ body {
 }
 
 .footer-favicon {
-    content: url(../imgs/lornae_favicon.png);
+    content: url(../imgs/lornae-favicon.png);
+    max-width: 10%;
 }
 
 #lyric-search-loading {
