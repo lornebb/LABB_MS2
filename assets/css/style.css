@@ -3,6 +3,20 @@
 body {
     font-family: "Press Start 2P";
     font-size: 0.9rem;
+    background-color: #e6d69c;
+}
+
+.btn {
+    background-color: #b4a56a;
+    color: #393829;
+}
+
+.btn:hover {
+    background-color: #7b7162;
+}
+
+.btn::selection {
+    background-color: #393829;
 }
 
 .about-image {
