@@ -158,7 +158,7 @@ function searchLyrics(searchValue) {
             }));
 }
 
-// reCAPTCHA
-// function onSubmitCaptcha(token) {
-//     document.getElementById("contact-form-submit").submit();
-// };
+reCAPTCHA
+function onSubmitCaptcha(token) {
+    document.getElementById("contact-form-submit").submit();
+};
