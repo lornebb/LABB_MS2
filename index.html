@@ -134,12 +134,12 @@
             </div>
         </div>
         <!-- Chord Results JS input -->
-        <div class="container">
+        <div class="container" id="chord-gen-box">
             <div class="row">
-                <div id="titleRandomCP" class="col p-3 text-center"></div>
+                <div id="titleRandomCP" class="col-10 mx-auto p-2 text-center results-box"></div>
             </div>
             <div class="row">
-                <p id="functionRandomCP" class="col"></p>
+                <div id="functionRandomCP" class="col-10 mx-auto results-box"></div>
             </div>
         </div>
         <!-- Chord Diagrams -->
@@ -189,9 +189,9 @@
             <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8 text-center">
-                    <p> Do your lyrics sound familiar?</p>
-                    <p> Ringing faint bells? </p>
-                    <p> See if you actually wrote it or not? </p>
+                    <div class="p-1"> Do your lyrics sound familiar?</div>
+                    <div class="p-1"> Ringing faint bells? </div>
+                    <div class="p-1"> See if you actually wrote it or not... </div>
                 </div>
                 <div class="col-sm-2"></div>
             </div>
@@ -207,31 +207,30 @@
             </div>
         </div>
         <!-- lyric search results -->
-        <div class="container mx-auto">
-            <div id="lyric-search-loading"></div>
+        <div class="container">
+            <div class="col-4 mx-auto" id="lyric-search-loading"></div>
         </div>
         <div id="lyric-search-results" class="container text-center">
-            <h6><u>Results</u></h6>
+            <h6 class="pt-3"><u>Results</u></h6>
             <div class="container">
-                <h6 class="text-muted">a.k.a You probably stole this from...</h6>
+                <h6 class="text-muted lyric-results-text">a.k.a You probably stole this from...</h6>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row p-1 results-box">
                     <div class="col-sm-2"></div>
-                    <h6 class="col-sm-4">Artist:</h6>
+                    <div class="col-sm-4 text-muted p-1">Artist:</div>
                     <h6 id="artist-fill" class="col-sm-4">Artist FIll</h6>
                     <div class="col-sm-2"></div>
                 </div>
-                <div class="row">
+                <div class="row p-1 results-box">
                     <div class="col-sm-2"></div>
-                    <h6 class="col-sm-4">Song:</h6>
+                    <div class="col-sm-4 text-muted p-1">Song:</div>
                     <h6 id="song-fill" class="col-sm-4">Song FIll</h6>
                     <div class="col-sm-2"></div>
                 </div>
-                <div class="row">
+                <div class="row p-1">
                     <div class="col-sm-2"></div>
-                    <h6 class="col-sm-4">Check it out:</h6>
-                    <a id="lyric-search-link" class="col-sm-4 btn btn-primary" href="" target="_blank"
+                    <a id="lyric-search-link" class="col-sm-8 btn" href="" target="_blank"
                         role="button">Check it out</a>
                     <div class="col-sm-2"></div>
                 </div>

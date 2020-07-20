@@ -12,6 +12,7 @@ $(document).ready(function () {
         homeSection.hide();
         chordSection.show();
         howToPlay.hide();
+        $("#chord-gen-box").hide()
     });
     // When Lyric Section button is selected, it hides the other section elements
     $('#lyric-section-button').on('click', function () {
@@ -81,6 +82,7 @@ function chordGenerator(chNum) {
 // a div template literal containing what the user selected and the generation
 // of those chords, clearing it on every refresh.
 function randomChords() {
+    $("#chord-gen-box").show()
     $("#titleRandomCP").html("");
     $("#functionRandomCP").html("");
     let noChords = $("#chord-amount-selector");
@@ -102,8 +104,8 @@ function randomChords() {
     let titleOutput = `<div> ${progNum} Random Progressions of ${chNum} Chords </div>`;
     let output = "";
     for (let i = 1; i <= progNum; i++) {
-        output += `${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0");
-        output += `${chordGenerator(chNum)}<br>`;
+        output += `<div class="chord-gen-number">${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"`</div>`);
+        output += `<div class="chord-gen-font">${chordGenerator(chNum)}</div>`;
     }
     $("#titleRandomCP").append(titleOutput);
     $("#functionRandomCP").append(output);
