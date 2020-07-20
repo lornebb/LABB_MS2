@@ -76,6 +76,7 @@ function chordGenerator(chNum) {
     }
     return chProg;
 }
+
 // randomChords() takes the users amount selection from the dropdown, and returns 
 // a div template literal containing what the user selected and the generation
 // of those chords, clearing it on every refresh.
@@ -107,6 +108,7 @@ function randomChords() {
     $("#titleRandomCP").append(titleOutput);
     $("#functionRandomCP").append(output);
 }
+
 // randomChoice() cycles through the array using JS Math function.
 function randomChoice(myArray) {
     return myArray[Math.floor(Math.random() * myArray.length)];
@@ -130,7 +132,11 @@ $("#generate-random-ChP").on("click", randomChords);
 
 // Lyric Search - Shazam API
 // When user submits lyrics, Shazam API is called.
-$("#lyric-form-submit").on('click', searchLyrics);
+$("#lyric-form-submit").on('click', function (e) {
+    e.preventDefault();
+    let searchValue = $('#lyric-search-box').val()
+    searchLyrics(searchValue);
+});
 
 function searchLyrics(searchValue) {
     $("#lyric-search-loading").show();
