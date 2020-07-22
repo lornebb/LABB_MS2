@@ -1,26 +1,26 @@
-const chordSection = $('#chord-section');
-const lyricSection = $('#lyric-section');
-const homeSection = $('#home-section');
+const chordSectionREF = $('#chord-section');
+const lyricSectionREF = $('#lyric-section');
+const homeSectionREF = $('#home-section');
 
 // section toggles and doc.ready generator scripts
 $(document).ready(function () {
     // When Chord Section button is selected, it hides the other section elements
     $('#chords-section-button').on('click', function () {
-        homeSection.hide();
-        chordSection.show();
+        homeSectionREF.hide();
+        chordSectionREF.show();
         $("#chord-gen-box").hide()
     });
     // When Lyric Section button is selected, it hides the other section elements
     $('#lyric-section-button').on('click', function () {
-        lyricSection.show();
-        homeSection.hide();
-        chordSection.hide();
+        lyricSectionREF.show();
+        homeSectionREF.hide();
+        chordSectionREF.hide();
     });
     // When Back button is selected, it hides the other section elements
     $('.back').on('click', function () {
-        homeSection.show();
-        chordSection.hide();
-        lyricSection.hide();
+        homeSectionREF.show();
+        chordSectionREF.hide();
+        lyricSectionREF.hide();
     });
     // when DOM is loaded, only the Home section shows
     $("#lyric-search-results").hide();
