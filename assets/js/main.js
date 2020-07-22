@@ -122,20 +122,6 @@ function randomChoice(myArray) {
 
 $("#generate-random-ChP").on("click", randomChords);
 
-// Chord Chart Diagram - might not keep
-
-// function scales_chords_api_onload() {
-//     fetch('https://www.scales-chords.com/api/scapi.1.3.php')
-//         .then(response => response.json()
-//             .then(data => {
-//                 console.log(data)
-//             })
-//             )
-// };
-
-// $("#show-guitar-button").on("click", scales_chords_api_onload);
-
-
 // Lyric Search - Shazam API
 // When user submits lyrics, Shazam API is called.
 $("#lyric-form").submit(function (e) {
