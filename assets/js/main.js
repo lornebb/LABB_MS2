@@ -1,9 +1,12 @@
+const chordSection = $('#chord-section');
+document.querySelector
+const lyricSection = $('#lyric-section');
+const homeSection = $('#home-section');
+const howToPlay = $('#how-to-play-section');
+
+
 // section toggles and doc.ready generator scripts
 $(document).ready(function () {
-    const chordSection = $('#chord-section');
-    const lyricSection = $('#lyric-section');
-    const homeSection = $('#home-section');
-    const howToPlay = $('#how-to-play-section');
 
     chordSection.hide();
     lyricSection.hide();
@@ -104,7 +107,8 @@ function randomChords() {
     let titleOutput = `<div> ${progNum} Random Progressions of ${chNum} Chords </div>`;
     let output = "";
     for (let i = 1; i <= progNum; i++) {
-        output += `<div class="chord-gen-number">${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"`</div>`);
+        output += `<div class="chord-gen-number">${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"
+            `</div>`);
         output += `<div class="chord-gen-font">${chordGenerator(chNum)}</div>`;
     }
     $("#titleRandomCP").append(titleOutput);
@@ -134,41 +138,40 @@ $("#generate-random-ChP").on("click", randomChords);
 
 // Lyric Search - Shazam API
 // When user submits lyrics, Shazam API is called.
-$("#lyric-form-submit").on('click', function (e) {
+$("#lyric-form").submit(function (e) {
     e.preventDefault();
-    let searchValue = $('#lyric-search-box').val()
+    let searchValue = $('#lyric-search-value').val()
     searchLyrics(searchValue);
 });
 
 function searchLyrics(searchValue) {
     $("#lyric-search-loading").show();
-    fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
+     fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
             "method": "GET",
             "headers": {
-                "x-rapidapi-host": "shazam.p.rapidapi.com",
-                "x-rapidapi-key": "15dac825ebmsh76a9e21a4637745p1a6c3bjsnb08d198023c0",
+               // "x-rapidapi-host": "shazam.p.rapidapi.com",
+               // "x-rapidapi-key": "15dac825ebmsh76a9e21a4637745p1a6c3bjsnb08d198023c0",
             }
         })
-        .then(response => response.json()
-            .then(data => {
-                $('#lyric-search-loading').hide();
-                $('#lyric-search-results').show();
-                console.log(data);
-                let artistResult = data.tracks.hits[0].track;
-                let lyricResultLink = data.tracks.hits[0].track.share.html;
-                $('#artist-fill').html(`${artistResult.subtitle}`);
-                $('#song-fill').html(`${artistResult.title}`);
-                console.log(lyricResultLink);
-                $("#lyric-search-link").attr("href", `${lyricResultLink}`);
-            })
-            .catch(err => {
-                $('#something-went-wrong-box-hide').css("display", "block");
-                $("#search-loading").css("display", "none");
-                console.log(err);
-            }));
+        .then(response => response.json())
+        .then(data => {
+            $('#lyric-search-loading').hide();
+            $('#lyric-search-results').show();
+            console.log(data);
+            let artistResult = data.tracks.hits[0].track;
+            let lyricResultLink = data.tracks.hits[0].track.share.html;
+            $('#artist-fill').html(`${artistResult.subtitle}`);
+            $('#song-fill').html(`${artistResult.title}`);
+            console.log(lyricResultLink);
+            $("#lyric-search-link").attr("href", `${lyricResultLink}`);
+        })
+        .catch(err => {
+            $('#something-went-wrong-box-hide').css("display", "block");
+            $("#search-loading").css("display", "none");
+            console.log(err);
+        });
 }
 
-reCAPTCHA
 function onSubmitCaptcha(token) {
     document.getElementById("contact-form-submit").submit();
 };

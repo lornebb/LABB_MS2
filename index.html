@@ -195,17 +195,19 @@
                 </div>
                 <div class="col-sm-2"></div>
             </div>
-            <div class="row p-1">
-                <div class="col-sm-3"></div>
-                <input class="col-sm-6" type="text" placeholder="type lyrics here..." id="lyric-search-box">
-                <div class="col-sm-3"></div>
-            </div>
-            <div class="row p-1">
-                <div class="col-4"></div>
-                <button id="lyric-form-submit" type="submit" class="col-sm-4" id="lyric-search-form">Submit</button>
-                <div class="col-4"></div>
-            </div>
         </div>
+        <form id="lyric-form" class="container">
+            <div class="row p-1">
+                <div class="col-sm-3"></div>
+                <input class="col-sm-6" type="text" placeholder="type lyrics here..." id="lyric-search-value">
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row p-1">
+                <div class="col-4"></div>
+                <button type="submit" class="col-sm-4">Submit</button>
+                <div class="col-4"></div>
+            </div>
+        </form>
         <!-- lyric search results -->
         <div class="container">
             <div class="col-4 mx-auto" id="lyric-search-loading"></div>
@@ -230,8 +232,8 @@
                 </div>
                 <div class="row p-1">
                     <div class="col-sm-2"></div>
-                    <a id="lyric-search-link" class="col-sm-8 btn" href="" target="_blank"
-                        role="button">Check it out</a>
+                    <a id="lyric-search-link" class="col-sm-8 btn" href="" target="_blank" role="button">Check it
+                        out</a>
                     <div class="col-sm-2"></div>
                 </div>
             </div>
