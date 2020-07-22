@@ -1,5 +1,4 @@
 const chordSection = $('#chord-section');
-document.querySelector
 const lyricSection = $('#lyric-section');
 const homeSection = $('#home-section');
 const howToPlay = $('#how-to-play-section');
@@ -7,9 +6,6 @@ const howToPlay = $('#how-to-play-section');
 
 // section toggles and doc.ready generator scripts
 $(document).ready(function () {
-
-    chordSection.hide();
-    lyricSection.hide();
     // When Chord Section button is selected, it hides the other section elements
     $('#chords-section-button').on('click', function () {
         homeSection.hide();

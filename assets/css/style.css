@@ -6,6 +6,14 @@ body {
     background-color: #e6d69c;
 }
 
+#chord-section {
+    display: none;
+}
+
+#lyric-section {
+    display: none;
+}
+
 .btn {
     background-color: #b4a56a;
     color: #393829;
