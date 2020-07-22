@@ -32,10 +32,6 @@ body {
     font-size: 0.5rem;
 }
 
-.footer-favicon {
-    content: url(../imgs/lornae-favicon.png);
-}
-
 #lyric-search-loading {
     content: url(../imgs/loader-pac-man.gif);
 }
