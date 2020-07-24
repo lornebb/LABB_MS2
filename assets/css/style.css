@@ -4,6 +4,7 @@ body {
     font-family: "Press Start 2P";
     font-size: 0.9rem;
     background-color: #e6d69c;
+    max-width: 800px;
 }
 
 #chord-section {
@@ -29,7 +30,7 @@ body {
 
 .about-image {
     content: url(../imgs/guitar-pad.jpg);
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .chord-gen-font {
