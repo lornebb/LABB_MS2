@@ -1,6 +1,13 @@
 const chordSectionREF = $('#chord-section');
 const lyricSectionREF = $('#lyric-section');
 const homeSectionREF = $('#home-section');
+const chRootREF = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+const chQualityREF = ['', 'm', 'dim', '+'];
+const replaceObjREF = {
+    'Ebdim': 'D#dim',
+    'Abdim': 'G#dim',
+    'Bbdim': 'A#dim'
+};
 
 // section toggles and doc.ready generator scripts
 $(document).ready(function () {
@@ -53,21 +60,16 @@ function sendMail() {
 // Chord Generator - modified from Scraggos Music Tools - reference in README.
 // A random chord and quality is created with chordGenerator() and to make sure 
 // no b / flats are used, the replaceObj function transposes them.
+
+
 function chordGenerator(chNum) {
-    let replaceObj = {
-        'Ebdim': 'D#dim',
-        'Abdim': 'G#dim',
-        'Bbdim': 'A#dim'
-    };
-    let chRoot = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-    let chQuality = ['', 'm', 'dim', '+'];
     let chProg = '';
     for (let i = 0; i < chNum; i++) {
-        let randRoot = randomChoice(chRoot);
-        let randQuality = randomChoice(chQuality);
+        let randRoot = randomChoice(chRootREF);
+        let randQuality = randomChoice(chQualityREF);
         let chord = randRoot + randQuality;
-        if (chord in replaceObj) {
-            chord = replaceObj[chord];
+        if (chord in replaceObjREF) {
+            chord = replaceObjREF[chord];
         }
         chProg += chord + ((i < chNum - 1) ? " | " : "");
     }
@@ -79,8 +81,8 @@ function chordGenerator(chNum) {
 // of those chords, clearing it on every refresh.
 function randomChords() {
     $("#chord-gen-box").show()
-    $("#titleRandomCP").html("");
-    $("#functionRandomCP").html("");
+    $("#Random-CP-title").html("");
+    $("#Random-CP").html("");
     let noChords = $("#chord-amount-selector");
     let chNum = Number(noChords.val());
     let noProgressions = $("#progression-amount-selector");
@@ -104,8 +106,8 @@ function randomChords() {
             `</div>`);
         output += `<div class="chord-gen-font">${chordGenerator(chNum)}</div>`;
     }
-    $("#titleRandomCP").append(titleOutput);
-    $("#functionRandomCP").append(output);
+    $("#Random-CP-title").append(titleOutput);
+    $("#Random-CP").append(output);
 }
 
 // randomChoice() cycles through the array using JS Math function.
@@ -125,28 +127,26 @@ $("#lyric-form").submit(function (e) {
 
 function searchLyrics(searchValue) {
     $("#lyric-search-loading").show();
-     fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
+    fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
             "method": "GET",
             "headers": {
-               // "x-rapidapi-host": "shazam.p.rapidapi.com",
-               // "x-rapidapi-key": "15dac825ebmsh76a9e21a4637745p1a6c3bjsnb08d198023c0",
+                "x-rapidapi-host": "shazam.p.rapidapi.com",
+                "x-rapidapi-key": "15dac825ebmsh76a9e21a4637745p1a6c3bjsnb08d198023c0",
             }
         })
         .then(response => response.json())
         .then(data => {
             $('#lyric-search-loading').hide();
             $('#lyric-search-results').show();
-            console.log(data);
             let artistResult = data.tracks.hits[0].track;
             let lyricResultLink = data.tracks.hits[0].track.share.html;
             $('#artist-fill').html(`${artistResult.subtitle}`);
             $('#song-fill').html(`${artistResult.title}`);
-            console.log(lyricResultLink);
             $("#lyric-search-link").attr("href", `${lyricResultLink}`);
         })
         .catch(err => {
-            $('#something-went-wrong-box-hide').css("display", "block");
-            $("#search-loading").css("display", "none");
+            $('#something-went-wrong-box-hide').show();
+            $("#search-loading").hide();
             console.log(err);
         });
 }
