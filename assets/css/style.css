@@ -29,7 +29,7 @@ body {
 
 .about-image {
     content: url(../imgs/guitar-pad.jpg);
-    max-width: 80%;
+    max-width: 60%;
 }
 
 .chord-gen-font {
