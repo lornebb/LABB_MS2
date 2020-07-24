@@ -15,7 +15,7 @@ $(document).ready(function () {
     $('#chords-section-button').on('click', function () {
         homeSectionREF.hide();
         chordSectionREF.show();
-        $("#chord-gen-box").hide()
+        $("#chord-gen-box").hide();
     });
     // When Lyric Section button is selected, it hides the other section elements
     $('#lyric-section-button').on('click', function () {
@@ -36,19 +36,19 @@ $(document).ready(function () {
 });
 
 // emailJS API - when submit is sent, EmailJS API is used to contact developer
-$('#contact-form-submit').on('click', sendMail)
+$('#contact-form-submit').on('click', sendMail);
 
 function sendMail() {
     console.log("EmailJS - calling");
     emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
     let templateParams = {
         "feature_request": $('#feature-request').val()
-    }
+    };
     emailjs.send("lorneashley_gmail_com", "wub", templateParams)
         .then(
             function (response) {
                 console.log("SUCCESS - called, sent", response, response.status, response.text);
-                $("#contact-form-confirmation").show()
+                $("#contact-form-confirmation").show();
             },
             function (error) {
                 console.log("FAILED", error);
@@ -60,7 +60,6 @@ function sendMail() {
 // Chord Generator - modified from Scraggos Music Tools - reference in README.
 // A random chord and quality is created with chordGenerator() and to make sure 
 // no b / flats are used, the replaceObj function transposes them.
-
 
 function chordGenerator(chNum) {
     let chProg = '';
@@ -80,7 +79,7 @@ function chordGenerator(chNum) {
 // a div template literal containing what the user selected and the generation
 // of those chords, clearing it on every refresh.
 function randomChords() {
-    $("#chord-gen-box").show()
+    $("#chord-gen-box").show();
     $("#Random-CP-title").html("");
     $("#Random-CP").html("");
     let noChords = $("#chord-amount-selector");
@@ -121,7 +120,7 @@ $("#generate-random-ChP").on("click", randomChords);
 // When user submits lyrics, Shazam API is called.
 $("#lyric-form").submit(function (e) {
     e.preventDefault();
-    let searchValue = $('#lyric-search-value').val()
+    let searchValue = $('#lyric-search-value').val();
     searchLyrics(searchValue);
 });
 
@@ -153,4 +152,4 @@ function searchLyrics(searchValue) {
 
 function onSubmitCaptcha(token) {
     document.getElementById("contact-form-submit").submit();
-};
+}
