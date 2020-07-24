@@ -63,24 +63,24 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 
 - A website that can be **operated by a guitarist** with a guitar in **one hand**, and a plectrum coiled in the other, with only **one finger available** for tapping.
 
-- Simple and complicated chord sequence generators.
-- Direct contact for feature requests.
-- No frills, easy to navigate design.
-- Easily recognisable on all browser sizes.
+- Simple and complicated **chord sequence generators**.
+- **Direct contact** for feature requests.
+- **No frills**, easy to navigate design.
+- **Easily recognisable** on all browser sizes.
 
 #### User Stories
 
 ##### Mr. Bloggs
 
-_As a composer and pianist I expect a site that can **generate harmony**, in key, instantly, and flexibly._
+"_**As a composer and pianist** I expect a site that can **generate harmony**, in key, instantly, and flexibly._"
 
 ##### Ms. C. Thweepioh
 
-_As a musician and web developer, I want the ability to **get in touch** with the developer and suggest feaures, potentially to collaborate and let them know of nay bugs or improvements._
+"_**As a musician and web developer**, I want the ability to **get in touch** with the developer and suggest feaures, potentially to collaborate and let them know of nay bugs or improvements._"
 
 ##### They Maplecourt
 
-_As a lyricist, I make lyrics all day, every day of the week. Sometimes I need to **make sure that what I make is mine**, without sifting through unrelated search results._
+"_**As a lyricist**, I make lyrics all day, every day of the week. Sometimes I need to **make sure that what I make is mine**, without sifting through unrelated search results._"
 
 #### Site Owner Goals
 
@@ -133,7 +133,7 @@ The original palette:
 
 ## Current Colour Palette
 
-After testing the original yellow and green contrast was too harsh and tiring to the eyes. Considering the text design and simple approach, I search for a soft retro GameBoy palette instead with only 4 different, complimentary tones.
+After testing the original yellow and green contrast was too harsh and tiring to the eyes. Considering the text design and simple approach, I search for a soft retro GameBoy palette instead with only 4 different, complimentary tones. On reflection, I should have done wireframes without colour for situations like this.
 
 ![Current Gameboy Colours](wireframes/gameboy-colour-palette.png)
 
@@ -164,7 +164,6 @@ After testing the original yellow and green contrast was too harsh and tiring to
 - **2 easy to navigate features** on home page.
 - **One page** for all content, Javascript hides other content when certain features are selected.
 - **Music harmony** random generator.
-- **How-to diagrams** and **sound-like** audio clips of a selection of chords.
 - **Direct contact with developer**, with no data collection.
 - **Captcha** for stopping spam or bots from abusing the mail feature.
 - **Lyric search**, with dedicated, filtered results straight to music from a respectable music search source.
@@ -216,17 +215,19 @@ After testing the original yellow and green contrast was too harsh and tiring to
 
 ### Test Planning
 
-This was my first time implimenting API's and using Javascript in a project, so testing was done at almost every line of code, using console logs and chrome inspector. As features were implimented, testing was then carried out by a small select batch of users and peers. Each tester was asked to test  feature by feature.
+This was my **first time implimenting API's and using Javascript** in a project, so testing was done at almost every line of code, using console logs and chrome inspector. As features were implimented, testing was then carried out by a small select batch of users and peers. Each tester was **asked to test feature by feature**.
 
 ### Testing Stories
 
-- The first test on the EmailJS integration came back with a problem with the submit button, where only a small section of the button was clickable to submit. This was fixed with a more robudt struct to the HTML of that section.
+- The first test on the EmailJS integration came back with a **problem with the submit button**, where only a small section of the button was clickable to submit. This was **fixed with a more robust structure to the HTML** of that section.
 
-- Similiarly, the testing of the lyric search feature showed an issue with the results link button and only showed results pertaining to MAC MILLER, a recording artist.
+- Similiarly, the testing of the lyric search feature showed an issue with the results link button and **only showed results pertaining to MAC MILLER**, a recording artist. This was fixed with finessing the Javascript that passed the search term into the URL.
 
-- Most testing of the search feature came back with feedback saying the feature was not returning any results. On further inspection, the results were loading too slowly. To fix this, I trimmed some un-need headers being sent to via fetch and added a loading icon to appear after the user presses search, until the results are returned.
+- Most testing of the **search** feature came back with feedback saying the feature **was not returning any results**. On further inspection, the results were **loading too slowly**. To fix this, I trimmed some un-need headers being sent to via fetch and added a loading icon to appear after the user presses search, until the results are returned.
 
-- Another laoding issue found during testing of the deployed site, was the loading of the image on the about section. Most browsers never loaded the file. this was fixed by reducing the file size and refining the relative load path in the CSS file.
+- Another loading issue found during testing of the deployed site, was the **loading of the image** on the about section. Most browsers never loaded the file. this was fixed by **reducing the file size** and refining the relative load path in the CSS file.
+
+- There was a **entire rebuild** of the site from scratch after I initially thought it was finished. After sending out this version to testers feedback on the code showed that the bootstrap structure and spahetti nature of the code deemed it worth of an **entire rebuild**. I believe version 2, the current build, **is much better** and the rebuild was defintely worth it.
 
 ### Overall
 
@@ -246,7 +247,7 @@ This was my first time implimenting API's and using Javascript in a project, so 
 
 ## Bugs
 
-Throughout development of the site I had a live deployment and a local preview of the project in chrome with dev. inspector open on each tab. So most bugs were squashed during the build. However there were some issues worth mentioning.
+Throughout development of the site I had a live deployment and a local preview of the project in chrome with developer inspector open on each tab. So most bugs were squashed during the build. However there were some issues worth mentioning.
 
 ### EmailJs JS impliment Bug
 
@@ -262,7 +263,9 @@ Throughout development of the site I had a live deployment and a local preview o
 
 ### Mac Miller saerch results bug
 
-- **Bug** At somepoint the Lyric Search results were coming back solely as Mac Miller. 
+- **Bug** At some point the Lyric Search results were coming back solely as Mac Miller.
+- **Fix** The javascript code that passed the search value to the url to be put into the HTML element, had the wrong formatting of the template literal, so once that was fixed, it was working again.
+- **Verdict** I should have used GIT to roll back / find an example of the code working before it had started returnign this error, as it was clearly a human error - I must have deleted a character at some point to make this happen. However, I chose instead to meticulously comb the code until I found the error, this was more due to a desire to learn, rather than rely on technology to fix somethign quickly.
 
 ### Chord chart call
 
@@ -279,7 +282,7 @@ When deploying **W.U.B** using **GitHub Pages** the following steps were made:
 - Opened up **GitHub** in the browser.
 - Signed in using username and password.
 - Selected my **repositories**.
-- Navigated to **'/lornebb/LORNEBB_MS2'**.
+- Navigated to **'/lornebb/W.U.B'**.
 - In the top navigation clicked **'settings'**.
 - Scrolled down to the **GitHub Pages** area.
 - Selected **'Master Branch'** from the **'Source'** dropdown menu.
@@ -290,7 +293,7 @@ When deploying **W.U.B** using **GitHub Pages** the following steps were made:
 
 Cloning **W.U.B** from **GitHub**:
 
-- Navigate to **'/lornebb/LORNEBB_MS2'**.
+- Navigate to **'/lornebb/W.U.B'**.
 - Click the green **'Clone or Download'** button in the top right.
 - Copy the **url** in the dropdown box.
 - Using your favourite **IDE** open up your preferred **terminal**.
@@ -298,7 +301,7 @@ Cloning **W.U.B** from **GitHub**:
 - Copy the following **code** and input it into your terminal to clone Holiday Destinations.
 
 ```bash
-git clone https://github.com/lornebb/LORNEBB_MS2.git
+git clone https://github.com/lornebb/W.U.B.git
 ```
 
 ## Credits
@@ -308,6 +311,8 @@ git clone https://github.com/lornebb/LORNEBB_MS2.git
 - **CI Student care** - helped with incomplete SDK from API.
 - [Bootstrap snippets](https://bootsnipp.com/snippets/GqBjl) **dvinciguerra** for the Square Buttons.
 - [**Bim Williams**](https://github.com/MrBim) - Cracked the Scales-Chords-Api call problem by deep diving into their api!
+- [WildLeoKnight](https://lospec.com/palette-list/muddysand) - Gameboy colour palette created by WildLeoKnight.
+- [Simen Daehlin](https://github.com/Eventyret) - my mentor during this build, provided above and beyond help to teach me how to make it reach a standard I could be proud of.
 
 ### Media
 
