@@ -1,5 +1,7 @@
 # [W. U. B (Writers UnBlocker)](#w-u-b--writers-unblocker-)
 
+![display-showcase](wireframes/readme-showcase-img.png)
+
 W. U. B is a one stop shop for creatives to get a quick rev on their accelerator pedal. Current features include an instant chord sequence generator, how-to-play chord diagrams on guitar & piano, and a lyric search feature. If you have any questions, comments or bugs, please let me know and get in touch :).
 
 - [UX](#ux)
@@ -118,16 +120,22 @@ Icons, much in the same way as the font, were designed to be as transparent as p
 
 ### Colours
 
-Colour palette was generated at [**Coolors.co**](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting.
+Originally, t colour palette was generated at [**Coolors.co**](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting. These were the colours used for the wireframes and VER 1 of the site.
 
 - **Primary Green** - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour.
 - **Background Yellow** - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour I tried.
 - **Teriary Pearl/Cream** - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction.
 - **Grey and Black** - #000000 & #5D737E - These darker colours are used for text, icons and and results.
 
-The palette:
+The original palette:
 
 ![Coolers Palette Image](wireframes/MS2_color_template_2.png)
+
+## Current Colour Palette
+
+After testing the original yellow and green contrast was too harsh and tiring to the eyes. Considering the text design and simple approach, I search for a soft retro GameBoy palette instead with only 4 different, complimentary tones.
+
+![Current Gameboy Colours](wireframes/gameboy-colour-palette.png)
 
 ## Wireframes
 
@@ -163,17 +171,17 @@ The palette:
 
 ## Features That Will Be Implemented In The **Future**
 
+- **How to play chord diagrams and audio clips** Originally, until the rebuild of the site, the 'How to Play' section was underneath the chord generation section. I plan to re-impliment this section at the earliest possible point, with an **Auto fill** feature from the chord generator. So only one button is needed to generate all the content.
+
 - **Features for writers, novelists, or games masters** with a pen in one hand and their phone / tablet in the other - to generate names of a wide array of things from names, pets and places, to orcs, dragons and angels.
 
 - Simple and complicated, in key, **melody generator**.
-
-- **Auto fill** from chord generator to chord play, and then pass that key into melody generator so only one button is needed to generate all that content.
 
 - Link footer to personal site / git hub repo.
 
 - Use **8-bit icons** for in theme visuals.
 
-- More **interactive transitions** between javascript toggles.
+- More **interactive visual transitions** between javascript toggles.
 
 ## Technologies Used
 
@@ -193,9 +201,10 @@ The palette:
 - [EmailJS API](https://www.emailjs.com/)
 - [Google Cloud Platform](https://cloud.google.com/) - for captcha on EmailJs.
 - [Shazam API](https://rapidapi.com/apidojo/api/shazam) - provided lyric search results via it's api.
-- [Scales-Chords API](https://www.scales-chords.com/api/) - for chord charts and sound clips.
 - [Scraggo Music Tools](http://www.scraggo.com/) - javascript chord generation.
 - [Loading IO](https://loading.io/) - animated gif loading image.
+- [Quokka.js](https://quokkajs.com/) - for live JS testing.
+- [JShint](https://jshint.com/) - for linting my Javascript.s
 
 ### Tools
 
@@ -213,11 +222,11 @@ This was my first time implimenting API's and using Javascript in a project, so 
 
 - The first test on the EmailJS integration came back with a problem with the submit button, where only a small section of the button was clickable to submit. This was fixed with a more robudt struct to the HTML of that section.
 
-- Similiarly, the testing of the lyric search feature showed an issue with the results link button.
+- Similiarly, the testing of the lyric search feature showed an issue with the results link button and only showed results pertaining to MAC MILLER, a recording artist.
 
 - Most testing of the search feature came back with feedback saying the feature was not returning any results. On further inspection, the results were loading too slowly. To fix this, I trimmed some un-need headers being sent to via fetch and added a loading icon to appear after the user presses search, until the results are returned.
 
-- Another laoding issue found during testing of the deployed site, was the loading of the image on the about section. Most browsers never loaded the file. this was fixed by reducing the file size.
+- Another laoding issue found during testing of the deployed site, was the loading of the image on the about section. Most browsers never loaded the file. this was fixed by reducing the file size and refining the relative load path in the CSS file.
 
 ### Overall
 
@@ -251,11 +260,15 @@ Throughout development of the site I had a live deployment and a local preview o
 - **Fix** Code Institute tutors located and found the probelm was with the Rapid API SDK sample code, providing incorrect headers and JSON code.
 - **Verdict** I wouldn't have known it at the time, but experience will have helped to spot this myself.
 
+### Mac Miller saerch results bug
+
+- **Bug** At somepoint the Lyric Search results were coming back solely as Mac Miller. 
+
 ### Chord chart call
 
-- **Bug** When trying to impliment the Scales-Chords-Api to insert 'how to play' chord images, I found that their documentation was aimed at static sites. Their call to their api was in the form of a custom tag "< ins >" which only called on a page load, when the HTML was read.
-- **Fix** I connected with another programmer called Bim Williams, who, as a musician, was interested in this idea anyway. He dove deeper than I was able to, into their api call and helped to show me how to break down the code that is called, so i could call it when I needed.
-- **Verdict** Once again, experience was the key here. Very glad I was showed how to do this!
+- **Bug** When trying to impliment the Scales-Chords-Api to insert 'how to play' chord images, I found that their documentation was aimed at **static sites**. Their call to their api was in the form of a custom tag **"< ins >"** which only called on a page load, when the HTML was read.
+- **Fix** I **connected with another programmer** called Bim Williams, who, as a musician, was interested in this idea anyway. He dove deeper than I was able to, into their api call and helped to show me how to break down the code that is called, so i could call it when I needed.
+- **Verdict** Once again, experience was the key here. Very glad I was showed how to do this! However the technology was too old to impliment with the level of stability I want on my site. So, I have had to remove this particular API for now, while I search for a more modern iteration of the idea.
 
 ## Deployment
 
