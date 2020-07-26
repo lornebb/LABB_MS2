@@ -15,6 +15,10 @@ body {
     display: none;
 }
 
+.min-height-section {
+    min-height: 85vh;
+}
+
 .btn {
     background-color: #b4a56a;
     color: #393829;
