@@ -39,6 +39,7 @@ body {
 
 .chord-gen-font {
     font-size: 0.8rem;
+    padding: 5px;
 }
 
 .chord-gen-number {

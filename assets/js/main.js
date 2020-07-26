@@ -103,7 +103,7 @@ function randomChords() {
     for (let i = 1; i <= progNum; i++) {
         output += `<div class="chord-gen-number">${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"
             `</div>`);
-        output += `<div class="chord-gen-font p-2">${chordGenerator(chNum)}</div>`;
+        output += `<div class="chord-gen-font">${chordGenerator(chNum)}</div>`;
     }
     $("#Random-CP-title").append(titleOutput);
     $("#Random-CP").append(output);
