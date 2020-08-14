@@ -7,13 +7,13 @@ body {
     max-width: 800px;
 }
 
-/* #chord-section {
+#chord-section {
     display: none;
-} */
-/* 
+}
+
 #lyric-section {
     display: none;
-} */
+}
 
 #lyric-search-loading {
     content: url(../imgs/loader-pac-man.gif);
