@@ -204,6 +204,7 @@ After testing the original yellow and green contrast was too harsh and tiring to
 - [Loading IO](https://loading.io/) - animated gif loading image.
 - [Quokka.js](https://quokkajs.com/) - for live JS testing.
 - [JShint](https://jshint.com/) - for linting my Javascript.s
+- [PopperJs](https://popper.js.org/)
 
 ### Tools
 
