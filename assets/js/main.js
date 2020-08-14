@@ -9,7 +9,8 @@ const replaceObjREF = {
     'Bbdim': 'A#dim'
 };
 
-// section toggles and doc.ready generator scripts
+// section toggles and doc.ready generator scripts 
+
 $(document).ready(function () {
     // When Chord Section button is selected, it hides the other section elements
     $('#chords-section-button').on('click', function () {
@@ -35,9 +36,12 @@ $(document).ready(function () {
     $("#contact-form-confirmation").hide();
 });
 
-// emailJS API - when submit is sent, EmailJS API is used to contact developer
+
 $('#contact-form-submit').on('click', sendMail);
 
+/** emailJS API - when submit on contact form is sent, 
+ * EmailJS API is used to contact developer directly 
+ * */ 
 function sendMail() {
     console.log("EmailJS - calling");
     emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
@@ -57,9 +61,10 @@ function sendMail() {
     return false;
 }
 
-// Chord Generator - modified from Scraggos Music Tools - reference in README.
-// A random chord and quality is created with chordGenerator() and to make sure 
-// no b / flats are used, the replaceObj function transposes them.
+/** Chord Generator - modified from Scraggos Music Tools - reference in README.
+ A random chord and quality is created with chordGenerator() and to make sure 
+ no b / flats are used, the replaceObj function transposes them. 
+*/
 
 function chordGenerator(chNum) {
     let chProg = '';
@@ -75,9 +80,10 @@ function chordGenerator(chNum) {
     return chProg;
 }
 
-// randomChords() takes the users amount selection from the dropdown, and returns 
-// a div template literal containing what the user selected and the generation
-// of those chords, clearing it on every refresh.
+/** randomChords() takes the users amount selection from the dropdown, and returns 
+ * a div template literal containing what the user selected and the generation
+ * of those chords, clearing it on every refresh.
+ */
 function randomChords() {
     $("#chord-gen-box").show();
     $("#Random-CP-title").html("");
@@ -116,8 +122,9 @@ function randomChoice(myArray) {
 
 $("#generate-random-ChP").on("click", randomChords);
 
-// Lyric Search - Shazam API
-// When user submits lyrics, Shazam API is called.
+/**  Lyric Search - Shazam API
+ * When user submits lyrics, Shazam API is called.
+ */
 $("#lyric-form").submit(function (e) {
     e.preventDefault();
     let searchValue = $('#lyric-search-value').val();
