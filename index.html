@@ -74,11 +74,12 @@
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6 mx-auto text-center font-2">
                     <form>
-                    <textarea id="feature-request" placeholder="Tell me what you want to see on the site"></textarea>
-                    <button id="contact-form-submit" type="submit" class="g-recaptcha"
-                        data-sitekey="6LdxdLYZAAAAADmDuvzHzZptIMUbZcLwhafdxXTH"
-                        data-callback='onSubmitCaptcha'>Submit</button>
-                    </form> 
+                        <textarea id="feature-request"
+                            placeholder="Tell me what you want to see on the site"></textarea>
+                        <button id="contact-form-submit" type="submit" class="g-recaptcha"
+                            data-sitekey="6LdxdLYZAAAAADmDuvzHzZptIMUbZcLwhafdxXTH"
+                            data-callback='onSubmitCaptcha'>Submit</button>
+                    </form>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
@@ -136,6 +137,35 @@
                     <button type="submit" id="generate-random-ChP">Generate</button>
                 </div>
                 <div class="col-sm-3"></div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-6 offset-3 pb-4">
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                        data-target="#exampleModal">
+                        How does this work?
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="How does this work?"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Chord Generation</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Depending on how many chords and progressions you have asked for - the generator
+                                    will cycle through random values within the 12 notes, apply a random quality to the
+                                    chord (minor, dim, 7 etc) and then structure them in a random order.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Chord Results JS input -->

@@ -65,7 +65,6 @@ function sendMail() {
  A random chord and quality is created with chordGenerator() and to make sure 
  no b / flats are used, the replaceObj function transposes them. 
 */
-
 function chordGenerator(chNum) {
     let chProg = '';
     for (let i = 0; i < chNum; i++) {
