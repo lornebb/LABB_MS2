@@ -41,8 +41,8 @@ $('#contact-form-submit').on('click', sendMail);
 
 /** 
  * emailJS API - when submit on contact form is sent, 
- * EmailJS API is used to contact developer directly 
- * */ 
+ * EmailJS API is used to send the email to the developer directly 
+ * */
 function sendMail() {
     console.log("EmailJS - calling");
     emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
@@ -64,9 +64,9 @@ function sendMail() {
 
 /** 
  * Chord Generator - modified from Scraggos Music Tools - reference in README.
- * A random chord and quality is created with chordGenerator() and to make sure 
- *b no b / flats are used, the replaceObj function transposes them. 
-*/
+ * A random chord and quality is created this function. To make sure 
+ * no unnatural flats are used, the replaceObj function transposes them back to neutral. 
+ */
 function chordGenerator(chNum) {
     let chProg = '';
     for (let i = 0; i < chNum; i++) {
@@ -82,8 +82,8 @@ function chordGenerator(chNum) {
 }
 
 /** 
- * randomChords() takes the users amount selection from the dropdown, and  
- * a div template literal containing what the user selected and the generation
+ * This takes the users chord amount selection from the dropdown, creates a
+ * result containing the generation in the amounts requested
  * of those chords, clearing it on every refresh.
  */
 function randomChords() {
@@ -117,16 +117,17 @@ function randomChords() {
     $("#Random-CP").append(output);
 }
 
-// randomChoice() cycles through the array using JS Math function.
+/** 
+ * This creates the amount of each chord and progression requested 
+*/
 function randomChoice(myArray) {
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
 
 $("#generate-random-ChP").on("click", randomChords);
 
-/**  
- * Lyric Search - Shazam API
- * When user submits lyrics, Shazam API is called.
+/**
+ * Submit the lyric search term to the Shazam API 
  */
 $("#lyric-form").submit(function (e) {
     e.preventDefault();
@@ -134,6 +135,10 @@ $("#lyric-form").submit(function (e) {
     searchLyrics(searchValue);
 });
 
+/**  
+ * Lyric Search - Shazam API
+ * When user submits lyrics to be searched, Shazam API searches its database for matches.
+ */
 function searchLyrics(searchValue) {
     $("#lyric-search-loading").show();
     fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
@@ -160,7 +165,9 @@ function searchLyrics(searchValue) {
         });
 }
 
-// FUNCTION EXPLANATION HERE
+/**  
+* Google reCaptcha makes sure no automated programs can send email through this.
+*/
 function onSubmitCaptcha(token) {
     document.getElementById("contact-form-submit").submit();
 }
