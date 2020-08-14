@@ -47,7 +47,6 @@
                 <div class="col-md-6 text-right">
                     <h4 class="pt-4">What is W.U.B?</h4>
                     <h5 class="pb-4"><small class="text-muted">Writers (un)Block</small></h5>
-
                     <p class="p-2 font-2"><u>Writers Block</u><br><b>Definition:</b> The condition of being unable to
                         think of what to write or
                         how to proceed with
@@ -66,13 +65,16 @@
         </div>
         <!-- contact form -->
         <div class="container text-center pt-4">
-            <h5>Got any features you want to see? </h5>
-            <h6><small class="text-muted">Get in touch!</small></h6>
+            <div class="row">
+                <h5 class="col-8 offset-2">Got any features you want to see? </h5>
+            </div>
+            <div class="row">
+                <h6 class="col-4 offset-4"><small class="text-muted">Get in touch!</small></h6>
+            </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6 mx-auto text-center font-2">
+                <div class="col-sm-6 offset-3 mx-auto text-center font-2">
                     <form>
                         <textarea id="feature-request"
                             placeholder="Tell me what you want to see on the site"></textarea>
@@ -81,10 +83,9 @@
                             data-callback='onSubmitCaptcha'>Submit</button>
                     </form>
                 </div>
-                <div class="col-sm-3"></div>
             </div>
             <div class="row">
-                <div id="contact-form-confirmation" class="mx-auto">Message Sent, thanks! :) </div>
+                <div id="contact-form-confirmation" class="col-6 offset-3 mx-auto">Message Sent, thanks! :) </div>
             </div>
         </div>
     </section>
@@ -101,48 +102,53 @@
                 </div>
                 <div class="col-sm-9"></div>
             </div>
-            <div class="mb-3 text-center">
-                <h6><u>Chord Generator</u></h6>
+            <div class="row">
+                <div class="col-6 offset-3 mb-3 text-center">
+                    <h6><u>Chord Generator</u></h6>
+                </div>
             </div>
         </div>
         <!-- Chord Input -->
         <div class="container">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="chord-amount-selector">Chords?</label>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="chord-amount-selector">Chords?</label>
+                        </div>
+                        <select class="custom-select" id="chord-amount-selector">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
-                <select class="custom-select" id="chord-amount-selector">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
             </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="progression-amount-selector">Progressions?</label>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="progression-amount-selector">Progressions?</label>
+                        </div>
+                        <select class="custom-select" id="progression-amount-selector">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
-                <select class="custom-select" id="progression-amount-selector">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
             </div>
-            <div class="row p-4">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6 text-center">
+            <div class="row p-3">
+                <div class="col-sm-3 offset-sm-3 text-center">
                     <button type="submit" id="generate-random-ChP">Generate</button>
                 </div>
-                <div class="col-sm-3"></div>
-            </div>
-            <div class="row mx-auto">
-                <div class="col-6 offset-3 pb-4">
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
-                        data-target="#exampleModal">
-                        How does this work?
+                <div class="col-sm-3 text-center">
+                    <button type="button" data-toggle="modal" data-target="#exampleModal">
+                        <i class="text-muted">How?</i>
                     </button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="How does this work?"
                         aria-hidden="true">
@@ -171,10 +177,10 @@
         <!-- Chord Results JS input -->
         <div class="container" id="chord-gen-box">
             <div class="row">
-                <div id="Random-CP-title" class="col-10 mx-auto p-2 text-center results-box"></div>
+                <div id="Random-CP-title" class="col-sm-7 offset-2 mx-auto p-2 text-center results-box"></div>
             </div>
             <div class="row">
-                <div id="Random-CP" class="col-10 mx-auto results-box"></div>
+                <div id="Random-CP" class="col-sm-7 mx-auto results-box"></div>
             </div>
         </div>
     </section>

@@ -7,12 +7,16 @@ body {
     max-width: 800px;
 }
 
-#chord-section {
+/* #chord-section {
     display: none;
-}
+} */
 
 #lyric-section {
     display: none;
+}
+
+#lyric-search-loading {
+    content: url(../imgs/loader-pac-man.gif);
 }
 
 .min-height-section {
@@ -44,10 +48,6 @@ body {
 
 .chord-gen-number {
     font-size: 0.5rem;
-}
-
-#lyric-search-loading {
-    content: url(../imgs/loader-pac-man.gif);
 }
 
 .lyric-results-text {
