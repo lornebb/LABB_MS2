@@ -31,9 +31,9 @@ $(document).ready(function () {
         lyricSectionREF.hide();
     });
     // when DOM is loaded, only the Home section shows
-    $("#lyric-search-results").hide();
-    $("#lyric-search-loading").hide();
-    $("#contact-form-confirmation").hide();
+    // $("#lyric-search-results").hide();
+    // $("#lyric-search-loading").hide();
+    // $("#contact-form-confirmation").hide();
 });
 
 

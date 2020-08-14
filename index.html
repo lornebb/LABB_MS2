@@ -176,12 +176,8 @@
         </div>
         <!-- Chord Results JS input -->
         <div class="container" id="chord-gen-box">
-            <div class="row">
-                <div id="Random-CP-title" class="col-sm-7 offset-2 mx-auto p-2 text-center results-box"></div>
-            </div>
-            <div class="row">
-                <div id="Random-CP" class="col-sm-7 mx-auto results-box"></div>
-            </div>
+            <div id="Random-CP-title" class="col-sm-7 offset-2 mx-auto p-2 text-center results-box"></div>
+            <div id="Random-CP" class="col-sm-7 mx-auto results-box"></div>
         </div>
     </section>
     <!-- Lyrics Search section -->
@@ -202,25 +198,20 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 text-center">
+                <div class="col-sm-8 offset-sm-2 text-center">
                     <div class="p-1"> Do your lyrics sound familiar?</div>
                     <div class="p-1"> Ringing faint bells? </div>
                     <div class="p-1"> See if you actually wrote it or not... </div>
                 </div>
-                <div class="col-sm-2"></div>
             </div>
         </div>
         <form id="lyric-form" class="container">
             <div class="row p-1">
-                <div class="col-sm-3"></div>
-                <input class="col-sm-6" type="text" placeholder="type lyrics here..." id="lyric-search-value">
-                <div class="col-sm-3"></div>
+                <input class="col-sm-6 offset-sm-3" type="text" placeholder="type lyrics here..."
+                    id="lyric-search-value">
             </div>
             <div class="row p-1">
-                <div class="col-4"></div>
-                <button type="submit" class="col-sm-4">Submit</button>
-                <div class="col-4"></div>
+                <button type="submit" class="col-sm-4 offset-sm-4">Submit</button>
             </div>
         </form>
         <!-- lyric search results -->
@@ -229,27 +220,21 @@
         </div>
         <div id="lyric-search-results" class="container text-center">
             <h6 class="pt-3"><u>Results</u></h6>
-            <div class="container">
-                <h6 class="text-muted lyric-results-text">a.k.a You probably stole this from...</h6>
+            <div class="row">
+                <h6 class="col-sm-6 offset-sm-3 text-muted lyric-results-text">a.k.a You probably stole this from...</h6>
             </div>
             <div class="container">
                 <div class="row p-1 results-box">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-4 text-muted p-1">Artist:</div>
+                    <div class="col-sm-4 offset-sm-2 text-muted p-1">Artist:</div>
                     <h6 id="artist-fill" class="col-sm-4">Artist FIll</h6>
-                    <div class="col-sm-2"></div>
                 </div>
                 <div class="row p-1 results-box">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-4 text-muted p-1">Song:</div>
+                    <div class="col-sm-4 offset-sm-2 text-muted p-1">Song:</div>
                     <h6 id="song-fill" class="col-sm-4">Song FIll</h6>
-                    <div class="col-sm-2"></div>
                 </div>
                 <div class="row p-1">
-                    <div class="col-sm-2"></div>
-                    <a id="lyric-search-link" class="col-sm-8 btn" href="" target="_blank" role="button">Check it
+                    <a id="lyric-search-link" class="col-sm-8 offset-sm-2 btn" href="" target="_blank" role="button">Check it
                         out</a>
-                    <div class="col-sm-2"></div>
                 </div>
             </div>
         </div>
