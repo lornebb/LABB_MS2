@@ -1,8 +1,8 @@
 const chordSectionREF = $('#chord-section');
 const lyricSectionREF = $('#lyric-section');
 const homeSectionREF = $('#home-section');
-const chRootREF = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-const chQualityREF = ['', 'm', 'dim', '+'];
+const chordRootREF = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+const chordQualityREF = ['', 'm', 'dim', '+'];
 const replaceObjREF = {
     'Ebdim': 'D#dim',
     'Abdim': 'G#dim',
@@ -74,18 +74,18 @@ function onSubmit(token) {
  * A random chord and quality is created this function. To make sure 
  * no unnatural flats are used, the replaceObj function transposes them back to neutral. 
  */
-function chordGenerator(chNum) {
-    let chProg = '';
-    for (let i = 0; i < chNum; i++) {
-        let randRoot = randomChoice(chRootREF);
-        let randQuality = randomChoice(chQualityREF);
-        let chord = randRoot + randQuality;
+function chordGenerator(chordNumber) {
+    let chordProgression = '';
+    for (let i = 0; i < chordNumber; i++) {
+        let randomRoot = randomChoice(chordRootREF);
+        let randomQuality = randomChoice(chordQualityREF);
+        let chord = randomRoot + randomQuality;
         if (chord in replaceObjREF) {
             chord = replaceObjREF[chord];
         }
-        chProg += chord + ((i < chNum - 1) ? " | " : "");
+        chordProgression += chord + ((i < chordNumber - 1) ? " | " : "");
     }
-    return chProg;
+    return chordProgression;
 }
 
 /** 
@@ -97,28 +97,28 @@ function randomChords() {
     $("#chord-gen-box").show();
     $("#Random-CP-title").html("");
     $("#Random-CP").html("");
-    let noChords = $("#chord-amount-selector");
-    let chNum = Number(noChords.val());
+    let noOfChords = $("#chord-amount-selector");
+    let chordNumber = Number(noOfChords.val());
     let noProgressions = $("#progression-amount-selector");
-    let progNum = Number(noProgressions.val());
-    if (chNum < 1) {
-        chNum = 1;
+    let progressionNumber = Number(noProgressions.val());
+    if (chordNumber < 1) {
+        chordNumber = 1;
     }
-    if (chNum > 16) {
-        chNum = 16;
+    if (chordNumber > 16) {
+        chordNumber = 16;
     }
-    if (progNum < 1) {
-        progNum = 5;
+    if (progressionNumber < 1) {
+        progressionNumber = 5;
     }
-    if (progNum > 50) {
-        progNum = 50;
+    if (progressionNumber > 50) {
+        progressionNumber = 50;
     }
-    let titleOutput = `<div> ${progNum} Random Progressions of ${chNum} Chords </div>`;
+    let titleOutput = `<div> ${progressionNumber} Random Progressions of ${chordNumber} Chords </div>`;
     let output = "";
-    for (let i = 1; i <= progNum; i++) {
+    for (let i = 1; i <= progressionNumber; i++) {
         output += `<div class="chord-gen-number">${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"
             `</div>`);
-        output += `<div class="chord-gen-font">${chordGenerator(chNum)}</div>`;
+        output += `<div class="chord-gen-font">${chordGenerator(chordNumber)}</div>`;
     }
     $("#Random-CP-title").append(titleOutput);
     $("#Random-CP").append(output);
