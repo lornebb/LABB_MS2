@@ -74,15 +74,13 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 offset-3 mx-auto text-center font-2">
-                    <form>
+                    <form class="col-sm-6 offset-3 mx-auto text-center font-2" method="POST">
                         <input type="text" id="feature-request"
                             placeholder="Tell me what you want to see on the site" required>
-                        <input id="contact-form-submit" type="submit" class="g-recaptcha"
+                        <button id="contact-form-submit" type="submit" class="g-recaptcha"
                             data-sitekey="6LdxdLYZAAAAADmDuvzHzZptIMUbZcLwhafdxXTH"
-                            data-callback='onSubmitCaptcha'>
+                            data-callback='onSubmit'>Submit</button>
                     </form>
-                </div>
             </div>
             <div class="row">
                 <div id="contact-form-confirmation" class="col-6 offset-3 mx-auto">Message Sent, thanks! :) </div>

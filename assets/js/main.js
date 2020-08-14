@@ -62,6 +62,13 @@ function sendMail() {
     return false;
 }
 
+/**  
+* Google reCaptcha makes sure no automated programs can send email through this.
+*/
+function onSubmit(token) {
+    document.getElementById("contact-form-submit").submit();
+}
+
 /** 
  * Chord Generator - modified from Scraggos Music Tools - reference in README.
  * A random chord and quality is created this function. To make sure 
@@ -163,11 +170,4 @@ function searchLyrics(searchValue) {
             $("#search-loading").hide();
             console.log(err);
         });
-}
-
-/**  
-* Google reCaptcha makes sure no automated programs can send email through this.
-*/
-function onSubmitCaptcha(token) {
-    document.getElementById("contact-form-submit").submit();
 }
