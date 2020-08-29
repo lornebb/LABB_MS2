@@ -36,7 +36,6 @@ $(document).ready(function () {
     $("#contact-form-confirmation").hide();
 });
 
-
 $('#contact-form-submit').on('click', sendMail);
 
 /** 
@@ -66,7 +65,9 @@ function sendMail() {
 * Google reCaptcha makes sure no automated programs can send email through this.
 */
 function onSubmit(token) {
-    document.getElementById("contact-form-submit").submit();
+    document.getElementById("contact-form-submit").submit(function(e){
+        e.preventDefault();
+    });
 }
 
 /** 
@@ -157,17 +158,21 @@ function searchLyrics(searchValue) {
         })
         .then(response => response.json())
         .then(data => {
-            $('#lyric-search-loading').hide();
-            $('#lyric-search-results').show();
-            let artistResult = data.tracks.hits[0].track;
-            let lyricResultLink = data.tracks.hits[0].track.share.html;
-            $('#artist-fill').html(`${artistResult.subtitle}`);
-            $('#song-fill').html(`${artistResult.title}`);
-            $("#lyric-search-link").attr("href", `${lyricResultLink}`);
+            distLyrics(data);
         })
         .catch(err => {
             $('#something-went-wrong-box-hide').show();
             $("#search-loading").hide();
             console.log(err);
         });
+}
+
+function distLyrics(data){
+    $('#lyric-search-loading').hide();
+    $('#lyric-search-results').show();
+    let artistResult = data.tracks.hits[0].track;
+    let lyricResultLink = data.tracks.hits[0].track.share.html;
+    $('#artist-fill').html(`${artistResult.subtitle}`);
+    $('#song-fill').html(`${artistResult.title}`);
+    $("#lyric-search-link").attr("href", `${lyricResultLink}`);
 }
