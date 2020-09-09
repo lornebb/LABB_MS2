@@ -1,9 +1,9 @@
-const chordSectionREF = $('#chord-section');
-const lyricSectionREF = $('#lyric-section');
-const homeSectionREF = $('#home-section');
-const chordRootREF = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
-const chordQualityREF = ['', 'm', 'dim', '+'];
-const replaceObjREF = {
+const chordSectionRef = $('#chord-section');
+const lyricSectionRef = $('#lyric-section');
+const homeSectionRef = $('#home-section');
+const chordRootRef = ['C', 'C#', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B'];
+const chordQualityRef = ['', 'm', 'dim', '+'];
+const replaceObjRef = {
     'Ebdim': 'D#dim',
     'Abdim': 'G#dim',
     'Bbdim': 'A#dim'
@@ -14,21 +14,21 @@ const replaceObjREF = {
 $(document).ready(function () {
     // When Chord Section button is selected, it hides the other section elements
     $('#chords-section-button').on('click', function () {
-        homeSectionREF.hide();
-        chordSectionREF.show();
+        homeSectionREefhide();
+        chordSectionRef.show();
         $("#chord-gen-box").hide();
     });
     // When Lyric Section button is selected, it hides the other section elements
     $('#lyric-section-button').on('click', function () {
-        lyricSectionREF.show();
-        homeSectionREF.hide();
-        chordSectionREF.hide();
+        lyricSectionRef.show();
+        homeSectionREefhide();
+        chordSectionRef.hide();
     });
     // When Back button is selected, it hides the other section elements
     $('.back').on('click', function () {
-        homeSectionREF.show();
-        chordSectionREF.hide();
-        lyricSectionREF.hide();
+        homeSectionREefshow();
+        chordSectionRef.hide();
+        lyricSectionRef.hide();
     });
     // when DOM is loaded, only the Home section shows
     $("#lyric-search-results").hide();
@@ -78,11 +78,11 @@ function onSubmit(token) {
 function chordGenerator(chordNumber) {
     let chordProgression = '';
     for (let i = 0; i < chordNumber; i++) {
-        let randomRoot = randomChoice(chordRootREF);
-        let randomQuality = randomChoice(chordQualityREF);
+        let randomRoot = randomChoice(chordRootRef);
+        let randomQuality = randomChoice(chordQualityRef);
         let chord = randomRoot + randomQuality;
-        if (chord in replaceObjREF) {
-            chord = replaceObjREF[chord];
+        if (chord in replaceObjRef) {
+            chord = replaceObjRef[chord];
         }
         chordProgression += chord + ((i < chordNumber - 1) ? " | " : "");
     }
