@@ -23,28 +23,32 @@
         </a>
     </nav>
     <!-- Main home section -->
-    <section id="home-section" class="min-height-section">
+    <main id="home-section" class="min-height-section">
         <div class="container text-center pb-3">
-            I need help with...
-        </div>
-        <!-- section selection -->
-        <div class="container-sm">
             <div class="row">
-                <div class="col-6">
-                    <button class="btn btn-lg float-right" id="chords-section-button">
-                        <i class="fa fa-music fa-5x"></i>
-                        Chords
-                    </button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-lg" id="lyric-section-button">
-                        <i class="fa fa-gavel fa-5x"></i>
-                        Lyrics
-                    </button>
+                <div class="col-sm">
+                    I need help with...
                 </div>
             </div>
         </div>
-        <!-- about section -->
+        <!-- feature selection -->
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-6">
+                    <a class="btn btn-lg float-right" id="chords-section-button">
+                        <i class="fa fa-music fa-5x"></i>
+                        Chords
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="btn btn-lg" id="lyric-section-button">
+                        <i class="fa fa-gavel fa-5x"></i>
+                        Lyrics
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- about content -->
         <div class="container-fluid">
             <div class="row m-4">
                 <div class="col-md-6 text-right">
@@ -69,26 +73,35 @@
         <!-- contact form -->
         <div class="container text-center pt-4">
             <div class="row">
-                <h5 class="col-8 offset-2">Got any features you want to see? </h5>
+                <div class="col-8 offset-2">
+                    <h5>Got any features you want to see? </h5>
+                </div>
             </div>
             <div class="row">
-                <h6 class="col-4 offset-4"><small class="text-muted">Get in touch!</small></h6>
+                <div class="col-4 offset-4">
+                    <h6><small class="text-muted">Get in touch!</small></h6>
+                </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <form class="col-sm-6 offset-3 mx-auto text-center font-2" method="POST">
-                    <input type="text" id="feature-request" placeholder="Tell me what you want to see on the site"
-                        name="feature request email" aria-label="email contact box" required>
-                    <button id="contact-form-submit" type="submit" class="g-recaptcha"
-                        data-sitekey="6LdxdLYZAAAAADmDuvzHzZptIMUbZcLwhafdxXTH" data-callback='onSubmit'>Submit</button>
-                </form>
+                <div class="col-sm-6 offset-3 mx-auto text-center font-2">
+                    <form method="POST">
+                        <input type="text" id="feature-request" placeholder="Tell me what you want to see on the site"
+                            name="feature request email" aria-label="email contact box" required>
+                        <button id="contact-form-submit" type="submit" class="g-recaptcha"
+                            data-sitekey="6LdxdLYZAAAAADmDuvzHzZptIMUbZcLwhafdxXTH"
+                            data-callback='onSubmit'>Submit</button>
+                    </form>
+                </div>
             </div>
             <div class="row">
-                <div id="contact-form-confirmation" class="col-6 offset-3 mx-auto">Message Sent, thanks! :) </div>
+                <div class="col-6 offset-3 mx-auto">
+                    <div id="contact-form-confirmation">Message Sent, thanks! :) </div>
+                </div>
             </div>
         </div>
-    </section>
+    </main>
     <!-- Chords section -->
     <section id="chord-section" class="min-height-section">
         <!-- Chords Section Title -->
@@ -208,7 +221,7 @@
         <form id="lyric-form" class="container">
             <div class="row p-1">
                 <input class="col-sm-6 offset-sm-3" type="text" placeholder="type lyrics here..."
-                    id="lyric-search-value">
+                    id="lyric-search-value" required>
             </div>
             <div class="row p-1">
                 <button type="submit" class="col-sm-4 offset-sm-4">Submit</button>
@@ -244,8 +257,12 @@
     <!-- footer -->
     <footer class="container-fluid footer-small mt-5">
         <div class="row">
-            <div class="col-6 text-left text-muted">Lornæ 2020©</div>
-            <div class="col-6 text-wrap text-right text-muted ">For educational purposes only</div>
+            <div class="col-6 text-left text-muted">
+                <div>Lornæ 2020©</div>
+            </div>
+            <div class="col-6 text-wrap text-right text-muted">
+                <div>For educational purposes only</div>
+            </div>
         </div>
     </footer>
 
