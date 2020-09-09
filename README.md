@@ -70,17 +70,23 @@ Writers Unblock is designed to give an artist a little push through barriers tha
 
 #### User Stories
 
-##### Mr. Bloggs
+### Composers
 
-"_**As a composer and pianist** I expect a site that can **generate harmony**, in key, instantly, and flexibly._"
+- As a user I expect a site that can **generate harmony**, in key, instantly, and flexibly.
+- As a user I need the cultural constraints of mediocre and predicable song writing to be broken up with randomness.
+- As a user that does not have a technical background, I want a site that is easy to navigate and understand.
 
-##### Ms. C. Thweepioh
+### Musicians
 
-"_**As a musician and web developer**, I want the ability to **get in touch** with the developer and suggest feaures, potentially to collaborate and let them know of nay bugs or improvements._"
+- As a user I can be writing with **one hand** and playing with the other, so one handed operation is key.
+- As a user I am in need of **random generations of chords** to kick start blank page writing.
+- As a user I want the ability to **get in touch** with the developer and suggest feaures, potentially to collaborate and let them know of nay bugs or improvements.
 
-##### They Maplecourt
+### Lyricists
 
-"_**As a lyricist**, I make lyrics all day, every day of the week. Sometimes I need to **make sure that what I make is mine**, without sifting through unrelated search results._"
+- As a user I need to **make sure that what lyrics I write are mine**, without sifting through unrelated search results.
+- As a user I want to be able to **reference the inspirations** behind what is relatable to the lyric I am writing.
+- As a user I want to **search quickly** when I am writing in a rush.
 
 #### Site Owner Goals
 
@@ -120,22 +126,24 @@ Icons, much in the same way as the font, were designed to be as transparent as p
 
 ### Colours
 
-Originally, t colour palette was generated at [**Coolors.co**](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting. These were the colours used for the wireframes and VER 1 of the site.
+Originally, the colour palette was generated at [**Coolors.co**](https://www.coolors.co). I auto generated a palette, freezing certain tones that felt right until a strong contrasting palette was finished. Something striking and not too distracting. These were the colours used for the wireframes and VER 1 of the site.
 
 - **Primary Green** - #87BBA2 - This muted green is used for buttons that activate or do things. All the generate buttons have this colour.
 - **Background Yellow** - #FFF07C - This muted yellow is used to keep the focus on the generation buttons. The theory behind it that green is go and yellow is slow-down. I found that the focus is drawn to the green off the yellow much easier than any other colour I tried.
 - **Teriary Pearl/Cream** - #F0F70E - I used this off white in the headers and the footers to prive a clear background for navigatiopnal information without distraction.
 - **Grey and Black** - #000000 & #5D737E - These darker colours are used for text, icons and and results.
 
-The original palette:
-
-![Coolers Palette Image](wireframes/MS2_color_template_2.png)
-
 ## Current Colour Palette
 
 After testing the original yellow and green contrast was too harsh and tiring to the eyes. Considering the text design and simple approach, I search for a soft retro GameBoy palette instead with only 4 different, complimentary tones. On reflection, I should have done wireframes without colour for situations like this.
 
 ![Current Gameboy Colours](wireframes/gameboy-colour-palette.png)
+
+The original palette, used in the wireframes and initial conception before testing:
+
+![Coolers Palette Image](wireframes/color_template_2.png)
+
+The colour palette was changed during the build as the colour scheme was too devisive and contrasting for some users.
 
 ## Wireframes
 

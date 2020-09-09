@@ -127,7 +127,7 @@ function randomChords() {
 
 /** 
  * This creates the amount of each chord and progression requested 
-*/
+ */
 function randomChoice(myArray) {
     return myArray[Math.floor(Math.random() * myArray.length)];
 }
