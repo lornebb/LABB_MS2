@@ -8,6 +8,7 @@ const replaceObjRef = {
     'Abdim': 'G#dim',
     'Bbdim': 'A#dim'
 };
+const contactFormSubmit = $('contact-form-submit');
 
 // section toggles and doc.ready generator scripts 
 
@@ -45,7 +46,7 @@ $('#contact-form-submit').on('click', sendMail);
 function sendMail() {
     console.log("EmailJS - calling");
     emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
-    let templateParams = {
+    const templateParams = {
         "feature_request": $('#feature-request').val()
     };
     emailjs.send("lorneashley_gmail_com", "wub", templateParams)
@@ -65,7 +66,7 @@ function sendMail() {
 * Google reCaptcha makes sure no automated programs can send email through this.
 */
 function onSubmit(token) {
-    document.getElementById("contact-form-submit").submit(function(e){
+    contactFormSubmit.submit(function(e){
         e.preventDefault();
     });
 }
