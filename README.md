@@ -149,7 +149,7 @@ The colour palette was changed during the build as the colour scheme was too dev
 
 ### Original Concept
 
-![Original Concept](wireframes/Wireframe-handdrawn-wireframe-0.jpg)
+![Original Concept](wireframes/wireframe-handdrawn-wireframe-0.jpg)
 
 ### Desktop
 
