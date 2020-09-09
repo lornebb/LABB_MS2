@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap');
 
 body {
+    background-color: #e6d69c;
     font-family: "Press Start 2P";
     font-size: 0.9rem;
-    background-color: #e6d69c;
     max-width: 800px;
 }
 
@@ -55,8 +55,8 @@ body {
 }
 
 .results-box {
-    outline-style: inset;
     background-color: #c2c5cc;
+    outline-style: inset;
 }
 
 .footer-small {
