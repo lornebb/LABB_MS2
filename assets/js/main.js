@@ -9,25 +9,27 @@ const replaceObjRef = {
     'Bbdim': 'A#dim'
 };
 const contactFormSubmit = $('contact-form-submit');
+const lyricSearchLoading = $('#lyric-search-loading');
+const lyricSearchResults = $('#lyric-search-results');
 
 // section toggles and doc.ready generator scripts 
 
 $(document).ready(function () {
     // When Chord Section button is selected, it hides the other section elements
     $('#chords-section-button').on('click', function () {
-        homeSectionREefhide();
+        homeSectionRef.hide();
         chordSectionRef.show();
         $("#chord-gen-box").hide();
     });
     // When Lyric Section button is selected, it hides the other section elements
     $('#lyric-section-button').on('click', function () {
         lyricSectionRef.show();
-        homeSectionREefhide();
+        homeSectionRef.hide();
         chordSectionRef.hide();
     });
     // When Back button is selected, it hides the other section elements
     $('.back').on('click', function () {
-        homeSectionREefshow();
+        homeSectionRef.show();
         chordSectionRef.hide();
         lyricSectionRef.hide();
     });
@@ -63,8 +65,8 @@ function sendMail() {
 }
 
 /**  
-* Google reCaptcha makes sure no automated programs can send email through this.
-*/
+ * Google reCaptcha makes sure no automated programs can send email through this.
+ */
 function onSubmit(token) {
     contactFormSubmit.submit(function(e){
         e.preventDefault();
@@ -169,8 +171,8 @@ function searchLyrics(searchValue) {
 }
 
 function distLyrics(data){
-    $('#lyric-search-loading').hide();
-    $('#lyric-search-results').show();
+    lyricSearchLoading.hide();
+    lyricSearchResults.show();
     let artistResult = data.tracks.hits[0].track;
     let lyricResultLink = data.tracks.hits[0].track.share.html;
     $('#artist-fill').html(`${artistResult.subtitle}`);
