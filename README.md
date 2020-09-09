@@ -147,6 +147,8 @@ The colour palette was changed during the build as the colour scheme was too dev
 
 ## Wireframes
 
+Some features from the wireframes were dropped during the build for asthetic reasons, namely the Nav bar and footer.
+
 ### Original Concept
 
 ![Original Concept](wireframes/wireframe-handdrawn-wireframe-0.jpg)
@@ -196,19 +198,15 @@ The colour palette was changed during the build as the colour scheme was too dev
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) is used to generate chords, hide DOM elements and call APIs on this project.
-- [JQuery](https://jquery.com) is used to simplify DOM manipulation.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)
 
 ### Libraries & Frameworks
 
 - [Bootstrap](https://getbootstrap.com/)
-- [Git](https://git-scm.com/)
+- [JQuery](https://jquery.com) is used to simplify DOM manipulation.
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [EmailJS API](https://www.emailjs.com/)
-- [Google Cloud Platform](https://cloud.google.com/) - for captcha on EmailJs.
-- [Shazam API](https://rapidapi.com/apidojo/api/shazam) - provided lyric search results via it's api.
-- [Scraggo Music Tools](http://www.scraggo.com/) - javascript chord generation.
+- [Shazam](https://rapidapi.com/apidojo/api/shazam) - provided lyric search results via it's api.
 - [Loading IO](https://loading.io/) - animated gif loading image.
 - [Quokka.js](https://quokkajs.com/) - for live JS testing.
 - [JShint](https://jshint.com/) - for linting my Javascript.s
@@ -216,6 +214,10 @@ The colour palette was changed during the build as the colour scheme was too dev
 
 ### Tools
 
+- [Scraggo Music Tools](http://www.scraggo.com/) - javascript chord generation.
+- [Google Cloud Platform](https://cloud.google.com/) - for captcha on EmailJs.
+- [EmailJS](https://www.emailjs.com/)
+- [Git](https://git-scm.com/)
 - [Adobe XD](https://www.adobe.com/uk/products/xd.html) was used to create interactive wireframes, giving the ability to live-test on all platforms.
 - [VS Code](https://code.visualstudio.com/)
 - [Chrome](https://www.google.com/intl/en/chrome/) developer tools.
@@ -288,26 +290,26 @@ Throughout development of the site I had a live deployment and a local preview o
 
 When deploying **W.U.B** using **GitHub Pages** the following steps were made:
 
-- Opened up **GitHub** in the browser.
-- Signed in using username and password.
-- Selected my **repositories**.
-- Navigated to **'/lornebb/W.U.B'**.
-- In the top navigation clicked **'settings'**.
-- Scrolled down to the **GitHub Pages** area.
-- Selected **'Master Branch'** from the **'Source'** dropdown menu.
-- Clicked to confirm my selection.
+- Open up **GitHub** in the browser (**'www.github.com'**).
+- Sign in using your username and password.
+- Select my **repositories**.
+- Navigat to **'https://github.com/lornebb/W.U.B'**.
+- In the top navigation clicked **'settings' https://github.com/lornebb/W.U.B/settings**.
+- Scroll down to the **GitHub Pages** area.
+- Select **'Master Branch'** from the **'Source'** dropdown menu.
+- Click to confirm my selection.
 - W.U.B now live on GitHub Pages.
 
 ### Running W.U.B Locally
 
 Cloning **W.U.B** from **GitHub**:
 
-- Navigate to **'/lornebb/W.U.B'**.
-- Click the green **'Clone or Download'** button in the top right.
+- Navigate to **'https://github.com/lornebb/W.U.B'**.
+- Click the green **'Code'** button in the top right.
 - Copy the **url** in the dropdown box.
-- Using your favourite **IDE** open up your preferred **terminal**.
+- Using your preferred **IDE** open up your preferred **terminal**.
 - Navigate to your desired file location.
-- Copy the following **code** and input it into your terminal to clone Holiday Destinations.
+- Copy the below **code** and input it into your terminal to clone W.U.B.
 
 ```bash
 git clone https://github.com/lornebb/W.U.B.git
@@ -318,10 +320,10 @@ git clone https://github.com/lornebb/W.U.B.git
 - [**Chris Palmer**](https://github.com/cgpalmer) - helped with JavaScript and API integration troubleshooting.
 - [**David Williams**](https://eightarms.co.uk/) - helped navigate some API documentation suggestions.
 - **CI Student care** - helped with incomplete SDK from API.
-- [Bootstrap snippets](https://bootsnipp.com/snippets/GqBjl) **dvinciguerra** for the Square Buttons.
+- [**Bootstrap snippets**](https://bootsnipp.com/snippets/GqBjl) - **dvinciguerra** for the Square Buttons.
 - [**Bim Williams**](https://github.com/MrBim) - Cracked the Scales-Chords-Api call problem by deep diving into their api!
-- [WildLeoKnight](https://lospec.com/palette-list/muddysand) - Gameboy colour palette created by WildLeoKnight.
-- [Simen Daehlin](https://github.com/Eventyret) - my mentor during this build, provided above and beyond help to teach me how to make it reach a standard I could be proud of.
+- [**WildLeoKnight**](https://lospec.com/palette-list/muddysand) - Gameboy colour palette created by WildLeoKnight.
+- [**Simen Daehlin**](https://github.com/Eventyret) - my mentor during this build, provided above and beyond help to teach me how to make it reach a standard I could be proud of.
 
 ### Media
 
