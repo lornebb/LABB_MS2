@@ -174,7 +174,6 @@ function searchLyrics(searchValue) {
 function distLyrics(data) {
     lyricSearchLoading.hide();
     if (data.tracks) {
-        console.log("results FOUND")
         lyricSearchResults.show();
         let artistResult = data.tracks.hits[0].track;
         let lyricResultLink = data.tracks.hits[0].track.share.html;
@@ -182,7 +181,6 @@ function distLyrics(data) {
         $('#song-fill').html(`${artistResult.title}`);
         $("#lyric-search-link").attr("href", `${lyricResultLink}`);
     } else {
-        console.log("no results found")
         $('#no-results-found').show();
         $('#lyric-results-box').hide();
         $('.lyric-results-text').hide();
