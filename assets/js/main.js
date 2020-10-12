@@ -70,6 +70,7 @@ function sendMail() {
             },
             function (error) {
                 console.log("FAILED", error);
+                alert('message not sent, please try again');
             }
         );
     return false;
@@ -172,7 +173,6 @@ function searchLyrics(searchValue) {
             $('#something-went-wrong-box').show();
             $('#lyric-results-box').hide();
             $('.lyric-results-text').hide();
-            console.log(err);
         });
 }
 
@@ -185,12 +185,9 @@ function distLyrics(data) {
         $('#artist-fill').html(`${artistResult.subtitle}`);
         $('#song-fill').html(`${artistResult.title}`);
         $("#lyric-search-link").attr("href", `${lyricResultLink}`);
-    }
-    else {
+    } else {
         $('#no-results-found').show();
         $('#lyric-results-box').hide();
         $('.lyric-results-text').hide();
     }
-
-
 }
