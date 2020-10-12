@@ -87,17 +87,20 @@
             <div class="row">
                 <div class="col-sm-6 offset-3 mx-auto text-center font-2">
                     <form method="POST">
-                        <input type="text" id="feature-request" placeholder="Tell me what you want to see on the site"
-                            name="feature request email" aria-label="email contact box" required>
-                        <button id="contact-form-submit" type="submit" class="g-recaptcha"
-                            data-sitekey="6LdxdLYZAAAAADmDuvzHzZptIMUbZcLwhafdxXTH"
-                            data-callback='onSubmit'>Submit</button>
+                        <input type="text" id="feature-request" placeholder="Get in touch!" name="feature request email"
+                            aria-label="email contact box" required>
+                        <button id="contact-form-submit" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6 offset-3 mx-auto">
+            <div class="row pt-2">
+                <div class="col-8 offset-3 mx-auto">
                     <div id="contact-form-confirmation">Message Sent, thanks! :) </div>
+                </div>
+            </div>
+            <div class="row pt-2">
+                <div class="col-8 offset-3 mx-auto">
+                    <div id="contact-form-fail">Please fill in this field. </div>
                 </div>
             </div>
         </div>
@@ -236,7 +239,8 @@
                 <h6 class="col-sm-6 offset-sm-3 text-muted lyric-results-text">a.k.a You probably stole this from...
                 </h6>
             </div>
-            <div class="container">
+            <div id="something-went-wrong-box">Something went wrong, <br> please try again.</div>
+            <div class="container" id="lyric-results-box">
                 <div class="row p-1 results-box">
                     <div class="col-sm-4 offset-sm-2 text-muted p-1">Artist:</div>
                     <h6 id="artist-fill" class="col-sm-4">Artist FIll</h6>
@@ -270,8 +274,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- EmailJs -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <!-- google recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- WUB JS -->
     <script src="assets/js/main.js"></script>
 

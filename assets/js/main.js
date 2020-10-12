@@ -8,7 +8,7 @@ const replaceObjRef = {
     'Abdim': 'G#dim',
     'Bbdim': 'A#dim'
 };
-const contactFormSubmit = $('contact-form-submit');
+const contactFormSubmit = $('#contact-form-submit');
 const lyricSearchLoading = $('#lyric-search-loading');
 const lyricSearchResults = $('#lyric-search-results');
 
@@ -37,9 +37,20 @@ $(document).ready(function () {
     $("#lyric-search-results").hide();
     $("#lyric-search-loading").hide();
     $("#contact-form-confirmation").hide();
+    $('#contact-form-fail').hide();
+    $('#something-went-wrong-box').hide();
 });
 
-$('#contact-form-submit').on('click', sendMail);
+$('#contact-form-submit').click(function(){
+    if($('#feature-request').val() == ''){
+        $('#contact-form-fail').show();
+    }
+    else {
+        $('#contact-form-fail').hide();
+        sendMail();
+        return false;
+    }
+ });
 
 /** 
  * emailJS API - when submit on contact form is sent, 
@@ -62,15 +73,6 @@ function sendMail() {
             }
         );
     return false;
-}
-
-/**  
- * Google reCaptcha makes sure no automated programs can send email through this.
- */
-function onSubmit(token) {
-    contactFormSubmit.submit(function(e){
-        e.preventDefault();
-    });
 }
 
 /** 
@@ -164,8 +166,10 @@ function searchLyrics(searchValue) {
             distLyrics(data);
         })
         .catch(err => {
-            $('#something-went-wrong-box-hide').show();
             $("#search-loading").hide();
+            $('#something-went-wrong-box').show();
+            $('#lyric-results-box').hide();
+            $('.lyric-results-text').hide();
             console.log(err);
         });
 }
