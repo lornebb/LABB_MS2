@@ -37,6 +37,7 @@ $(document).ready(function () {
     $("#lyric-search-results").hide();
     $("#lyric-search-loading").hide();
     $("#contact-form-confirmation").hide();
+    $('#contact-form-fail').hide();
 });
 
 $('#contact-form-submit').on('click', sendMail);
