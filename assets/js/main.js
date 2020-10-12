@@ -57,7 +57,6 @@ $('#contact-form-submit').click(function () {
  * EmailJS API is used to send the email to the developer directly 
  * */
 function sendMail() {
-    console.log("EmailJS - calling");
     emailjs.init("user_NLgvc4Mu5hpwy6V4uUBBn");
     const templateParams = {
         "feature_request": $('#feature-request').val()
@@ -65,11 +64,9 @@ function sendMail() {
     emailjs.send("lorneashley_gmail_com", "wub", templateParams)
         .then(
             function (response) {
-                console.log("SUCCESS - called, sent", response, response.status, response.text);
                 $("#contact-form-confirmation").show();
             },
             function (error) {
-                console.log("FAILED", error);
                 alert('message not sent, please try again');
             }
         );
