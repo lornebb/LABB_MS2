@@ -144,8 +144,6 @@ $("#lyric-form").submit(function (e) {
     e.preventDefault();
     let searchValue = $('#lyric-search-value').val();
     searchLyrics(searchValue);
-    $('#lyric-results-box').hide();
-    $('#no-results-found').show();
 });
 
 /**  
@@ -175,14 +173,16 @@ function searchLyrics(searchValue) {
 
 function distLyrics(data) {
     lyricSearchLoading.hide();
-    lyricSearchResults.show();
     if (data.tracks) {
+        console.log("results FOUND")
+        lyricSearchResults.show();
         let artistResult = data.tracks.hits[0].track;
         let lyricResultLink = data.tracks.hits[0].track.share.html;
         $('#artist-fill').html(`${artistResult.subtitle}`);
         $('#song-fill').html(`${artistResult.title}`);
         $("#lyric-search-link").attr("href", `${lyricResultLink}`);
     } else {
+        console.log("no results found")
         $('#no-results-found').show();
         $('#lyric-results-box').hide();
         $('.lyric-results-text').hide();

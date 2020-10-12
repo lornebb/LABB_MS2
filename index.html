@@ -234,14 +234,12 @@
             <div class="col-4 mx-auto" id="lyric-search-loading"></div>
         </div>
         <div id="lyric-search-results" class="container text-center">
-            <h6 class="pt-3"><u>Results</u></h6>
-            <div class="row">
-                <h6 class="col-sm-6 offset-sm-3 text-muted lyric-results-text">a.k.a You probably stole this from...
-                </h6>
-            </div>
-            <div id="something-went-wrong-box">Something went wrong, <br> please try again.</div>
-            <div id="no-results-found">No results found, <br> you have written something original. <br> Congrats!</div>
-            <div class="container" id="lyric-results-box">
+            <div class="col" id="lyric-results-box">
+                <h6 class="col-sm-6 offset-3 pt-3"><u>Results</u></h6>
+                <div class="row">
+                    <h6 class="col-sm-6 offset-sm-3 text-muted lyric-results-text">a.k.a You probably stole this from...
+                    </h6>
+                </div>
                 <div class="row p-1 results-box">
                     <div class="col-sm-4 offset-sm-2 text-muted p-1">Artist:</div>
                     <h6 id="artist-fill" class="col-sm-4">Artist FIll</h6>
@@ -257,6 +255,9 @@
                 </div>
             </div>
         </div>
+        <div id="something-went-wrong-box" class="row">Something went wrong, <br> please try again.</div>
+        <div id="no-results-found" class="row">No results found, <br> you have either written something original or nonsensical. <br>
+            Congrats!</div>
     </section>
     <!-- footer -->
     <footer class="container-fluid footer-small mt-5">
