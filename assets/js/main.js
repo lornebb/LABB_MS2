@@ -40,7 +40,16 @@ $(document).ready(function () {
     $('#contact-form-fail').hide();
 });
 
-$('#contact-form-submit').on('click', sendMail);
+$('#contact-form-submit').click(function(){
+    if($('#feature-request').val() == ''){
+        $('#contact-form-fail').show();
+    }
+    else {
+        $('#contact-form-fail').hide();
+        sendMail();
+        return false;
+    }
+ });
 
 /** 
  * emailJS API - when submit on contact form is sent, 
