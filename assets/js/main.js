@@ -8,7 +8,7 @@ const replaceObjRef = {
     'Abdim': 'G#dim',
     'Bbdim': 'A#dim'
 };
-const contactFormSubmit = $('contact-form-submit');
+const contactFormSubmit = $('#contact-form-submit');
 const lyricSearchLoading = $('#lyric-search-loading');
 const lyricSearchResults = $('#lyric-search-results');
 
@@ -38,6 +38,7 @@ $(document).ready(function () {
     $("#lyric-search-loading").hide();
     $("#contact-form-confirmation").hide();
     $('#contact-form-fail').hide();
+    $('#something-went-wrong-box').hide();
 });
 
 $('#contact-form-submit').click(function(){
