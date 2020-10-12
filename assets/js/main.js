@@ -165,8 +165,10 @@ function searchLyrics(searchValue) {
             distLyrics(data);
         })
         .catch(err => {
-            $('#something-went-wrong-box-hide').show();
             $("#search-loading").hide();
+            $('#something-went-wrong-box').show();
+            $('#lyric-results-box').hide();
+            $('.lyric-results-text').hide();
             console.log(err);
         });
 }
