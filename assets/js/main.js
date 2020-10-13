@@ -127,8 +127,6 @@ function randomChords() {
     $("#Random-CP").append(output);
 }
 
-// + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"
-
 /** 
  * This creates the amount of each chord and progression requested 
  */
