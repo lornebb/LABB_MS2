@@ -120,13 +120,14 @@ function randomChords() {
     let titleOutput = `<div> ${progressionNumber} Random Progressions of ${chordNumber} Chords </div>`;
     let output = "";
     for (let i = 1; i <= progressionNumber; i++) {
-        output += `<div class="chord-gen-number">${i}.` + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"
-            `</div>`);
+        output += `<div class="chord-gen-number">${i}.</div>`;
         output += `<div class="chord-gen-font">${chordGenerator(chordNumber)}</div>`;
     }
     $("#Random-CP-title").append(titleOutput);
     $("#Random-CP").append(output);
 }
+
+// + ((i < 10) ? "\xa0\xa0\xa0" : "\xa0\xa0"
 
 /** 
  * This creates the amount of each chord and progression requested 
