@@ -137,12 +137,32 @@ function randomChoice(myArray) {
 $("#generate-random-ChP").on("click", randomChords);
 
 /**
- * Submit the lyric search term to the Shazam API 
+ * Submit the lyric search term to the Shazam API on click of submit. 
  */
-$("#lyric-form").submit(function (e) {
+$("#lyric-submit").click(function (e) {
     e.preventDefault();
     let searchValue = $('#lyric-search-value').val();
-    searchLyrics(searchValue);
+    if (searchValue <= "") {
+        alert("Please fill search box");
+    } else {
+        lyricSearchResults.hide();
+        searchLyrics(searchValue);
+    }
+});
+
+/**
+ * Submit the lyric search term to the Shazam API on enter press. 
+ */
+$('#lyric-search-value').on("keyup", function (e) {
+    if (e.keyCode == 13) {
+        let searchValue = $('#lyric-search-value').val();
+        if (searchValue.length >0) {
+            lyricSearchResults.hide();
+            searchLyrics(searchValue);
+        } else {
+            alert("Please fill search box");
+        }
+    }
 });
 
 /**  
@@ -151,6 +171,9 @@ $("#lyric-form").submit(function (e) {
  */
 function searchLyrics(searchValue) {
     $("#lyric-search-loading").show();
+    $('#no-results-found').hide();
+    $('#lyric-results-box').show();
+    $('.lyric-results-text').show();
     fetch(`https://shazam.p.rapidapi.com/search?locale=en-US&offset=0&limit=5&term=${searchValue}`, {
             "method": "GET",
             "headers": {
